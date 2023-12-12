@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,6 +14,20 @@
         android:orientation="vertical"
         android:layout_marginTop="0.5dp"
         android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Tên của bạn"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:id="@+id/editText3" />
 
         <TextView
             android:text="Tên đăng nhập"
@@ -43,22 +57,13 @@
             android:background="@android:color/white"
             android:id="@+id/editText1" />
 
+        
         <Button
-            android:id="@+id/btn_taotaikhoan"
+            android:id="@+id/button2"
             android:text="Tạo tài khoản"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/white"
-            android:background="@android:color/transparent"/>
-
-        <Button
-            android:id="@+id/btn_dangnhap"
-            android:text="Đăng nhập"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"/>
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

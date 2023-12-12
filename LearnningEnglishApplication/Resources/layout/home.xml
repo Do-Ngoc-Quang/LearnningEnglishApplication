@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Layout ở trên chiếm 90% chiều cao -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" 
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Chào mừng"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="30px"
+            android:minHeight="30px"
+            android:id="@+id/txt_chaomung" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:paddingTop="20sp"
+        android:background="?android:attr/colorControlHighlight">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_home"
+            android:drawableTop="@drawable/icon_home_32px"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_category"
+            android:drawableTop="@drawable/icon_category_32px"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_leaderboard"
+            android:drawableTop="@drawable/icon_rank_32px"
+            android:gravity="center" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:id="@+id/btn_profile"
+            android:drawableTop="@drawable/icon_profile_32px"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

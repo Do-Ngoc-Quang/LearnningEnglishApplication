@@ -15,7 +15,7 @@
         android:layout_marginTop="370dp">
 
         <TextView
-            android:text="Study"
+            android:text="English"
             android:textSize="30sp"
             android:textStyle="bold"
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:textColor="@android:color/white"/>
         
         <TextView
-            android:text="Your pocket guide for school"
+            android:text="Tương lai trong tầm tay của bạn"
             android:textSize="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
 
         <Button
             android:id="@+id/btn_start"
-            android:text="Start"
+            android:text="Bắt đầu"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
