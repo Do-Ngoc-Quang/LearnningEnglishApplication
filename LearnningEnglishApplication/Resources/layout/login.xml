@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background8"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:text="Your username"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:inputType="textPersonName"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:id="@+id/editText2" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Your password"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:id="@+id/editText1" />
+
+        <Button
+            android:id="@+id/button1"
+            android:text="to sign up"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:text="Log in"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+</LinearLayout>
