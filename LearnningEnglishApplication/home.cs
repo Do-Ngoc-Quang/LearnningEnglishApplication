@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -36,18 +37,51 @@ namespace LearnningEnglishApplication
         private void Btn_profile_Click(object sender, EventArgs e)
         {
             Intent it = new Intent(this, typeof(profile));
+
+            // Check if the activity is already in the task stack
+            ComponentName cn = it.ResolveActivity(PackageManager);
+            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+            if (!currentActivity.Equals(GetType().FullName))
+            {
+                // If the activity is not the current one, reorder it to the front
+                it.AddFlags(ActivityFlags.ReorderToFront);
+            }
+
             StartActivity(it);
         }
 
         private void Btn_leaderboard_Click(object sender, EventArgs e)
         {
             Intent it = new Intent(this, typeof(leaderboard));
+
+            // Check if the activity is already in the task stack
+            ComponentName cn = it.ResolveActivity(PackageManager);
+            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+            if (!currentActivity.Equals(GetType().FullName))
+            {
+                // If the activity is not the current one, reorder it to the front
+                it.AddFlags(ActivityFlags.ReorderToFront);
+            }
+
             StartActivity(it);
         }
 
         private void Btn_category_Click(object sender, EventArgs e)
         {
             Intent it = new Intent(this, typeof(category));
+
+            // Check if the activity is already in the task stack
+            ComponentName cn = it.ResolveActivity(PackageManager);
+            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+            if (!currentActivity.Equals(GetType().FullName))
+            {
+                // If the activity is not the current one, reorder it to the front
+                it.AddFlags(ActivityFlags.ReorderToFront);
+            }
+
             StartActivity(it);
         }
 
