@@ -1,7 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background11">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:textColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:format="mm:ss"
+                android:gravity="left"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="32dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="@android:color/white" />
+
+        </LinearLayout>
+
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:text="Nghĩa của từ: "
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/txt_EN"
+                android:text="Nghĩa của từ: "
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/holo_red_dark"/>
+
+        </LinearLayout>
+
+        
+        <Button
+            android:id="@+id/btn_1"
+            android:text="Đáp án 1"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/btn_2"
+            android:text="Đáp án 2"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/btn_3"
+            android:text="Đáp án 3"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+        
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="20dp">
+
+           
+            <TextView
+                android:text="Câu hỏi "
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/txt_socau"
+                android:text="txt_socau"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:text=" trên "
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/txt_tongsocau"
+                android:text="txt_tongsocau"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
