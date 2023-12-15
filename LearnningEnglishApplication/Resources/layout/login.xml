@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/white"
-            android:id="@+id/editText2" />
+            android:id="@+id/txt_tendangnhap" />
 
         <TextView
             android:layout_marginTop="10dp"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/white"
-            android:id="@+id/editText1" />
+            android:id="@+id/txt_matkhau" />
 
         <Button
             android:id="@+id/btn_taotaikhoan"

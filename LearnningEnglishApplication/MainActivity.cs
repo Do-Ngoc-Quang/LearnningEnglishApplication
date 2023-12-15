@@ -4,6 +4,7 @@ using Android.Runtime;
 using AndroidX.AppCompat.App;
 using Android.Widget;
 using Android.Content;
+using Android.Database;
 
 namespace LearnningEnglishApplication
 {
@@ -17,6 +18,11 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            //Create db SQLite
+            mySQLite mysqlite = new mySQLite(this.ApplicationContext);
+
+
 
             btn_start = FindViewById<Button>(Resource.Id.btn_start);
 

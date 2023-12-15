@@ -66,6 +66,7 @@
     <Compile Include="leaderboard.cs" />
     <Compile Include="login.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="mySQLite.cs" />
     <Compile Include="profile.cs" />
     <Compile Include="quiz_lost.cs" />
     <Compile Include="quiz.cs" />

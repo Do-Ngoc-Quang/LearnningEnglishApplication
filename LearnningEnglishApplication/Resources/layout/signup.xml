@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/white"
-            android:id="@+id/editText3" />
+            android:id="@+id/txt_hoten" />
 
         <TextView
             android:text="Tên đăng nhập"
@@ -41,7 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/white"
-            android:id="@+id/editText2" />
+            android:id="@+id/txt_tendangnhap" />
 
         <TextView
             android:layout_marginTop="10dp"
@@ -55,11 +55,11 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="@android:color/white"
-            android:id="@+id/editText1" />
+            android:id="@+id/txt_matkhau" />
 
         
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_taotaikhoan"
             android:text="Tạo tài khoản"
             android:layout_width="250dp"
             android:layout_height="50dp"
