@@ -85,9 +85,22 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
+        //Kiểm thử
         private void Btn_home_Click(object sender, EventArgs e)
         {
-            
+            Intent it = new Intent(this, typeof(quiz));
+
+            // Check if the activity is already in the task stack
+            ComponentName cn = it.ResolveActivity(PackageManager);
+            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+            if (!currentActivity.Equals(GetType().FullName))
+            {
+                // If the activity is not the current one, reorder it to the front
+                it.AddFlags(ActivityFlags.ReorderToFront);
+            }
+
+            StartActivity(it);
         }
     }
 }
