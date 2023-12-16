@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -26,11 +27,13 @@ namespace LearnningEnglishApplication
         int tongSocau = 0;
         int cauDung = 0;
 
-        // Biến lính canh có vị trí button của đáp án đúng
-        int btn_index_true = 0;
+        // Biến lính canh 
+        int btn_index_true = 0; //vị trí button của đáp án đúng
+        int soluotchoi = 3; //Số mạng là 3 - làm sai tối đa 3 lần
 
+        CheckBox ckb_soluotchoi_1, ckb_soluotchoi_2, ckb_soluotchoi_3;
         TextView txt_EN, txt_socau;
-        Button btn_dapan1, btn_dapan2, btn_dapan3;
+        Button btn_dapan1, btn_dapan2, btn_dapan3, btn_endquiz;
 
         private Handler handler = new Handler();
 
@@ -41,46 +44,59 @@ namespace LearnningEnglishApplication
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz);
 
+            ckb_soluotchoi_1 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_1);
+            ckb_soluotchoi_2 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_2);
+            ckb_soluotchoi_3 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_3);
+
             txt_EN = FindViewById<TextView>(Resource.Id.txt_EN);
             txt_socau = FindViewById<TextView>(Resource.Id.txt_socau);
 
             btn_dapan1 = FindViewById<Button>(Resource.Id.btn_dapan1);
             btn_dapan2 = FindViewById<Button>(Resource.Id.btn_dapan2);
             btn_dapan3 = FindViewById<Button>(Resource.Id.btn_dapan3);
+            btn_endquiz = FindViewById<Button>(Resource.Id.btn_endquiz);
 
             btn_dapan1.Click += Btn_dapan1_Click;
             btn_dapan2.Click += Btn_dapan2_Click;
             btn_dapan3.Click += Btn_dapan3_Click;
+            btn_endquiz.Click += Btn_endquiz_Click;
 
             LoadXML();
 
             ShowRandomItem();
         }
 
+        
+
         private void Btn_dapan1_Click(object sender, EventArgs e)
         {
             if (btn_index_true == 1)
             {
-                btn_dapan1.Text = "Sure anwser!";
+                //True answer!
                 btn_dapan1.SetBackgroundColor(Android.Graphics.Color.LightGreen);
 
+                //Đếm số câu đúng
                 cauDung++;
             }
             else
             {
+                //Xử lý nếu trả lời sai
+                soluotchoi--;
+
                 switch (btn_index_true)
                 {
                     case 2:
-                        //Wrong answer!
+                        //This is wrong answer!
                         btn_dapan1.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
+
 
                         //True answer!
                         btn_dapan2.SetBackgroundColor(Android.Graphics.Color.LightGreen);
-
+                        
                         break;
 
                     case 3:
-                        //Wrong answer!
+                        //This is wrong answer!
                         btn_dapan1.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
 
                         //True answer!
@@ -95,17 +111,109 @@ namespace LearnningEnglishApplication
             handler.PostDelayed(() => {
                 ShowRandomItem();
             }, 2000);
-
         }
 
         private void Btn_dapan2_Click(object sender, EventArgs e)
         {
-            
+            if (btn_index_true == 2)
+            {
+                //True answer!
+                btn_dapan2.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+
+                //Đếm số câu đúng
+                cauDung++;
+            }
+            else
+            {
+                //Xử lý nếu trả lời sai
+                soluotchoi--;
+
+                switch (btn_index_true)
+                {
+                    case 1:
+                        //This is wrong answer!
+                        btn_dapan2.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
+
+                        //True answer!
+                        btn_dapan1.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+                        break;
+
+                    case 3:
+                        //This is wrong answer!
+                        btn_dapan2.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
+
+                        //True answer!
+                        btn_dapan3.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            // Sử dụng Handler để tạo độ trễ
+            handler.PostDelayed(() => {
+                ShowRandomItem();
+            }, 2000);
         }
 
         private void Btn_dapan3_Click(object sender, EventArgs e)
         {
-            
+            if (btn_index_true == 3)
+            {
+                //True answer!
+                btn_dapan3.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+
+                //Đếm số câu đúng
+                cauDung++;
+            }
+            else
+            {
+                //Xử lý nếu trả lời sai
+                soluotchoi--;
+
+                switch (btn_index_true)
+                {
+                    case 1:
+                        //This is wrong answer!
+                        btn_dapan3.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
+
+                        //True answer!
+                        btn_dapan1.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+                        break;
+
+                    case 2:
+                        //This is wrong answer!
+                        btn_dapan3.SetBackgroundColor(Android.Graphics.Color.PaleVioletRed);
+
+                        //True answer!
+                        btn_dapan2.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            // Sử dụng Handler để tạo độ trễ
+            handler.PostDelayed(() => {
+                ShowRandomItem();
+            }, 2000);
+        }
+
+        private void Btn_endquiz_Click(object sender, EventArgs e)
+        {
+            Intent it = new Intent(this, typeof(home));
+
+            // Check if the activity is already in the task stack
+            ComponentName cn = it.ResolveActivity(PackageManager);
+            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+            if (!currentActivity.Equals(GetType().FullName))
+            {
+                // If the activity is not the current one, reorder it to the front
+                it.AddFlags(ActivityFlags.ReorderToFront);
+            }
+
+            StartActivity(it);
         }
 
         private void LoadXML()
@@ -122,58 +230,102 @@ namespace LearnningEnglishApplication
 
         private void ShowRandomItem()
         {
-            btn_dapan1.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
-            btn_dapan2.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
-            btn_dapan3.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
-
-            tongSocau++;
-
-            txt_socau.Text = tongSocau.ToString();
-
-            // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng anh
-            int randomIndex_en = random.Next(0, mydataEn.Count);
-            string randomItem_en = mydataEn[randomIndex_en];
-
-            // Gán giá trị của phần tử ngẫu nhiên vào EditText
-            txt_EN.Text = randomItem_en;
-
-            // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng việt
-            string rightAnswer = mydataVn[randomIndex_en];
-
-            // Gán giá trị của phần tử ngẫu nhiên
-            int randomIndex_vn = random.Next(1, 4);
-            switch (randomIndex_vn)
+            //Hiển thị số lượt chơi
+            switch (soluotchoi)
             {
                 case 1:
-                    //Câu trả lời đúng
-                    btn_dapan1.Text = rightAnswer;
-                    btn_index_true = randomIndex_vn;
-
-                    //Các lựa chọn còn lại sẽ sai
-                    btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                    btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                    ckb_soluotchoi_1.Checked = true;
+                    ckb_soluotchoi_2.Checked = false;
+                    ckb_soluotchoi_3.Checked = false;
                     break;
                 case 2:
-                    //Câu trả lời đúng
-                    btn_dapan2.Text = rightAnswer;
-                    btn_index_true = randomIndex_vn;
-
-                    //Các lựa chọn còn lại sẽ sai
-                    btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                    btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                    ckb_soluotchoi_1.Checked = true;
+                    ckb_soluotchoi_2.Checked = true;
+                    ckb_soluotchoi_3.Checked = false;
                     break;
                 case 3:
-                    //Câu trả lời đúng
-                    btn_dapan3.Text = rightAnswer;
-                    btn_index_true = randomIndex_vn;
-
-                    //Các lựa chọn còn lại sẽ sai
-                    btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                    btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                    ckb_soluotchoi_1.Checked = true;
+                    ckb_soluotchoi_2.Checked = true;
+                    ckb_soluotchoi_3.Checked = true;
                     break;
-               
                 default:
                     break;
+            }
+
+            //Kiểm tra điều kiện
+            if (tongSocau == 5 || soluotchoi == 0)
+            {
+                if (cauDung >= 2)
+                {
+                    Intent it = new Intent(this, typeof(quiz_completed));
+
+                    it.PutExtra("tongSocau", tongSocau.ToString());
+                    it.PutExtra("cauDung", cauDung.ToString());
+
+                    StartActivity(it);
+                }
+                else
+                {
+                    Intent it = new Intent(this, typeof(quiz_lost));
+                    StartActivity(it);
+                }
+                
+            }
+            else
+            {
+                btn_dapan1.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
+                btn_dapan2.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
+                btn_dapan3.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
+
+                tongSocau++;
+
+                txt_socau.Text = tongSocau.ToString();
+
+                // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng anh
+                int randomIndex_en = random.Next(0, mydataEn.Count);
+                string randomItem_en = mydataEn[randomIndex_en];
+
+                // Gán giá trị của phần tử ngẫu nhiên vào EditText
+                txt_EN.Text = randomItem_en;
+
+                // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng việt
+                string rightAnswer = mydataVn[randomIndex_en];
+
+                // Gán giá trị của phần tử ngẫu nhiên
+                int randomIndex_vn = random.Next(1, 4);
+                switch (randomIndex_vn)
+                {
+                    case 1:
+                        //Câu trả lời đúng
+                        btn_dapan1.Text = rightAnswer;
+                        btn_index_true = randomIndex_vn;
+
+                        //Các lựa chọn còn lại sẽ sai
+                        btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        break;
+                    case 2:
+                        //Câu trả lời đúng
+                        btn_dapan2.Text = rightAnswer;
+                        btn_index_true = randomIndex_vn;
+
+                        //Các lựa chọn còn lại sẽ sai
+                        btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        break;
+                    case 3:
+                        //Câu trả lời đúng
+                        btn_dapan3.Text = rightAnswer;
+                        btn_index_true = randomIndex_vn;
+
+                        //Các lựa chọn còn lại sẽ sai
+                        btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
     }
