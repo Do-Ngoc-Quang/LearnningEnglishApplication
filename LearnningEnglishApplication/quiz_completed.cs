@@ -39,6 +39,9 @@ namespace LearnningEnglishApplication
 
         private void Btn_endquiz_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(home));
 
             // Check if the activity is already in the task stack
@@ -56,6 +59,9 @@ namespace LearnningEnglishApplication
 
         private void Btn_replay_quiz_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(quiz));
             StartActivity(it);
         }

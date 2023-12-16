@@ -58,6 +58,11 @@ namespace LearnningEnglishApplication
                 {
                     // Xác thực thành công
                     Intent it = new Intent(this, typeof(home));
+
+                    // Lấy id người dùng
+                    string id = cur.GetString(cur.GetColumnIndex("id"));
+                    it.PutExtra("id", id);
+
                     StartActivity(it);
                 }
                 else
