@@ -19,8 +19,9 @@ namespace LearnningEnglishApplication
         XmlReader reader;
 
         // Danh sách để lưu trữ dữ liệu từ file XML
-        List<string> mydataEn = new List<string>();
-        List<string> mydataVn = new List<string>();
+        List<string> vocab_en = new List<string>();
+        List<string> mean_vn = new List<string>();
+        List<string> mean_vn_total = new List<string>();
 
         Random random = new Random();
 
@@ -66,7 +67,66 @@ namespace LearnningEnglishApplication
             ShowRandomItem();
         }
 
-        
+        private void LoadXML()
+        {
+            //reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
+            //while (reader.Read())
+            //{
+            //    if (reader.Name.ToString() == "en")
+            //        vocab_en.Add(reader.ReadString());
+            //    if (reader.Name.ToString() == "vn")
+            //        mean_vn.Add(reader.ReadString());
+            //}
+
+            
+            using (XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml")))
+            {
+                string currentCategory = "";
+
+                while (reader.Read())
+                {
+                    if (reader.NodeType == XmlNodeType.Element)
+                    {
+                        if (reader.Name == "plan")
+                        {
+                            // Nếu đang đọc một danh mục, lấy tên danh mục
+                            currentCategory = reader.GetAttribute("name");
+                        }
+                        else if (reader.Name == "vn")
+                        {
+                            // Thêm nghĩa vào danh sách chung mean_vn_total
+                            mean_vn_total.Add(reader.ReadString());
+                        }
+                        else if (reader.Name == "word" && currentCategory == "stage_2")
+                        {
+                            // Nếu đang ở trong danh mục "General", đọc từ vựng
+                            while (reader.Read())
+                            {
+                                if (reader.NodeType == XmlNodeType.Element)
+                                {
+                                    if (reader.Name == "en")
+                                    {
+                                        vocab_en.Add(reader.ReadString());
+                                    }
+                                    else if (reader.Name == "vn")
+                                    {
+                                        mean_vn.Add(reader.ReadString());
+                                    }
+                                }
+                                else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "word")
+                                {
+                                    // Kết thúc đọc một từ, thoát khỏi vòng lặp con
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
 
         private void Btn_dapan1_Click(object sender, EventArgs e)
         {
@@ -216,17 +276,6 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void LoadXML()
-        {
-            reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
-            while (reader.Read())
-            {
-                if (reader.Name.ToString() == "en")
-                    mydataEn.Add(reader.ReadString());
-                if (reader.Name.ToString() == "vn")
-                    mydataVn.Add(reader.ReadString());
-            }
-        }
 
         private void ShowRandomItem()
         {
@@ -253,9 +302,9 @@ namespace LearnningEnglishApplication
             }
 
             //Kiểm tra điều kiện
-            if (tongSocau == 5 || soluotchoi == 0)
+            if (tongSocau == 10 || soluotchoi == 0)
             {
-                if (cauDung >= 2)
+                if (cauDung >= 5)
                 {
                     Intent it = new Intent(this, typeof(quiz_completed));
 
@@ -281,15 +330,15 @@ namespace LearnningEnglishApplication
 
                 txt_socau.Text = tongSocau.ToString();
 
-                // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng anh
-                int randomIndex_en = random.Next(0, mydataEn.Count);
-                string randomItem_en = mydataEn[randomIndex_en];
+                // Chọn ngẫu nhiên một phần tử từ danh sách vocab_en ------ Tiếng anh
+                int randomIndex_en = random.Next(0, vocab_en.Count);
+                string randomItem_en = vocab_en[randomIndex_en];
 
                 // Gán giá trị của phần tử ngẫu nhiên vào EditText
                 txt_EN.Text = randomItem_en;
 
-                // Chọn ngẫu nhiên một phần tử từ danh sách mydataEn ------ Tiếng việt
-                string rightAnswer = mydataVn[randomIndex_en];
+                // Chọn ngẫu nhiên một phần tử từ danh sách vocab_en ------ Tiếng việt
+                string rightAnswer = mean_vn[randomIndex_en];
 
                 // Gán giá trị của phần tử ngẫu nhiên
                 int randomIndex_vn = random.Next(1, 4);
@@ -301,8 +350,8 @@ namespace LearnningEnglishApplication
                         btn_index_true = randomIndex_vn;
 
                         //Các lựa chọn còn lại sẽ sai
-                        btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                        btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan2.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
+                        btn_dapan3.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
                         break;
                     case 2:
                         //Câu trả lời đúng
@@ -310,8 +359,8 @@ namespace LearnningEnglishApplication
                         btn_index_true = randomIndex_vn;
 
                         //Các lựa chọn còn lại sẽ sai
-                        btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                        btn_dapan3.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan1.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
+                        btn_dapan3.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
                         break;
                     case 3:
                         //Câu trả lời đúng
@@ -319,8 +368,8 @@ namespace LearnningEnglishApplication
                         btn_index_true = randomIndex_vn;
 
                         //Các lựa chọn còn lại sẽ sai
-                        btn_dapan1.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
-                        btn_dapan2.Text = (mydataVn[random.Next(0, mydataVn.Count)]).ToString();
+                        btn_dapan1.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
+                        btn_dapan2.Text = (mean_vn_total[random.Next(0, mean_vn_total.Count)]).ToString();
                         break;
 
                     default:
