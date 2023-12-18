@@ -24,75 +24,11 @@
                 android:gravity="center"/>
         </LinearLayout>
 
-        <!-- Các nút trong các hàng -->
-        <LinearLayout
+        <ListView
+            android:id="@+id/listPlan"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content" />
 
-            <!-- Hàng 1 -->
-            <Button
-                android:id="@+id/btn_1"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-            
-            <Button
-                android:id="@+id/btn_2"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-
-        <!-- Hàng 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            
-            <Button
-                android:id="@+id/btn_3"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-            
-            <Button
-                android:id="@+id/btn_4"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-
-        <!-- Hàng 3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            
-            <Button
-                android:id="@+id/btn_5"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-            
-            <Button
-                android:id="@+id/btn_6"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_weight="1"
-                android:layout_gravity="center"/>
-        </LinearLayout>
     </LinearLayout>
 
     <!-- Layout dưới cùng -->
