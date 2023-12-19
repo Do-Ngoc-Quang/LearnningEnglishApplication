@@ -41,41 +41,49 @@ namespace LearnningEnglishApplication
 
         private void Btn_dangnhap_Click(object sender, EventArgs e)
         {
-            // Đọc dữ liệu
-            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE tendangnhap = '" + txt_tendangnhap.Text + "' LIMIT 1", null);
+            //Xác thực thành công
+            Intent it = new Intent(this, typeof(home));
+            // Lấy id người dùng
+            string id = "1";
+            it.PutExtra("id", id);
+            StartActivity(it);
 
-            // Kiểm tra dữ liệu
-            if (cur != null && cur.Count > 0)
-            {
-                // Di chuyển con trỏ đến dòng đầu tiên
-                cur.MoveToFirst();
 
-                // Lấy giá trị từ cột "matkhau"
-                string matkhau = cur.GetString(cur.GetColumnIndex("matkhau"));
+            //// Đọc dữ liệu
+            //ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE tendangnhap = '" + txt_tendangnhap.Text + "' LIMIT 1", null);
 
-                // Kiểm tra mật khẩu
-                if (txt_matkhau.Text == matkhau)
-                {
-                    // Xác thực thành công
-                    Intent it = new Intent(this, typeof(home));
+            //// Kiểm tra dữ liệu
+            //if (cur != null && cur.Count > 0)
+            //{
+            //    // Di chuyển con trỏ đến dòng đầu tiên
+            //    cur.MoveToFirst();
 
-                    // Lấy id người dùng
-                    string id = cur.GetString(cur.GetColumnIndex("id"));
-                    it.PutExtra("id", id);
+            //    // Lấy giá trị từ cột "matkhau"
+            //    string matkhau = cur.GetString(cur.GetColumnIndex("matkhau"));
 
-                    StartActivity(it);
-                }
-                else
-                {
-                    // Thông báo mật khẩu không đúng
-                    Toast.MakeText(this, "Mật khẩu không chính xác!", ToastLength.Short).Show();
-                }
-            }
-            else
-            {
-                // Thông báo tên đăng nhập không đúng
-                Toast.MakeText(this, "Tên đăng nhập không chính xác!", ToastLength.Short).Show();
-            }  
+            //    // Kiểm tra mật khẩu
+            //    if (txt_matkhau.Text == matkhau)
+            //    {
+            //        // Xác thực thành công
+            //        Intent it = new Intent(this, typeof(home));
+
+            //        // Lấy id người dùng
+            //        string id = cur.GetString(cur.GetColumnIndex("id"));
+            //        it.PutExtra("id", id);
+
+            //        StartActivity(it);
+            //    }
+            //    else
+            //    {
+            //        // Thông báo mật khẩu không đúng
+            //        Toast.MakeText(this, "Mật khẩu không chính xác!", ToastLength.Short).Show();
+            //    }
+            //}
+            //else
+            //{
+            //    // Thông báo tên đăng nhập không đúng
+            //    Toast.MakeText(this, "Tên đăng nhập không chính xác!", ToastLength.Short).Show();
+            //}  
         }
 
         private void Btn_taotaikhoan_Click(object sender, EventArgs e)

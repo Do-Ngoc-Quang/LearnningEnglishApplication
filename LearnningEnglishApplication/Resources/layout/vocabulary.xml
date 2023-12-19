@@ -4,19 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Layout ở trên chiếm 90% chiều cao -->
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9" 
+        android:orientation="vertical">
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_goback"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
+       
+        <ImageButton
+            android:id="@+id/img_btn_goback"
+            android:src="@drawable/icon_back_left_32px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
             android:background="@android:color/transparent"
-            android:drawableTop="@drawable/icon_back_left_32px"
-            android:layout_marginTop="5dp"/>
-
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"/>
 
         <TextView
             android:id="@+id/txt_planName"
@@ -43,45 +52,51 @@
                 android:text="vocab_?"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_dark"/>
 
             <TextView
                 android:id="@+id/txt_type"
                 android:text="type_?"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="13sp"
+                android:textSize="20sp"
                 android:layout_marginLeft="10dp"/>
 
         </LinearLayout>
 
+        
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
-            <Button
-            android:id="@+id/btn_speaker"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:drawableTop="@drawable/icon_speaker_24"/>
+            <ImageButton
+                android:src="@drawable/icon_speaker_24"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageButton1"
+                android:background="@android:color/transparent"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/txt_pronounce"
                 android:text="pronounce_?"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:layout_marginLeft="10dp"/>
-
+                android:textSize="25sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"/>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
 
             
             <TextView
@@ -89,29 +104,64 @@
                 android:text="describe_?"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"/>
+                android:textSize="25sp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
 
                 <ImageView
-                    android:src="@drawable/icon_vietnam_24"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:minWidth="25px"
-                    android:minHeight="25px"/>
+                    android:src="@drawable/icon_vietnam_32"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:minWidth="32px"
+                    android:minHeight="32px"
+                    android:layout_marginTop="3dp"/>
 
                 <TextView
                     android:id="@+id/txt_mean_vn"
                     android:text="mean_vn_?"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="17sp"
+                    android:textSize="25sp"
                     android:layout_marginLeft="5dp"/>
 
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/img_btn_back1node"
+            android:src="@drawable/icon_goback_32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/img_btn_go1node"
+            android:src="@drawable/icon_gofoward_32"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+
 </LinearLayout>
+

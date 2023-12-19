@@ -44,7 +44,7 @@ namespace LearnningEnglishApplication
             btn_profile = FindViewById<Button>(Resource.Id.btn_profile);
 
             //Load 
-            load_chaomung();
+            //load_chaomung();
 
             btn_playquiz.Click += Btn_playquiz_Click;
 
