@@ -74,10 +74,10 @@
             android:layout_marginTop="10dp">
 
             <ImageButton
+                android:id="@+id/img_btn_audio"
                 android:src="@drawable/icon_speaker_24"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/imageButton1"
                 android:background="@android:color/transparent"
                 android:gravity="center"/>
 

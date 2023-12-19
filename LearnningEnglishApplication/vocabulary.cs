@@ -2,13 +2,9 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Xml;
 
 namespace LearnningEnglishApplication
@@ -18,7 +14,7 @@ namespace LearnningEnglishApplication
     {
         TextView txt_planName, txt_vocab_en, txt_type, txt_pronounce, txt_describe, txt_mean_vn;
 
-        ImageButton img_btn_goback, img_btn_back1node, img_btn_go1node;
+        ImageButton img_btn_goback, img_btn_audio, img_btn_back1node, img_btn_go1node;
 
         // Danh sách để lưu trữ dữ liệu từ file XML
         List<string> vocab_en = new List<string>();
@@ -30,6 +26,8 @@ namespace LearnningEnglishApplication
 
         int i = 0;
 
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -38,6 +36,7 @@ namespace LearnningEnglishApplication
             SetContentView(Resource.Layout.vocabulary);
 
             img_btn_goback = FindViewById<ImageButton>(Resource.Id.img_btn_goback);
+            img_btn_audio = FindViewById<ImageButton>(Resource.Id.img_btn_audio);
             img_btn_back1node = FindViewById<ImageButton>(Resource.Id.img_btn_back1node);
             img_btn_go1node = FindViewById<ImageButton>(Resource.Id.img_btn_go1node);
 
@@ -57,11 +56,10 @@ namespace LearnningEnglishApplication
             FillData(i);
 
             img_btn_goback.Click += Img_btn_goback_Click;
+            img_btn_audio.Click += Img_btn_audio_Click;
             img_btn_back1node.Click += Img_btn_back1node_Click;
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
-
-
 
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
@@ -78,6 +76,37 @@ namespace LearnningEnglishApplication
             }
 
             StartActivity(it);
+        }
+
+        private void Img_btn_audio_Click(object sender, EventArgs e)
+        {
+            PlayAudio();
+        }
+
+        private void PlayAudio()
+        {
+            try
+            {
+                string audioUrl = "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exi/exist/exist__gb_3.mp3";
+
+                // Tạo một đối tượng SoundPlayer
+                using (SoundPlayer player = new SoundPlayer(audioUrl))
+                {
+                    // Chờ cho việc tải âm thanh hoàn tất
+                    player.LoadCompleted += (sender, args) =>
+                    {
+                        // Phát âm thanh
+                        player.Play();
+                    };
+
+                    // Bắt đầu quá trình tải âm thanh
+                    player.LoadAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý lỗi (nếu cần)
+            }
         }
 
         private void LoadVocabularyfromXML(string planName)
@@ -144,7 +173,7 @@ namespace LearnningEnglishApplication
 
             txt_vocab_en.Text = vocab_en[i];
             txt_type.Text = type[i];
-
+            
             txt_pronounce.Text = pronounce[i];
             txt_describe.Text = describe[i];
             txt_mean_vn.Text = mean_vn[i];

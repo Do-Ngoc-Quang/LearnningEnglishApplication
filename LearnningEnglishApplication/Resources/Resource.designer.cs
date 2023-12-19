@@ -3873,10 +3873,10 @@ namespace LearnningEnglishApplication
 			public const int image = 2131230855;
 			
 			// aapt resource value: 0x7F080088
-			public const int imageButton1 = 2131230856;
+			public const int imageView1 = 2131230856;
 			
 			// aapt resource value: 0x7F080089
-			public const int imageView1 = 2131230857;
+			public const int img_btn_audio = 2131230857;
 			
 			// aapt resource value: 0x7F08008A
 			public const int img_btn_back1node = 2131230858;

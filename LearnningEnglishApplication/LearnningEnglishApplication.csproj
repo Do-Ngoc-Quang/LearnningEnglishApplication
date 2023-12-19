@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="category.cs" />
     <Compile Include="home.cs" />
+    <Compile Include="ISimpleAudioPlayer.cs" />
     <Compile Include="leaderboard.cs" />
     <Compile Include="login.cs" />
     <Compile Include="MainActivity.cs" />
