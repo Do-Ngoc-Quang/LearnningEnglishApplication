@@ -1,11 +1,14 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Media;
 using Android.OS;
 using Android.Widget;
 using System;
 using System.Collections.Generic;
 using System.Xml;
+using System.Net;
+using System.Threading.Tasks;
 
 namespace LearnningEnglishApplication
 {
@@ -26,6 +29,7 @@ namespace LearnningEnglishApplication
 
         int i = 0;
 
+        private MediaPlayer mediaPlayer;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -55,6 +59,9 @@ namespace LearnningEnglishApplication
             //Fill phần từ đầu tiên của một plan
             FillData(i);
 
+            // Khởi tạo MediaPlayer
+            mediaPlayer = new MediaPlayer();
+
             img_btn_goback.Click += Img_btn_goback_Click;
             img_btn_audio.Click += Img_btn_audio_Click;
             img_btn_back1node.Click += Img_btn_back1node_Click;
@@ -80,32 +87,36 @@ namespace LearnningEnglishApplication
 
         private void Img_btn_audio_Click(object sender, EventArgs e)
         {
-            PlayAudio();
+            PlayAudio(audio[i]);
         }
 
-        private void PlayAudio()
+        public async Task PlayAudio(string audioUrl)
         {
             try
             {
-                string audioUrl = "https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/e/exi/exist/exist__gb_3.mp3";
-
-                // Tạo một đối tượng SoundPlayer
-                using (SoundPlayer player = new SoundPlayer(audioUrl))
+                // Kiểm tra xem mediaPlayer đang chạy hay không
+                if (mediaPlayer.IsPlaying)
                 {
-                    // Chờ cho việc tải âm thanh hoàn tất
-                    player.LoadCompleted += (sender, args) =>
-                    {
-                        // Phát âm thanh
-                        player.Play();
-                    };
-
-                    // Bắt đầu quá trình tải âm thanh
-                    player.LoadAsync();
+                    mediaPlayer.Stop();
+                    mediaPlayer.Reset();
                 }
+
+                // Tải âm thanh từ URL
+                var httpClient = new WebClient();
+                var audioData = await httpClient.DownloadDataTaskAsync(new Uri(audioUrl));
+
+                // Chuẩn bị MediaPlayer
+                mediaPlayer.Reset();
+                mediaPlayer.SetDataSource((string)new Java.IO.ByteArrayInputStream(audioData));
+                mediaPlayer.Prepare();
+
+                // Phát âm thanh
+                mediaPlayer.Start();
             }
             catch (Exception ex)
             {
-                // Xử lý lỗi (nếu cần)
+                // Xử lý lỗi nếu có
+                Console.WriteLine($"Error: {ex.Message}");
             }
         }
 
