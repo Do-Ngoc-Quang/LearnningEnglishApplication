@@ -73,7 +73,8 @@ namespace LearnningEnglishApplication
 
         private void Btn_leaderboard_Click(object sender, EventArgs e)
         {
-            
+            // Thông báo tên đăng nhập không đúng
+            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
         }
 
         private void Btn_profile_Click(object sender, EventArgs e)

@@ -16,6 +16,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "quiz")]
     public class quiz : Activity
     {
+        string planName = "";
+
         XmlReader reader;
 
         // Danh sách để lưu trữ dữ liệu từ file XML
@@ -30,7 +32,7 @@ namespace LearnningEnglishApplication
 
         // Biến lính canh 
         int btn_index_true = 0; //vị trí button của đáp án đúng
-        int soluotchoi = 3; //Số mạng là 3 - làm sai tối đa 3 lần
+        int soluotchoi = 3; //Số mạng là 3
 
         CheckBox ckb_soluotchoi_1, ckb_soluotchoi_2, ckb_soluotchoi_3;
         TextView txt_EN, txt_socau;
@@ -44,6 +46,8 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz);
+
+            planName = Intent.GetStringExtra("planName");
 
             ckb_soluotchoi_1 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_1);
             ckb_soluotchoi_2 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_2);
@@ -62,12 +66,12 @@ namespace LearnningEnglishApplication
             btn_dapan3.Click += Btn_dapan3_Click;
             btn_endquiz.Click += Btn_endquiz_Click;
 
-            LoadXML();
+            LoadXML(planName);
 
             ShowRandomItem();
         }
 
-        private void LoadXML()
+        private void LoadXML(string planName)
         {
             //reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
             //while (reader.Read())
@@ -97,9 +101,9 @@ namespace LearnningEnglishApplication
                             // Thêm nghĩa vào danh sách chung mean_vn_total
                             mean_vn_total.Add(reader.ReadString());
                         }
-                        else if (reader.Name == "word" && currentCategory == "stage_2")
+                        else if (reader.Name == "word" && currentCategory == planName)
                         {
-                            // Nếu đang ở trong danh mục "General", đọc từ vựng
+                            // Nếu đang ở trong danh mục "", đọc từ vựng
                             while (reader.Read())
                             {
                                 if (reader.NodeType == XmlNodeType.Element)
@@ -261,18 +265,8 @@ namespace LearnningEnglishApplication
 
         private void Btn_endquiz_Click(object sender, EventArgs e)
         {
-            Intent it = new Intent(this, typeof(home));
-
-            // Check if the activity is already in the task stack
-            ComponentName cn = it.ResolveActivity(PackageManager);
-            String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
-
-            if (!currentActivity.Equals(GetType().FullName))
-            {
-                // If the activity is not the current one, reorder it to the front
-                it.AddFlags(ActivityFlags.ReorderToFront);
-            }
-
+            Intent it = new Intent(this, typeof(vocabulary));
+            it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
 
@@ -308,6 +302,7 @@ namespace LearnningEnglishApplication
                 {
                     Intent it = new Intent(this, typeof(quiz_completed));
 
+                    it.PutExtra("planName", planName.ToString());
                     it.PutExtra("tongSocau", tongSocau.ToString());
                     it.PutExtra("cauDung", cauDung.ToString());
 
@@ -316,6 +311,7 @@ namespace LearnningEnglishApplication
                 else
                 {
                     Intent it = new Intent(this, typeof(quiz_lost));
+                    it.PutExtra("planName", planName.ToString());
                     StartActivity(it);
                 }
                 

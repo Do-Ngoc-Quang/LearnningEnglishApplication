@@ -15,6 +15,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "quiz_lost")]
     public class quiz_lost : Activity
     {
+        string planName = "";
+
         Button btn_endquiz, btn_replay_quiz;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,6 +24,8 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz_lost);
+
+            planName = Intent.GetStringExtra("planName");
 
             btn_endquiz = FindViewById<Button>(Resource.Id.btn_endquiz);
             btn_replay_quiz = FindViewById<Button>(Resource.Id.btn_replay_quiz);
@@ -56,6 +60,7 @@ namespace LearnningEnglishApplication
             Finish();
 
             Intent it = new Intent(this, typeof(quiz));
+            it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
     }

@@ -16,8 +16,10 @@ namespace LearnningEnglishApplication
     public class vocabulary : Activity
     {
         TextView txt_planName, txt_vocab_en, txt_type, txt_pronounce, txt_describe, txt_mean_vn;
-
+        Button btn_playquiz;
         ImageButton img_btn_goback, img_btn_audio, img_btn_back1node, img_btn_go1node;
+
+        string planName = "";
 
         // Danh sách để lưu trữ dữ liệu từ file XML
         List<string> vocab_en = new List<string>();
@@ -44,6 +46,8 @@ namespace LearnningEnglishApplication
             img_btn_back1node = FindViewById<ImageButton>(Resource.Id.img_btn_back1node);
             img_btn_go1node = FindViewById<ImageButton>(Resource.Id.img_btn_go1node);
 
+            btn_playquiz = FindViewById<Button>(Resource.Id.btn_playquiz);
+
             txt_planName = FindViewById<TextView>(Resource.Id.txt_planName);
             txt_vocab_en = FindViewById<TextView>(Resource.Id.txt_vocab_en);
             txt_type = FindViewById<TextView>(Resource.Id.txt_type);
@@ -51,9 +55,8 @@ namespace LearnningEnglishApplication
             txt_describe = FindViewById<TextView>(Resource.Id.txt_describe);
             txt_mean_vn = FindViewById<TextView>(Resource.Id.txt_mean_vn);
 
-            txt_planName.Text = Intent.GetStringExtra("planName");
-
-            string planName = Intent.GetStringExtra("planName");
+            planName = Intent.GetStringExtra("planName");
+            txt_planName.Text = planName;   
             LoadVocabularyfromXML(planName);
 
             //Fill phần từ đầu tiên của một plan
@@ -62,11 +65,15 @@ namespace LearnningEnglishApplication
             // Khởi tạo MediaPlayer
             mediaPlayer = new MediaPlayer();
 
+            btn_playquiz.Click += Btn_playquiz_Click;
+
             img_btn_goback.Click += Img_btn_goback_Click;
             img_btn_audio.Click += Img_btn_audio_Click;
             img_btn_back1node.Click += Img_btn_back1node_Click;
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
+
+
 
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
@@ -82,6 +89,13 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            StartActivity(it);
+        }
+
+        private void Btn_playquiz_Click(object sender, EventArgs e)
+        {
+            Intent it = new Intent(this, typeof(quiz));
+            it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
 

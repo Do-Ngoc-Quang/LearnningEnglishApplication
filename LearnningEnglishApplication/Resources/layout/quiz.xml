@@ -20,7 +20,6 @@
             android:orientation="horizontal"
             android:gravity="right">
 
-
             <CheckBox
                 android:id="@+id/ckb_soluotchoi_1"
                 android:layout_width="32dp"
@@ -115,7 +114,7 @@
                 android:textColor="@android:color/white"/>
 
             <TextView
-                android:text=" trên 20"
+                android:text=" trên 10"
                 android:textSize="15sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

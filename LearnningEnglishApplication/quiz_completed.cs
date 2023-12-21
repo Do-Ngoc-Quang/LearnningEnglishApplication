@@ -15,6 +15,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "quiz_completed")]
     public class quiz_completed : Activity
     {
+        string planName = "";
+
         TextView txt_socau, txt_sodiem;
         Button btn_endquiz, btn_replay_quiz;
         protected override void OnCreate(Bundle savedInstanceState)
@@ -23,6 +25,8 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz_completed);
+
+            planName = Intent.GetStringExtra("planName");
 
             txt_socau = FindViewById<TextView>(Resource.Id.txt_socau);
             txt_sodiem = FindViewById<TextView>(Resource.Id.txt_sodiem);
@@ -63,6 +67,7 @@ namespace LearnningEnglishApplication
             Finish();
 
             Intent it = new Intent(this, typeof(quiz));
+            it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
     }

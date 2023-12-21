@@ -1,11 +1,11 @@
 <?xml version = "1.0"?>
 <vocabulary>
-    <plan name="stage_1">
+    <plan name="Stage 1">
         <word>
             <en>exist</en>
             <vn>tồn tại</vn>
             <type>verb</type>
-            <audio>C:\Do Ngoc Quang\HK1-Y3\PhatTrienUngDungDiDong\LearnningEnglishApplication\LearnningEnglishApplication\audio\stage_1\exist__gb_3.mp3</audio>
+            <audio>C:\Do Ngoc Quang\HK1-Y3\PhatTrienUngDungDiDong\LearnningEnglishApplication\LearnningEnglishApplication\audio\Stage 1\exist__gb_3.mp3</audio>
             <pronounce>/ɪɡˈzɪst/</pronounce>
             <describe>to be real; to be present in a place or situation</describe>
         </word>
@@ -83,7 +83,7 @@
         </word>
     </plan>
 
-    <plan name="stage_2">
+    <plan name="Stage 2">
         <word>
             <en>rot</en>
             <vn>mục rữa; chết mòn...</vn>
@@ -166,7 +166,7 @@
         </word>
     </plan>
 
-    <plan name="stage_3">
+    <plan name="Stage 3">
         <word>
             <en>creation</en>
             <vn>sự sáng tạo; tác phẩm</vn>
@@ -249,7 +249,7 @@
         </word>
     </plan>
 
-    <plan name="stage_4">
+    <plan name="Stage 4">
         <word>
             <en>survivor</en>
             <vn>người sống sót</vn>
@@ -332,7 +332,7 @@
         </word>
     </plan>
 
-    <plan name="stage_5">
+    <plan name="Stage 5">
         <word>
             <en>inborn</en>
             <vn>bẩm sinh</vn>
@@ -407,7 +407,7 @@
         </word>
     </plan>
 
-    <plan name="stage_6">
+    <plan name="Stage 6">
         <word>
             <en>butcher</en>
             <vn>giết ,mổ (lợn),giết chóc</vn>
@@ -490,7 +490,7 @@
         </word>
     </plan>
 
-    <plan name="stage_7">
+    <plan name="Stage 7">
         <word>
             <en>lethal</en>
             <vn>gây chết người</vn>
@@ -573,7 +573,7 @@
         </word>
     </plan>
 
-    <plan name="stage_8">
+    <plan name="Stage 8">
         <word>
             <en>massacre</en>
             <vn>cuộc/sự tàn sát</vn>
@@ -656,7 +656,7 @@
         </word>
     </plan>
 
-    <plan name="stage_9">
+    <plan name="Stage 9">
         <word>
             <en>mate</en>
             <vn>kết đôi với; lấy nhau</vn>
@@ -739,7 +739,7 @@
         </word>
     </plan>
 
-    <plan name="stage_10">
+    <plan name="Stage 10">
         <word>
             <en>coition</en>
             <vn>sự giao cấu</vn>
@@ -822,7 +822,7 @@
         </word>
     </plan>
 
-    <plan name="stage_11">
+    <plan name="Stage 11">
         <word>
             <en>pregnant</en>
             <vn>có thai</vn>
@@ -913,7 +913,7 @@
         </word>
     </plan>
 
-    <plan name="stage_12">
+    <plan name="Stage 12">
         <word>
             <en>cell</en>
             <vn>tế bào</vn>
@@ -996,7 +996,7 @@
         </word>
     </plan>
 
-    <plan name="stage_13">
+    <plan name="Stage 13">
         <word>
             <en>ovum</en>
             <vn>trứng</vn>
@@ -1079,7 +1079,7 @@
         </word>
     </plan>
 
-    <plan name="stage_14">
+    <plan name="Stage 14">
         <word>
             <en>plant</en>
             <vn>thực vật</vn>
@@ -1162,7 +1162,7 @@
         </word>
     </plan>
 
-    <plan name="stage_15">
+    <plan name="Stage 15">
         <word>
             <en>animal</en>
             <vn>động vật</vn>
@@ -1245,7 +1245,7 @@
         </word>
     </plan>
 
-    <plan name="stage_16">
+    <plan name="Stage 16">
         <word>
             <en>wildfowl</en>
             <vn>chim săn bắn</vn>
@@ -1328,7 +1328,7 @@
         </word>
     </plan>
 
-    <plan name="stage_17">
+    <plan name="Stage 17">
         <word>
             <en>genus</en>
             <vn>phái, giống; loại</vn>
@@ -1411,7 +1411,7 @@
         </word>
     </plan>
 
-    <plan name="stage_18">
+    <plan name="Stage 18">
         <word>
             <en>mongrel</en>
             <vn>vật lai; chó/người lai</vn>
@@ -1494,7 +1494,7 @@
         </word>
     </plan>
 
-    <plan name="stage_19">
+    <plan name="Stage 19">
         <word>
             <en>microbe</en>
             <vn>vi trùng, vi khuẩn</vn>
@@ -1577,7 +1577,7 @@
         </word>
     </plan>
 
-    <plan name="stage_20">
+    <plan name="Stage 20">
         <word>
             <en>herd</en>
             <vn>bầy, đàn</vn>
@@ -1660,7 +1660,7 @@
         </word>
     </plan>
 
-    <plan name="stage_21">
+    <plan name="Stage 21">
         <word>
             <en>burrow</en>
             <vn>hang (cầy, thỏ)</vn>
@@ -1743,7 +1743,7 @@
         </word>
     </plan>
 
-    <plan name="stage_22">
+    <plan name="Stage 22">
         <word>
             <en>snort</en>
             <vn>tiếng khịt khịt (v.)</vn>
@@ -1826,7 +1826,7 @@
         </word>
     </plan>
 
-    <plan name="stage_23">
+    <plan name="Stage 23">
         <word>
             <en>anthropold (ape)</en>
             <vn>vượn người</vn>
@@ -1909,7 +1909,7 @@
         </word>
     </plan>
 
-    <plan name="stage_24">
+    <plan name="Stage 24">
         <word>
             <en>ear</en>
             <vn>tai</vn>
@@ -1992,7 +1992,7 @@
         </word>
     </plan>
 
-    <plan name="stage_25">
+    <plan name="Stage 25">
         <word>
             <en>muzzle</en>
             <vn>rọ bịt mõm</vn>
@@ -2075,7 +2075,7 @@
         </word>
     </plan>
 
-    <plan name="stage_26">
+    <plan name="Stage 26">
         <word>
             <en>belly</en>
             <vn>bụng</vn>
@@ -2158,7 +2158,7 @@
         </word>
     </plan>
 
-    <plan name="stage_27">
+    <plan name="Stage 27">
         <word>
             <en>donkey, ass</en>
             <vn>lừa</vn>
@@ -2241,7 +2241,7 @@
         </word>
     </plan>
 
-    <plan name="stage_28">
+    <plan name="Stage 28">
         <word>
             <en>calf, calves</en>
             <vn>bê</vn>
@@ -2324,7 +2324,7 @@
         </word>
     </plan>
 
-    <plan name="stage_29">
+    <plan name="Stage 29">
         <word>
             <en>claw</en>
             <vn>vuốt</vn>
@@ -2407,7 +2407,7 @@
         </word>
     </plan>
 
-    <plan name="stage_30">
+    <plan name="Stage 30">
         <word>
             <en>lynx</en>
             <vn>linh miêu</vn>
@@ -2490,7 +2490,7 @@
         </word>
     </plan>
 
-    <plan name="stage_31">
+    <plan name="Stage 31">
         <word>
             <en>loins</en>
             <vn>miếng thịt lưng của bò,</vn>
@@ -2573,7 +2573,7 @@
         </word>
     </plan>
 
-    <plan name="stage_32">
+    <plan name="Stage 32">
         <word>
             <en>sheepdog</en>
             <vn>chó chăn cừu</vn>
@@ -2656,7 +2656,7 @@
         </word>
     </plan>
 
-    <plan name="stage_33">
+    <plan name="Stage 33">
         <word>
             <en>pekinese, peke</en>
             <vn>chó Bắc kinh</vn>
@@ -2739,7 +2739,7 @@
         </word>
     </plan>
 
-    <plan name="stage_34">
+    <plan name="Stage 34">
         <word>
             <en>fox</en>
             <vn>con cáo</vn>
@@ -2822,7 +2822,7 @@
         </word>
     </plan>
 
-    <plan name="stage_35">
+    <plan name="Stage 35">
         <word>
             <en>hog</en>
             <vn>lợn, lợn thiến</vn>
@@ -2905,7 +2905,7 @@
         </word>
     </plan>
 
-    <plan name="stage_36">
+    <plan name="Stage 36">
         <word>
             <en>she-goat</en>
             <vn>dê cái</vn>
@@ -2988,7 +2988,7 @@
         </word>
     </plan>
 
-    <plan name="stage_37">
+    <plan name="Stage 37">
         <word>
             <en>moose</en>
             <vn>nai sừng tấm Bắc Mỹ</vn>
@@ -3071,7 +3071,7 @@
         </word>
     </plan>
 
-    <plan name="stage_38">
+    <plan name="Stage 38">
         <word>
             <en>sea lion</en>
             <vn>sư tử biển</vn>
@@ -3154,7 +3154,7 @@
         </word>
     </plan>
 
-    <plan name="stage_39">
+    <plan name="Stage 39">
         <word>
             <en>mammoth</en>
             <vn>voi mamut</vn>
@@ -3237,7 +3237,7 @@
         </word>
     </plan>
 
-    <plan name="stage_40">
+    <plan name="Stage 40">
         <word>
             <en>giraffe</en>
             <vn>hươu cao cổ</vn>
@@ -3320,7 +3320,7 @@
         </word>
     </plan>
 
-    <plan name="stage_41">
+    <plan name="Stage 41">
         <word>
             <en>vole</en>
             <vn>một loại chuột đồng</vn>
@@ -3403,7 +3403,7 @@
         </word>
     </plan>
 
-    <plan name="stage_42">
+    <plan name="Stage 42">
         <word>
             <en>mole</en>
             <vn>chuột chũi</vn>
@@ -3486,7 +3486,7 @@
         </word>
     </plan>
 
-    <plan name="stage_43">
+    <plan name="Stage 43">
         <word>
             <en>rooster</en>
             <vn>(Mỹ) gà trống</vn>
@@ -3569,7 +3569,7 @@
         </word>
     </plan>
 
-    <plan name="stage_44">
+    <plan name="Stage 44">
         <word>
             <en>gosling</en>
             <vn>ngỗng con</vn>
@@ -3652,7 +3652,7 @@
         </word>
     </plan>
 
-    <plan name="stage_45">
+    <plan name="Stage 45">
         <word>
             <en>swan, cygnet</en>
             <vn>con thiên nga</vn>
@@ -3735,7 +3735,7 @@
         </word>
     </plan>
 
-    <plan name="stage_46">
+    <plan name="Stage 46">
         <word>
             <en>thrush</en>
             <vn>chim hét</vn>
@@ -3818,7 +3818,7 @@
         </word>
     </plan>
 
-    <plan name="stage_47">
+    <plan name="Stage 47">
         <word>
             <en>toe</en>
             <vn>ngón chân</vn>
@@ -3901,7 +3901,7 @@
         </word>
     </plan>
 
-    <plan name="stage_48">
+    <plan name="Stage 48">
         <word>
             <en>kiwi</en>
             <vn>chim kiwi</vn>
@@ -3984,7 +3984,7 @@
         </word>
     </plan>
 
-    <plan name="stage_49">
+    <plan name="Stage 49">
         <word>
             <en>rook</en>
             <vn>con quạ</vn>
@@ -4067,7 +4067,7 @@
         </word>
     </plan>
 
-    <plan name="stage_50">
+    <plan name="Stage 50">
         <word>
             <en>cobra</en>
             <vn>rắn mang bành</vn>
@@ -4150,7 +4150,7 @@
         </word>
     </plan>
 
-    <plan name="stage_51">
+    <plan name="Stage 51">
         <word>
             <en>crocodile</en>
             <vn>cá sấu Châu Phi</vn>
@@ -4233,7 +4233,7 @@
         </word>
     </plan>
 
-    <plan name="stage_52">
+    <plan name="Stage 52">
         <word>
             <en>newt</en>
             <vn>sa giông</vn>
@@ -4316,7 +4316,7 @@
         </word>
     </plan>
 
-    <plan name="stage_53">
+    <plan name="Stage 53">
         <word>
             <en>skate</en>
             <vn>cá đuối</vn>
@@ -4399,7 +4399,7 @@
         </word>
     </plan>
 
-    <plan name="stage_54">
+    <plan name="Stage 54">
         <word>
             <en>sole</en>
             <vn>cá bơn</vn>
@@ -4482,7 +4482,7 @@
         </word>
     </plan>
 
-    <plan name="stage_55">
+    <plan name="Stage 55">
         <word>
             <en>lobster</en>
             <vn>tôm hùm</vn>
@@ -4565,7 +4565,7 @@
         </word>
     </plan>
 
-    <plan name="stage_56">
+    <plan name="Stage 56">
         <word>
             <en>squid</en>
             <vn>mực ống</vn>
@@ -4648,7 +4648,7 @@
         </word>
     </plan>
 
-    <plan name="stage_57">
+    <plan name="Stage 57">
         <word>
             <en>mosquito</en>
             <vn>con muỗi</vn>
@@ -4731,7 +4731,7 @@
         </word>
     </plan>
 
-    <plan name="stage_58">
+    <plan name="Stage 58">
         <word>
             <en>hornet</en>
             <vn>ong bắp cày</vn>
@@ -4814,7 +4814,7 @@
         </word>
     </plan>
 
-    <plan name="stage_59">
+    <plan name="Stage 59">
         <word>
             <en>egg</en>
             <vn>trứng</vn>
@@ -4897,7 +4897,7 @@
         </word>
     </plan>
 
-    <plan name="stage_60">
+    <plan name="Stage 60">
         <word>
             <en>web</en>
             <vn>mạng, tơ</vn>
@@ -4980,7 +4980,7 @@
         </word>
     </plan>
 
-    <plan name="stage_61">
+    <plan name="Stage 61">
         <word>
             <en>ear</en>
             <vn>tai</vn>
@@ -5063,7 +5063,7 @@
         </word>
     </plan>
 
-    <plan name="stage_62">
+    <plan name="Stage 62">
         <word>
             <en>mouth</en>
             <vn>miệng</vn>
@@ -5146,7 +5146,7 @@
         </word>
     </plan>
 
-    <plan name="stage_63">
+    <plan name="Stage 63">
         <word>
             <en>gill</en>
             <vn>mang (cá), yếm (gà)</vn>
@@ -5229,7 +5229,7 @@
         </word>
     </plan>
 
-    <plan name="stage_64">
+    <plan name="Stage 64">
         <word>
             <en>claw</en>
             <vn>vuốc, càng (cua)</vn>
@@ -5312,7 +5312,7 @@
         </word>
     </plan>
 
-    <plan name="stage_65">
+    <plan name="Stage 65">
         <word>
             <en>hide</en>
             <vn>da sống (chưa thuộc)</vn>
@@ -5395,7 +5395,7 @@
         </word>
     </plan>
 
-    <plan name="stage_66">
+    <plan name="Stage 66">
         <word>
             <en>scale</en>
             <vn>vảy</vn>
@@ -5478,7 +5478,7 @@
         </word>
     </plan>
 
-    <plan name="stage_67">
+    <plan name="Stage 67">
         <word>
             <en>bulb</en>
             <vn>củ (hành, tỏi)</vn>
@@ -5561,7 +5561,7 @@
         </word>
     </plan>
 
-    <plan name="stage_68">
+    <plan name="Stage 68">
         <word>
             <en>twig</en>
             <vn>nhánh nhỏ</vn>
@@ -5644,7 +5644,7 @@
         </word>
     </plan>
 
-    <plan name="stage_69">
+    <plan name="Stage 69">
         <word>
             <en>petal</en>
             <vn>cánh hoa</vn>
@@ -5727,7 +5727,7 @@
         </word>
     </plan>
 
-    <plan name="stage_70">
+    <plan name="Stage 70">
         <word>
             <en>stalk</en>
             <vn>cuống (hoa), thân (cây)</vn>
@@ -5810,7 +5810,7 @@
         </word>
     </plan>
 
-    <plan name="stage_71">
+    <plan name="Stage 71">
         <word>
             <en>nut</en>
             <vn>quả hạch</vn>
@@ -5893,7 +5893,7 @@
         </word>
     </plan>
 
-    <plan name="stage_72">
+    <plan name="Stage 72">
         <word>
             <en>rind</en>
             <vn>vỏ cây, vỏ quả</vn>
@@ -5976,7 +5976,7 @@
         </word>
     </plan>
 
-    <plan name="stage_73">
+    <plan name="Stage 73">
         <word>
             <en>flower</en>
             <vn>hoa</vn>
@@ -6059,7 +6059,7 @@
         </word>
     </plan>
 
-    <plan name="stage_74">
+    <plan name="Stage 74">
         <word>
             <en>undergrowth</en>
             <vn>bụi cây thấp</vn>
@@ -6142,7 +6142,7 @@
         </word>
     </plan>
 
-    <plan name="stage_75">
+    <plan name="Stage 75">
         <word>
             <en>heath</en>
             <vn>giống cây thạch nam</vn>
@@ -6225,7 +6225,7 @@
         </word>
     </plan>
 
-    <plan name="stage_76">
+    <plan name="Stage 76">
         <word>
             <en>mushroom</en>
             <vn>nấm</vn>
@@ -6308,7 +6308,7 @@
         </word>
     </plan>
 
-    <plan name="stage_77">
+    <plan name="Stage 77">
         <word>
             <en>ivy</en>
             <vn>dây thường xuân</vn>
@@ -6391,7 +6391,7 @@
         </word>
     </plan>
 
-    <plan name="stage_78">
+    <plan name="Stage 78">
         <word>
             <en>peach</en>
             <vn>quả đào</vn>
@@ -6474,7 +6474,7 @@
         </word>
     </plan>
 
-    <plan name="stage_79">
+    <plan name="Stage 79">
         <word>
             <en>fig</en>
             <vn>quả sung, quả vả</vn>
@@ -6557,7 +6557,7 @@
         </word>
     </plan>
 
-    <plan name="stage_80">
+    <plan name="Stage 80">
         <word>
             <en>asparagus</en>
             <vn>măng tây</vn>
@@ -6640,7 +6640,7 @@
         </word>
     </plan>
 
-    <plan name="stage_81">
+    <plan name="Stage 81">
         <word>
             <en>marrow (squash AmE)</en>
             <vn>bí ngô</vn>
@@ -6723,7 +6723,7 @@
         </word>
     </plan>
 
-    <plan name="stage_82">
+    <plan name="Stage 82">
         <word>
             <en>artichoke</en>
             <vn>cây atisô</vn>
@@ -6806,7 +6806,7 @@
         </word>
     </plan>
 
-    <plan name="stage_83">
+    <plan name="Stage 83">
         <word>
             <en>oat</en>
             <vn>yến mạch</vn>
@@ -6889,7 +6889,7 @@
         </word>
     </plan>
 
-    <plan name="stage_84">
+    <plan name="Stage 84">
         <word>
             <en>cup</en>
             <vn>đài hoa</vn>
@@ -6972,7 +6972,7 @@
         </word>
     </plan>
 
-    <plan name="stage_85">
+    <plan name="Stage 85">
         <word>
             <en>brazil nut</en>
             <vn>hạt vang</vn>
@@ -7055,7 +7055,7 @@
         </word>
     </plan>
 
-    <plan name="stage_86">
+    <plan name="Stage 86">
         <word>
             <en>blueberry</en>
             <vn>quả việt quất Bắc Mỹ</vn>
@@ -7138,7 +7138,7 @@
         </word>
     </plan>
 
-    <plan name="stage_87">
+    <plan name="Stage 87">
         <word>
             <en>poplar</en>
             <vn>cây bạch dương</vn>
@@ -7221,7 +7221,7 @@
         </word>
     </plan>
 
-    <plan name="stage_88">
+    <plan name="Stage 88">
         <word>
             <en>broom</en>
             <vn>cây đậu chổi</vn>
@@ -7304,7 +7304,7 @@
         </word>
     </plan>
 
-    <plan name="stage_89">
+    <plan name="Stage 89">
         <word>
             <en>tulip</en>
             <vn>cây uất kim hương</vn>
@@ -7387,7 +7387,7 @@
         </word>
     </plan>
 
-    <plan name="stage_90">
+    <plan name="Stage 90">
         <word>
             <en>build</en>
             <vn>tầm vóc</vn>
@@ -7470,7 +7470,7 @@
         </word>
     </plan>
 
-    <plan name="stage_91">
+    <plan name="Stage 91">
         <word>
             <en>cadaver</en>
             <vn>xác chết</vn>
@@ -7553,7 +7553,7 @@
         </word>
     </plan>
 
-    <plan name="stage_92">
+    <plan name="Stage 92">
         <word>
             <en>gristle</en>
             <vn>xương sụn</vn>
@@ -7636,7 +7636,7 @@
         </word>
     </plan>
 
-    <plan name="stage_93">
+    <plan name="Stage 93">
         <word>
             <en>adenoids</en>
             <vn>bệnh sùi vòm họng, V.A</vn>
@@ -7719,7 +7719,7 @@
         </word>
     </plan>
 
-    <plan name="stage_94">
+    <plan name="Stage 94">
         <word>
             <en>hair</en>
             <vn>tóc, lông</vn>
@@ -7802,7 +7802,7 @@
         </word>
     </plan>
 
-    <plan name="stage_95">
+    <plan name="Stage 95">
         <word>
             <en>nose</en>
             <vn>mũi</vn>
@@ -7885,7 +7885,7 @@
         </word>
     </plan>
 
-    <plan name="stage_96">
+    <plan name="Stage 96">
         <word>
             <en>elbow</en>
             <vn>khuỷu tay</vn>
@@ -7968,7 +7968,7 @@
         </word>
     </plan>
 
-    <plan name="stage_97">
+    <plan name="Stage 97">
         <word>
             <en>ankle</en>
             <vn>mắt cá chân</vn>
@@ -8051,7 +8051,7 @@
         </word>
     </plan>
 
-    <plan name="stage_98">
+    <plan name="Stage 98">
         <word>
             <en>waist</en>
             <vn>chỗ thắt lưng</vn>
@@ -8134,7 +8134,7 @@
         </word>
     </plan>
 
-    <plan name="stage_99">
+    <plan name="Stage 99">
         <word>
             <en>ulna</en>
             <vn>xương trụ</vn>
@@ -8217,7 +8217,7 @@
         </word>
     </plan>
 
-    <plan name="stage_100">
+    <plan name="Stage 100">
         <word>
             <en>coccyx</en>
             <vn>xương cụt</vn>
