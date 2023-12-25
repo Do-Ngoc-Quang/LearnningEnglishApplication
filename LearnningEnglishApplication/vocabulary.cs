@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.Xml;
 using System.Net;
 using System.Threading.Tasks;
+using Android.Runtime;
+
 
 namespace LearnningEnglishApplication
 {
@@ -31,7 +33,7 @@ namespace LearnningEnglishApplication
 
         int i = 0;
 
-        private MediaPlayer mediaPlayer;
+        MediaPlayer _player;    
 
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -63,12 +65,20 @@ namespace LearnningEnglishApplication
             FillData(i);
 
             // Khởi tạo MediaPlayer
-            mediaPlayer = new MediaPlayer();
+            _player = MediaPlayer.Create(this, Resource.Raw.EmDongY);
+
+            //var playButton = FindViewById<Button>(Resource.Id.playButton);
+            //playButton.Click += (sender, e) => _player.Start();
+
 
             btn_playquiz.Click += Btn_playquiz_Click;
 
             img_btn_goback.Click += Img_btn_goback_Click;
-            img_btn_audio.Click += Img_btn_audio_Click;
+            //img_btn_audio.Click += Img_btn_audio_Click;
+            //img_btn_audio.Click += delegate {
+            //    _player.Start();
+            //};
+
             img_btn_back1node.Click += Img_btn_back1node_Click;
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
@@ -99,40 +109,15 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Img_btn_audio_Click(object sender, EventArgs e)
-        {
-            PlayAudio(audio[i]);
-        }
+        //private void Img_btn_audio_Click(object sender, EventArgs e)
+        //{
+        //    _player.Start();
+        //}
+        //private void PlayAudio(object sender, EventArgs e)
+        //{
+        //    _player.Start();
+        //}
 
-        public async Task PlayAudio(string audioUrl)
-        {
-            try
-            {
-                // Kiểm tra xem mediaPlayer đang chạy hay không
-                if (mediaPlayer.IsPlaying)
-                {
-                    mediaPlayer.Stop();
-                    mediaPlayer.Reset();
-                }
-
-                // Tải âm thanh từ URL
-                var httpClient = new WebClient();
-                var audioData = await httpClient.DownloadDataTaskAsync(new Uri(audioUrl));
-
-                // Chuẩn bị MediaPlayer
-                mediaPlayer.Reset();
-                mediaPlayer.SetDataSource((string)new Java.IO.ByteArrayInputStream(audioData));
-                mediaPlayer.Prepare();
-
-                // Phát âm thanh
-                mediaPlayer.Start();
-            }
-            catch (Exception ex)
-            {
-                // Xử lý lỗi nếu có
-                Console.WriteLine($"Error: {ex.Message}");
-            }
-        }
 
         private void LoadVocabularyfromXML(string planName)
         {
