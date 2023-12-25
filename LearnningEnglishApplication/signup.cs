@@ -32,7 +32,7 @@ namespace LearnningEnglishApplication
             mysqlite = new mySQLite(this.ApplicationContext);
             // Tạo table người dùng:
             string sql = "CREATE TABLE IF NOT EXISTS nguoidung " +
-                "(id INTEGER PRIMARY KEY AUTOINCREMENT, hoten Text, tendangnhap text, matkhau text)";
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, hoten Text, tendangnhap text, matkhau text, diemso integer)";
             //string sql = "DROP TABLE nguoidung;";
             mysqlite.ReadableDatabase.ExecSQL(sql);
 
@@ -61,8 +61,8 @@ namespace LearnningEnglishApplication
                 try
                 {
                     // Thực thi câu lệnh SQL INSERT
-                    mysqlite.ReadableDatabase.ExecSQL("INSERT INTO nguoidung(hoten, tendangnhap, matkhau) " +
-                        "VALUES('" + txt_hoten.Text + "', '" + txt_tendangnhap.Text + "', '" + txt_matkhau.Text + "')");
+                    mysqlite.ReadableDatabase.ExecSQL("INSERT INTO nguoidung(hoten, tendangnhap, matkhau, diemso) " +
+                        "VALUES('" + txt_hoten.Text + "', '" + txt_tendangnhap.Text + "', '" + txt_matkhau.Text + "', '0')");
 
                     // Nếu không có ngoại lệ, tức là thực thi thành công, thông báo tạo tài khoản thành công
                     Toast.MakeText(this, "Thêm người dùng thành công!", ToastLength.Short).Show();

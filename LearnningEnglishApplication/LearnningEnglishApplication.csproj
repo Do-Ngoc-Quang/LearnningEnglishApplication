@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="category.cs" />
     <Compile Include="home.cs" />
-    <Compile Include="ISimpleAudioPlayer.cs" />
     <Compile Include="leaderboard.cs" />
     <Compile Include="login.cs" />
     <Compile Include="MainActivity.cs" />
@@ -264,6 +263,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\EmDongY.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_speaker_ame_24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

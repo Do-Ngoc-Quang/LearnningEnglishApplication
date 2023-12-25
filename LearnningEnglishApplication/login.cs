@@ -41,12 +41,14 @@ namespace LearnningEnglishApplication
 
         private void Btn_dangnhap_Click(object sender, EventArgs e)
         {
+            // ---
             //Xác thực thành công
             Intent it = new Intent(this, typeof(home));
             // Lấy id người dùng
-            string id = "1";
-            it.PutExtra("id", id);
+            string id_user = "1";
+            it.PutExtra("id_user", id_user);
             StartActivity(it);
+            // ---
 
 
             //// Đọc dữ liệu
@@ -68,8 +70,8 @@ namespace LearnningEnglishApplication
             //        Intent it = new Intent(this, typeof(home));
 
             //        // Lấy id người dùng
-            //        string id = cur.GetString(cur.GetColumnIndex("id"));
-            //        it.PutExtra("id", id);
+            //        string id_user = cur.GetString(cur.GetColumnIndex("id"));
+            //        it.PutExtra("id_user", id_user);
 
             //        StartActivity(it);
             //    }
@@ -83,7 +85,7 @@ namespace LearnningEnglishApplication
             //{
             //    // Thông báo tên đăng nhập không đúng
             //    Toast.MakeText(this, "Tên đăng nhập không chính xác!", ToastLength.Short).Show();
-            //}  
+            //}
         }
 
         private void Btn_taotaikhoan_Click(object sender, EventArgs e)

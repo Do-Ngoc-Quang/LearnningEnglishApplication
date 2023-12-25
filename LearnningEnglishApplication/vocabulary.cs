@@ -17,24 +17,27 @@ namespace LearnningEnglishApplication
     [Activity(Label = "vocabulary")]
     public class vocabulary : Activity
     {
-        TextView txt_planName, txt_vocab_en, txt_type, txt_pronounce, txt_describe, txt_mean_vn;
+        string id_user; 
+
+        TextView txt_planName, txt_vocab_en, txt_type, txt_pronounce_eng, txt_pronounce_ame, txt_describe, txt_mean_vn;
         Button btn_playquiz;
-        ImageButton img_btn_goback, img_btn_audio, img_btn_back1node, img_btn_go1node;
+        ImageButton img_btn_goback, img_btn_audio_eng, img_btn_audio_ame, img_btn_back1node, img_btn_go1node;
 
         string planName = "";
 
         // Danh sách để lưu trữ dữ liệu từ file XML
         List<string> vocab_en = new List<string>();
         List<string> type = new List<string>();
-        List<string> audio = new List<string>();
-        List<string> pronounce = new List<string>();
+        List<string> audio_eng = new List<string>();
+        List<string> audio_ame = new List<string>();
+        List<string> pronounce_eng = new List<string>();
+        List<string> pronounce_ame = new List<string>();
         List<string> describe = new List<string>();
         List<string> mean_vn = new List<string>();
 
         int i = 0;
 
-        MediaPlayer _player;    
-
+        MediaPlayer _player;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,7 +47,8 @@ namespace LearnningEnglishApplication
             SetContentView(Resource.Layout.vocabulary);
 
             img_btn_goback = FindViewById<ImageButton>(Resource.Id.img_btn_goback);
-            img_btn_audio = FindViewById<ImageButton>(Resource.Id.img_btn_audio);
+            img_btn_audio_eng = FindViewById<ImageButton>(Resource.Id.img_btn_audio_eng);
+            img_btn_audio_ame = FindViewById<ImageButton>(Resource.Id.img_btn_audio_ame);
             img_btn_back1node = FindViewById<ImageButton>(Resource.Id.img_btn_back1node);
             img_btn_go1node = FindViewById<ImageButton>(Resource.Id.img_btn_go1node);
 
@@ -53,10 +57,12 @@ namespace LearnningEnglishApplication
             txt_planName = FindViewById<TextView>(Resource.Id.txt_planName);
             txt_vocab_en = FindViewById<TextView>(Resource.Id.txt_vocab_en);
             txt_type = FindViewById<TextView>(Resource.Id.txt_type);
-            txt_pronounce = FindViewById<TextView>(Resource.Id.txt_pronounce);
+            txt_pronounce_eng = FindViewById<TextView>(Resource.Id.txt_pronounce_eng);
+            txt_pronounce_ame = FindViewById<TextView>(Resource.Id.txt_pronounce_ame);
             txt_describe = FindViewById<TextView>(Resource.Id.txt_describe);
             txt_mean_vn = FindViewById<TextView>(Resource.Id.txt_mean_vn);
 
+            id_user = Intent.GetStringExtra("id_user");
             planName = Intent.GetStringExtra("planName");
             txt_planName.Text = planName;   
             LoadVocabularyfromXML(planName);
@@ -74,6 +80,7 @@ namespace LearnningEnglishApplication
             btn_playquiz.Click += Btn_playquiz_Click;
 
             img_btn_goback.Click += Img_btn_goback_Click;
+
             //img_btn_audio.Click += Img_btn_audio_Click;
             //img_btn_audio.Click += delegate {
             //    _player.Start();
@@ -105,6 +112,7 @@ namespace LearnningEnglishApplication
         private void Btn_playquiz_Click(object sender, EventArgs e)
         {
             Intent it = new Intent(this, typeof(quiz));
+            it.PutExtra("id_user", id_user);
             it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
@@ -149,13 +157,21 @@ namespace LearnningEnglishApplication
                                     {
                                         type.Add(reader.ReadString());
                                     }
-                                    else if (reader.Name == "audio")
+                                    else if (reader.Name == "audio_eng")
                                     {
-                                        audio.Add(reader.ReadString());
+                                        audio_eng.Add(reader.ReadString());
                                     }
-                                    else if (reader.Name == "pronounce")
+                                    else if (reader.Name == "audio_ame")
                                     {
-                                        pronounce.Add(reader.ReadString());
+                                        audio_ame.Add(reader.ReadString());
+                                    }
+                                    else if (reader.Name == "pronounce_eng")
+                                    {
+                                        pronounce_eng.Add(reader.ReadString());
+                                    }
+                                    else if (reader.Name == "pronounce_ame")
+                                    {
+                                        pronounce_ame.Add(reader.ReadString());
                                     }
                                     else if (reader.Name == "describe")
                                     {
@@ -184,7 +200,9 @@ namespace LearnningEnglishApplication
             txt_vocab_en.Text = vocab_en[i];
             txt_type.Text = type[i];
             
-            txt_pronounce.Text = pronounce[i];
+            txt_pronounce_eng.Text = pronounce_eng[i];
+            txt_pronounce_ame.Text = pronounce_ame[i];
+
             txt_describe.Text = describe[i];
             txt_mean_vn.Text = mean_vn[i];
 

@@ -16,6 +16,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "category")]
     public class category : Activity
     {
+        string id_user;
+
         ArrayAdapter adapter;
         List<string> planNames = new List<string>();
         ListView listPlan;
@@ -27,6 +29,8 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.category);
+
+            id_user = Intent.GetStringExtra("id_user");
 
             listPlan = FindViewById<ListView>(Resource.Id.listPlan);
 
@@ -70,6 +74,7 @@ namespace LearnningEnglishApplication
         private void ListPlan_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             Intent it = new Intent(this, typeof(vocabulary));
+            it.PutExtra("id_user", id_user);
             it.PutExtra("planName", planNames[e.Position]);
             StartActivity(it);
         }

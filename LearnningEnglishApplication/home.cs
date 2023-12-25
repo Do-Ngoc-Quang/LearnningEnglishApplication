@@ -16,7 +16,7 @@ namespace LearnningEnglishApplication
     [Activity(Label = "home")]
     public class home : Activity
     {
-        string id;
+        string id_user;
 
         mySQLite mysqlite;
 
@@ -30,7 +30,7 @@ namespace LearnningEnglishApplication
             SetContentView(Resource.Layout.home);
 
             // id của người dùng
-            id = Intent.GetStringExtra("id");
+            id_user = Intent.GetStringExtra("id_user");
 
             mysqlite = new mySQLite(this.ApplicationContext);
 
@@ -63,7 +63,7 @@ namespace LearnningEnglishApplication
         private void load_chaomung()
         {
             // Đọc dữ liệu
-            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE id = '" + id.ToString() + "' LIMIT 1", null);
+            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE id = '" + id_user.ToString() + "' LIMIT 1", null);
             if (cur != null && cur.Count > 0)
             {
                 // Di chuyển con trỏ đến dòng đầu tiên
@@ -80,9 +80,15 @@ namespace LearnningEnglishApplication
             }
         }
 
-        private void Btn_profile_Click(object sender, EventArgs e)
+        private void Btn_home_Click(object sender, EventArgs e)
         {
-            Intent it = new Intent(this, typeof(profile));
+            // Thông báo tên đăng nhập không đúng
+            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
+        }
+
+        private void Btn_category_Click(object sender, EventArgs e)
+        {
+            Intent it = new Intent(this, typeof(category));
 
             // Check if the activity is already in the task stack
             ComponentName cn = it.ResolveActivity(PackageManager);
@@ -93,6 +99,8 @@ namespace LearnningEnglishApplication
                 // If the activity is not the current one, reorder it to the front
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
+
+            it.PutExtra("id_user", id_user);
 
             StartActivity(it);
         }
@@ -114,9 +122,9 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_category_Click(object sender, EventArgs e)
+        private void Btn_profile_Click(object sender, EventArgs e)
         {
-            Intent it = new Intent(this, typeof(category));
+            Intent it = new Intent(this, typeof(profile));
 
             // Check if the activity is already in the task stack
             ComponentName cn = it.ResolveActivity(PackageManager);
@@ -129,13 +137,6 @@ namespace LearnningEnglishApplication
             }
 
             StartActivity(it);
-        }
-
-        //Kiểm thử
-        private void Btn_home_Click(object sender, EventArgs e)
-        {
-            // Thông báo tên đăng nhập không đúng
-            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
         }
     }
 }

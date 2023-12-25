@@ -16,6 +16,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "quiz")]
     public class quiz : Activity
     {
+        string id_user;
+
         string planName = "";
 
         XmlReader reader;
@@ -47,6 +49,7 @@ namespace LearnningEnglishApplication
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz);
 
+            id_user = Intent.GetStringExtra("id_user");
             planName = Intent.GetStringExtra("planName");
 
             ckb_soluotchoi_1 = FindViewById<CheckBox>(Resource.Id.ckb_soluotchoi_1);
@@ -72,17 +75,7 @@ namespace LearnningEnglishApplication
         }
 
         private void LoadXML(string planName)
-        {
-            //reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
-            //while (reader.Read())
-            //{
-            //    if (reader.Name.ToString() == "en")
-            //        vocab_en.Add(reader.ReadString());
-            //    if (reader.Name.ToString() == "vn")
-            //        mean_vn.Add(reader.ReadString());
-            //}
-
-            
+        {          
             using (XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml")))
             {
                 string currentCategory = "";
@@ -127,9 +120,6 @@ namespace LearnningEnglishApplication
                     }
                 }
             }
-
-
-
         }
 
         private void Btn_dapan1_Click(object sender, EventArgs e)
@@ -298,9 +288,11 @@ namespace LearnningEnglishApplication
             //Kiểm tra điều kiện
             if (tongSocau == 10 || soluotchoi == 0)
             {
-                if (cauDung >= 5)
+                if (cauDung >= 1)
                 {
                     Intent it = new Intent(this, typeof(quiz_completed));
+
+                    it.PutExtra("id_user", id_user);
 
                     it.PutExtra("planName", planName.ToString());
                     it.PutExtra("tongSocau", tongSocau.ToString());
