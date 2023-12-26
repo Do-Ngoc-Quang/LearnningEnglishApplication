@@ -40,7 +40,7 @@ namespace LearnningEnglishApplication
 
             txt_socau.Text = Intent.GetStringExtra("cauDung") + " / " + Intent.GetStringExtra("tongSocau");
             int diemso = int.Parse(Intent.GetStringExtra("cauDung")) * 5;
-            txt_diemso.Text = diemso.ToString();
+            txt_diemso.Text = "+" + diemso.ToString() + " points";
 
             // --- Thực hiện update điểm số cho người dùng
             update_diemso(diemso);

@@ -135,8 +135,6 @@
                 android:drawableTop="@drawable/icon_close_48px"
                 android:id="@+id/btn_endquiz"
                 android:gravity="center" />
-         </LinearLayout>
-        
+        </LinearLayout>
     </LinearLayout>
-
 </RelativeLayout>

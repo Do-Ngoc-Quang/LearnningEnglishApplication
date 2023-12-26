@@ -17,7 +17,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:text="Tên của bạn"
+            android:text="Your name"
             android:textSize="15sp"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
@@ -30,7 +30,8 @@
             android:id="@+id/txt_hoten" />
 
         <TextView
-            android:text="Tên đăng nhập"
+            android:layout_marginTop="10dp"
+            android:text="username"
             android:textSize="15sp"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
@@ -45,7 +46,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:text="Mật khẩu"
+            android:text="password"
             android:textSize="15sp"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
@@ -57,10 +58,9 @@
             android:background="@android:color/white"
             android:id="@+id/txt_matkhau" />
 
-        
         <Button
             android:id="@+id/btn_taotaikhoan"
-            android:text="Tạo tài khoản"
+            android:text="create account"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

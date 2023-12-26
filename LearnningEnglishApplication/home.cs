@@ -82,8 +82,8 @@ namespace LearnningEnglishApplication
 
         private void Btn_home_Click(object sender, EventArgs e)
         {
-            // Thông báo tên đăng nhập không đúng
-            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
+            // Thông báo
+            Toast.MakeText(this, "You are here", ToastLength.Short).Show();
         }
 
         private void Btn_category_Click(object sender, EventArgs e)
@@ -119,6 +119,8 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
@@ -135,6 +137,8 @@ namespace LearnningEnglishApplication
                 // If the activity is not the current one, reorder it to the front
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
+
+            it.PutExtra("id_user", id_user);
 
             StartActivity(it);
         }

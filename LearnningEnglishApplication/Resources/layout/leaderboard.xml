@@ -7,9 +7,10 @@
 
     <!-- Layout ở trên chiếm 90% chiều cao -->
     <LinearLayout
+        android:id="@+id/linearLayout_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9" 
+        android:layout_weight="9"
         android:orientation="vertical">
 
         <LinearLayout
@@ -24,9 +25,12 @@
                 android:textStyle="bold"
                 android:gravity="center"/>
         </LinearLayout>
+
+
+
     </LinearLayout>
 
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -76,5 +80,4 @@
             android:drawableTop="@drawable/icon_profile_32px"
             android:gravity="center" />
     </LinearLayout>
-
 </LinearLayout>

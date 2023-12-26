@@ -286,7 +286,7 @@ namespace LearnningEnglishApplication
             }
 
             //Kiểm tra điều kiện
-            if (tongSocau == 10 || soluotchoi == 0)
+            if (tongSocau == 10 || soluotchoi == 2) //lượt chơi bằng 0
             {
                 if (cauDung >= 1)
                 {

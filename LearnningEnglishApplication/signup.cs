@@ -32,7 +32,7 @@ namespace LearnningEnglishApplication
             mysqlite = new mySQLite(this.ApplicationContext);
             // Tạo table người dùng:
             string sql = "CREATE TABLE IF NOT EXISTS nguoidung " +
-                "(id INTEGER PRIMARY KEY AUTOINCREMENT, hoten Text, tendangnhap text, matkhau text, diemso integer)";
+                "(id INTEGER PRIMARY KEY AUTOINCREMENT, hoten Text, gioitinh bit, tendangnhap text, matkhau text, diemso integer)";
             //string sql = "DROP TABLE nguoidung;";
             mysqlite.ReadableDatabase.ExecSQL(sql);
 
@@ -53,27 +53,33 @@ namespace LearnningEnglishApplication
             if (cur != null && cur.MoveToFirst())
             {
                 // Thông báo tên tài khoản đã tồn tại
-                Toast.MakeText(this, "Tên đang nhập đã tồn tại, hãy thử lại!", ToastLength.Short).Show();
+                Toast.MakeText(this, "The name being entered already exists, please try again!", ToastLength.Short).Show();
             }
             else
             {
+                int gioitinh = 0; // 0 là nam, 1 là nữ
+                //if (true)
+                //{
+
+                //}
+
                 //Chưa tồn tại - tạo mới tài khoản
                 try
                 {
                     // Thực thi câu lệnh SQL INSERT
-                    mysqlite.ReadableDatabase.ExecSQL("INSERT INTO nguoidung(hoten, tendangnhap, matkhau, diemso) " +
-                        "VALUES('" + txt_hoten.Text + "', '" + txt_tendangnhap.Text + "', '" + txt_matkhau.Text + "', '0')");
+                    mysqlite.ReadableDatabase.ExecSQL("INSERT INTO nguoidung(hoten, gioitinh, tendangnhap, matkhau, diemso) " +
+                        "VALUES('" + txt_hoten.Text + "', '" + gioitinh.ToString() + "', '" + txt_tendangnhap.Text + "', '" + txt_matkhau.Text + "', '0')");
 
                     // Nếu không có ngoại lệ, tức là thực thi thành công, thông báo tạo tài khoản thành công
-                    Toast.MakeText(this, "Thêm người dùng thành công!", ToastLength.Short).Show();
+                    Toast.MakeText(this, "Account successfully created!", ToastLength.Short).Show();
                 }
                 catch (SQLiteException ex)
                 {
                     // Nếu có ngoại lệ, thông báo tạo tài khoản không thành công - hiển thị lỗi
                     //Console.WriteLine("Lỗi khi thực hiện câu lệnh SQL: " + ex.Message);
-                    Toast.MakeText(this, "Lỗi khi thêm người dùng!" + ex.Message, ToastLength.Short).Show();
+                    Toast.MakeText(this, "Error creating account!" + ex.Message, ToastLength.Short).Show();
                 }
-                
+
             }
         }
     }

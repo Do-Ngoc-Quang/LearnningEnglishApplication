@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true">
 
         <TextView
-            android:text="Tên đăng nhập"
+            android:text="username"
             android:textSize="15sp"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
 
         <TextView
             android:layout_marginTop="10dp"
-            android:text="Mật khẩu"
+            android:text="password"
             android:textSize="15sp"
             android:textColor="@android:color/white"
             android:layout_width="wrap_content"
@@ -45,8 +45,8 @@
 
         <Button
             android:id="@+id/btn_taotaikhoan"
-            android:text="Tạo tài khoản"
-            android:layout_width="150dp"
+            android:text="Create account"
+            android:layout_width="170dp"
             android:layout_height="50dp"
             android:layout_gravity="right"
             android:layout_marginTop="10dp"
@@ -55,7 +55,7 @@
 
         <Button
             android:id="@+id/btn_dangnhap"
-            android:text="Đăng nhập"
+            android:text="login"
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

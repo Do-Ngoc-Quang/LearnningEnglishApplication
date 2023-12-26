@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Database;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -15,6 +16,10 @@ namespace LearnningEnglishApplication
     [Activity(Label = "leaderboard")]
     public class leaderboard : Activity
     {
+        string id_user;
+
+        mySQLite mysqlite;
+
         Button btn_home, btn_category, btn_leaderboard, btn_profile;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -24,6 +29,13 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.leaderboard);
+
+            id_user = Intent.GetStringExtra("id_user");
+
+            mysqlite = new mySQLite(this.ApplicationContext);
+
+            //
+            load_user_rank();
 
 
             btn_home = FindViewById<Button>(Resource.Id.btn_home);
@@ -35,6 +47,71 @@ namespace LearnningEnglishApplication
             btn_category.Click += Btn_category_Click;
             btn_leaderboard.Click += Btn_leaderboard_Click;
             btn_profile.Click += Btn_profile_Click;
+        }
+
+        private void load_user_rank()
+        {
+            // Đọc dữ liệu
+            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung", null);
+
+            // Kiểm tra dữ liệu
+            if (cur != null && cur.Count > 0)
+            {
+                int index = 1;
+
+                // Vòng lặp đọc từng trường dữ liệu
+                while (cur.MoveToNext())
+                {
+                    // Lấy giá trị
+                    string name_user = cur.GetString(cur.GetColumnIndex("hoten"));
+                    int gioitinh_user = int.Parse(cur.GetString(cur.GetColumnIndex("gioitinh")));
+                    string point_user = cur.GetString(cur.GetColumnIndex("diemso"));
+
+                    // ---
+                    // Khởi tạo LayoutInflater
+                    LayoutInflater inflater = (LayoutInflater)GetSystemService(Context.LayoutInflaterService);
+
+                    // Tạo một instance của LinearLayout từ layout xml
+                    LinearLayout newUserLayout = (LinearLayout)inflater.Inflate(Resource.Layout.leaderboard_user, null);
+
+                    // Thêm nó vào LinearLayout chứa tất cả các layout
+                    LinearLayout containerLayout = FindViewById<LinearLayout>(Resource.Id.linearLayout_container);
+
+                    // Truyền tham số vào TextView hoặc các thành phần khác trong layout
+                    TextView txt_rank = newUserLayout.FindViewById<TextView>(Resource.Id.txt_rank);
+                    ImageView gender_user_avatar = FindViewById<ImageView>(Resource.Id.gender_user_avatar);
+                    TextView txt_name_user = newUserLayout.FindViewById<TextView>(Resource.Id.txt_name_user);
+                    TextView txt_point = newUserLayout.FindViewById<TextView>(Resource.Id.txt_point);
+                    txt_rank.Text = "#" + index.ToString();
+
+                    //if (gioitinh_user == 0)
+                    //{
+                    //    // Thay đổi hình ảnh bằng mã nguồn (resource ID)
+                    //    //gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_male_32);
+                    //}
+                    //else
+                    //{
+                    //    //gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_female_32);
+                    //}
+
+                    //Intent it = new Intent(this, typeof(leaderboard_user));
+                    //it.PutExtra("gioitinh_user", gioitinh_user.ToString());
+                    //StartActivity(it);
+
+                    txt_name_user.Text = name_user.ToString();
+                    txt_point.Text = point_user.ToString() + " points";
+
+                    // --- 
+                    containerLayout.AddView(newUserLayout);
+
+                    index++;
+                }
+            }
+            else
+            {
+                // Thông báo lỗi
+                Toast.MakeText(this, "Cannot connect to database!", ToastLength.Short).Show();
+            }
         }
 
         private void Btn_home_Click(object sender, EventArgs e)
@@ -68,13 +145,15 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
         private void Btn_leaderboard_Click(object sender, EventArgs e)
         {
-            // Thông báo tên đăng nhập không đúng
-            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
+            // Thông báo 
+            Toast.MakeText(this, "You are here", ToastLength.Short).Show();
         }
 
         private void Btn_profile_Click(object sender, EventArgs e)
@@ -90,6 +169,8 @@ namespace LearnningEnglishApplication
                 // If the activity is not the current one, reorder it to the front
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
+
+            it.PutExtra("id_user", id_user);
 
             StartActivity(it);
         }

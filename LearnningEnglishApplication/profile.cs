@@ -15,6 +15,8 @@ namespace LearnningEnglishApplication
     [Activity(Label = "profile")]
     public class profile : Activity
     {
+        string id_user;
+
         Button btn_home, btn_category, btn_leaderboard, btn_profile;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -23,6 +25,9 @@ namespace LearnningEnglishApplication
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.profile);
+
+            // id của người dùng
+            id_user = Intent.GetStringExtra("id_user");
 
             btn_home = FindViewById<Button>(Resource.Id.btn_home);
             btn_category = FindViewById<Button>(Resource.Id.btn_category);
@@ -66,6 +71,8 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
@@ -83,13 +90,15 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
         private void Btn_profile_Click(object sender, EventArgs e)
         {
-            // Thông báo tên đăng nhập không đúng
-            Toast.MakeText(this, "Bạn đang ở trang này", ToastLength.Short).Show();
+            // Thông báo 
+            Toast.MakeText(this, "You are here", ToastLength.Short).Show();
         }
     }
 }

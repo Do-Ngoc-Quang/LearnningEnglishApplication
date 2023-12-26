@@ -51,6 +51,12 @@ namespace LearnningEnglishApplication
             // ---
 
 
+            if (txt_tendangnhap.Text == "" || txt_matkhau.Text == "")
+            {
+                //Thông báo
+                Toast.MakeText(this, "Username and password cannot be left blank!", ToastLength.Short).Show();
+            }
+
             //// Đọc dữ liệu
             //ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE tendangnhap = '" + txt_tendangnhap.Text + "' LIMIT 1", null);
 
@@ -78,19 +84,19 @@ namespace LearnningEnglishApplication
             //    else
             //    {
             //        // Thông báo mật khẩu không đúng
-            //        Toast.MakeText(this, "Mật khẩu không chính xác!", ToastLength.Short).Show();
+            //        Toast.MakeText(this, "Incorrect password!", ToastLength.Short).Show();
             //    }
             //}
             //else
             //{
             //    // Thông báo tên đăng nhập không đúng
-            //    Toast.MakeText(this, "Tên đăng nhập không chính xác!", ToastLength.Short).Show();
+            //    Toast.MakeText(this, "Incorrect username!", ToastLength.Short).Show();
             //}
         }
 
         private void Btn_taotaikhoan_Click(object sender, EventArgs e)
         {
-            Intent it = new Intent(this, typeof(signup)); 
+            Intent it = new Intent(this, typeof(signup));
             StartActivity(it);
         }
     }
