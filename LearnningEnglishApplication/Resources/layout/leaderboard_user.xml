@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:layout_marginTop="10dp"
     android:background="@android:color/holo_orange_light">
 
     <TextView
@@ -13,12 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="# "
-        android:textSize="25sp"
-        android:layout_marginLeft="40dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"/>
 
     <ImageView
-        android:src="@drawable/icon_avatar_female_32"
+        android:src="@drawable/icon_avatar_female_48"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:id="@+id/gender_user_avatar" />
@@ -28,7 +27,7 @@
         android:text="name?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:layout_marginLeft="10dp"/>
 
     <TextView
@@ -36,8 +35,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="point"
-        android:textSize="25sp"
+        android:textSize="17sp"
         android:gravity="right"
         android:layout_weight="1"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="10dp"/>
 </LinearLayout>

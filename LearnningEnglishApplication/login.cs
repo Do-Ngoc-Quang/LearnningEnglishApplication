@@ -45,7 +45,7 @@ namespace LearnningEnglishApplication
             //Xác thực thành công
             Intent it = new Intent(this, typeof(home));
             // Lấy id người dùng
-            string id_user = "1";
+            string id_user = "3";
             it.PutExtra("id_user", id_user);
             StartActivity(it);
             // ---

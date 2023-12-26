@@ -52,7 +52,7 @@ namespace LearnningEnglishApplication
         private void load_user_rank()
         {
             // Đọc dữ liệu
-            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung", null);
+            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung ORDER BY diemso DESC", null);
 
             // Kiểm tra dữ liệu
             if (cur != null && cur.Count > 0)
@@ -62,6 +62,9 @@ namespace LearnningEnglishApplication
                 // Vòng lặp đọc từng trường dữ liệu
                 while (cur.MoveToNext())
                 {
+                    string id = cur.GetString(cur.GetColumnIndex("id"));
+
+
                     // Lấy giá trị
                     string name_user = cur.GetString(cur.GetColumnIndex("hoten"));
                     int gioitinh_user = int.Parse(cur.GetString(cur.GetColumnIndex("gioitinh")));
@@ -98,7 +101,16 @@ namespace LearnningEnglishApplication
                     //it.PutExtra("gioitinh_user", gioitinh_user.ToString());
                     //StartActivity(it);
 
-                    txt_name_user.Text = name_user.ToString();
+
+                    if (id == id_user)
+                    {
+                        txt_name_user.Text = name_user.ToString() + " (you)";
+                    }
+                    else
+                    {
+                        txt_name_user.Text = name_user.ToString();
+                    }
+
                     txt_point.Text = point_user.ToString() + " points";
 
                     // --- 
