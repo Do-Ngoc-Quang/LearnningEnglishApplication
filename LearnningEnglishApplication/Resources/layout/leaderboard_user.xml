@@ -17,10 +17,15 @@
         android:layout_marginRight="10dp"/>
 
     <ImageView
+        android:id="@+id/gender_user_male"
+        android:src="@drawable/icon_avatar_male_48"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+<!--    <ImageView
+        android:id="@+id/gender_user_female"
         android:src="@drawable/icon_avatar_female_48"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/gender_user_avatar" />
+        android:layout_height="match_parent"/>-->
 
     <TextView
         android:id="@+id/txt_name_user"

@@ -58,6 +58,31 @@
             android:background="@android:color/white"
             android:id="@+id/txt_matkhau" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <CheckBox
+                android:id="@+id/cbox_male"
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+
+            <CheckBox
+                android:id="@+id/cbox_female"
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:buttonTint="@android:color/white"/>
+        </LinearLayout>
+
         <Button
             android:id="@+id/btn_taotaikhoan"
             android:text="create account"

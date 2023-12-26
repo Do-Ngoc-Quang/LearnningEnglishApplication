@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9" 
+        android:layout_weight="9"
         android:orientation="vertical"
         android:paddingLeft="10dp">
 
@@ -21,21 +21,25 @@
             android:minHeight="30px"
             android:id="@+id/txt_chaomung"/>
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="10dp">
 
-            <!-- Hình ảnh -->
+            -->
+        <!-- Hình ảnh -->
+        <!--
             <ImageView
                 android:src="@drawable/icon_checklist_64px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView1" />
 
-            <!-- Chữ và Nút -->
+            -->
+        <!-- Chữ và Nút -->
+        <!--
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,10 +61,12 @@
                     android:layout_gravity="end" />
 
             </LinearLayout>
-        </LinearLayout>
+        </LinearLayout>-->
+
+
     </LinearLayout>
 
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="5dp"

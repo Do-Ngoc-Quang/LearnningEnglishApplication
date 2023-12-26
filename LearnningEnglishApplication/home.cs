@@ -21,7 +21,7 @@ namespace LearnningEnglishApplication
         mySQLite mysqlite;
 
         TextView txt_chaomung;
-        Button btn_playquiz, btn_home, btn_category, btn_leaderboard, btn_profile;
+        Button btn_home, btn_category, btn_leaderboard, btn_profile;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,8 +36,6 @@ namespace LearnningEnglishApplication
 
             txt_chaomung = FindViewById<TextView>(Resource.Id.txt_chaomung);
 
-            btn_playquiz = FindViewById<Button>(Resource.Id.btn_playquiz);
-
             btn_home = FindViewById<Button>(Resource.Id.btn_home);
             btn_category = FindViewById<Button>(Resource.Id.btn_category);
             btn_leaderboard = FindViewById<Button>(Resource.Id.btn_leaderboard);
@@ -45,8 +43,6 @@ namespace LearnningEnglishApplication
 
             //Load 
             //load_chaomung();
-
-            btn_playquiz.Click += Btn_playquiz_Click;
 
             btn_home.Click += Btn_home_Click;
             btn_category.Click += Btn_category_Click;

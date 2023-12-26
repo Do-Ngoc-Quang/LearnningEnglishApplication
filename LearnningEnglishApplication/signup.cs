@@ -19,7 +19,11 @@ namespace LearnningEnglishApplication
         mySQLite mysqlite;
 
         EditText txt_hoten, txt_tendangnhap, txt_matkhau;
+        CheckBox cbox_male, cbox_female;
         Button btn_taotaikhoan;
+
+        int gioitinh = 0; // 0 là nam, 1 là nữ
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -41,9 +45,35 @@ namespace LearnningEnglishApplication
             txt_tendangnhap = FindViewById<EditText>(Resource.Id.txt_tendangnhap);
             txt_matkhau = FindViewById<EditText>(Resource.Id.txt_matkhau);
 
+            cbox_male = FindViewById<CheckBox>(Resource.Id.cbox_male);
+            cbox_female = FindViewById<CheckBox>(Resource.Id.cbox_female);
+
             btn_taotaikhoan = FindViewById<Button>(Resource.Id.btn_taotaikhoan);
 
+            cbox_male.Click += Cbox_male_Click;
+            cbox_female.Click += Cbox_female_Click;
+
             btn_taotaikhoan.Click += Btn_taotaikhoan_Click;
+        }
+
+        private void Cbox_male_Click(object sender, EventArgs e)
+        {
+            bool isChecked = cbox_male.Checked;
+            if (isChecked)
+            {
+                gioitinh = 0; // 0 là nam
+                cbox_female.Checked = false;
+            }
+        }
+
+        private void Cbox_female_Click(object sender, EventArgs e)
+        {
+            bool isChecked = cbox_female.Checked;
+            if (isChecked)
+            {
+                gioitinh = 1; // 1 là nữ
+                cbox_male.Checked = false;
+            }
         }
 
         private void Btn_taotaikhoan_Click(object sender, EventArgs e)
@@ -57,12 +87,6 @@ namespace LearnningEnglishApplication
             }
             else
             {
-                int gioitinh = 0; // 0 là nam, 1 là nữ
-                //if (true)
-                //{
-
-                //}
-
                 //Chưa tồn tại - tạo mới tài khoản
                 try
                 {

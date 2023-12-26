@@ -82,20 +82,25 @@ namespace LearnningEnglishApplication
 
                     // Truyền tham số vào TextView hoặc các thành phần khác trong layout
                     TextView txt_rank = newUserLayout.FindViewById<TextView>(Resource.Id.txt_rank);
-                    ImageView gender_user_avatar = FindViewById<ImageView>(Resource.Id.gender_user_avatar);
+                    //ImageView gender_user_male = FindViewById<ImageView>(Resource.Id.gender_user_male);
+                    //ImageView gender_user_female = FindViewById<ImageView>(Resource.Id.gender_user_female);
                     TextView txt_name_user = newUserLayout.FindViewById<TextView>(Resource.Id.txt_name_user);
                     TextView txt_point = newUserLayout.FindViewById<TextView>(Resource.Id.txt_point);
                     txt_rank.Text = "#" + index.ToString();
 
-                    //if (gioitinh_user == 0)
+                    //if (gender_user_male != null || gender_user_female != null)
                     //{
-                    //    // Thay đổi hình ảnh bằng mã nguồn (resource ID)
-                    //    //gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_male_32);
+                    //    if (gioitinh_user == 0)
+                    //    {
+                    //        // Ẩn avatar female
+                    //        gender_user_female.Visibility = ViewStates.Gone;
+                    //    }
+                    //    else
+                    //    {
+                    //        gender_user_male.Visibility = ViewStates.Gone;
+                    //    }
                     //}
-                    //else
-                    //{
-                    //    //gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_female_32);
-                    //}
+                    
 
                     //Intent it = new Intent(this, typeof(leaderboard_user));
                     //it.PutExtra("gioitinh_user", gioitinh_user.ToString());

@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="category.cs" />
+    <Compile Include="dialog_layout_edit_user.cs" />
     <Compile Include="home.cs" />
     <Compile Include="leaderboard.cs" />
     <Compile Include="leaderboard_user.cs" />
@@ -282,6 +283,20 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\leaderboard_user.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_avatar_male_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_avatar_male_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_edit_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\dialog_layout_edit_user.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
