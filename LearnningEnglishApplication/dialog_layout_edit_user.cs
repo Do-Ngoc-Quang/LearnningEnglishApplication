@@ -31,32 +31,32 @@ namespace LearnningEnglishApplication
 
             txt_name_user = FindViewById<EditText>(Resource.Id.txt_name_user);
 
-            cbox_male = FindViewById<CheckBox>(Resource.Id.cbox_male);
-            cbox_female = FindViewById<CheckBox>(Resource.Id.cbox_female);
+            //cbox_male = FindViewById<CheckBox>(Resource.Id.cbox_male);
+            //cbox_female = FindViewById<CheckBox>(Resource.Id.cbox_female);
 
-            cbox_male.Click += Cbox_male_Click;
-            cbox_female.Click += Cbox_female_Click;
+            //cbox_male.Click += Cbox_male_Click;
+            //cbox_female.Click += Cbox_female_Click;
         }
 
-        private void Cbox_male_Click(object sender, EventArgs e)
-        {
-            bool isChecked = cbox_male.Checked;
-            if (isChecked)
-            {
-                gioitinh = 0; // 0 là nam
-                cbox_female.Checked = false;
-            }
-        }
+        //private void Cbox_male_Click(object sender, EventArgs e)
+        //{
+        //    bool isChecked = cbox_male.Checked;
+        //    if (isChecked)
+        //    {
+        //        gioitinh = 0; // 0 là nam
+        //        cbox_female.Checked = false;
+        //    }
+        //}
 
-        private void Cbox_female_Click(object sender, EventArgs e)
-        {
-            bool isChecked = cbox_female.Checked;
-            if (isChecked)
-            {
-                gioitinh = 1; // 1 là nữ
-                cbox_male.Checked = false;
-            }
-        }
+        //private void Cbox_female_Click(object sender, EventArgs e)
+        //{
+        //    bool isChecked = cbox_female.Checked;
+        //    if (isChecked)
+        //    {
+        //        gioitinh = 1; // 1 là nữ
+        //        cbox_male.Checked = false;
+        //    }
+        //}
 
     }
 }

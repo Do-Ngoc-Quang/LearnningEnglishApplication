@@ -24,6 +24,10 @@ namespace LearnningEnglishApplication
 
         TextView txt_name_user, txt_point;
 
+        // --
+        string name_user;
+        int gioitinh_user;
+
         Button btn_home, btn_category, btn_leaderboard, btn_profile;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -72,8 +76,8 @@ namespace LearnningEnglishApplication
                 string id = cur.GetString(cur.GetColumnIndex("id"));
 
                 // Lấy giá trị
-                string name_user = cur.GetString(cur.GetColumnIndex("hoten"));
-                int gioitinh_user = int.Parse(cur.GetString(cur.GetColumnIndex("gioitinh")));
+                name_user = cur.GetString(cur.GetColumnIndex("hoten"));
+                gioitinh_user = int.Parse(cur.GetString(cur.GetColumnIndex("gioitinh")));
                 string point_user = cur.GetString(cur.GetColumnIndex("diemso"));
 
                 // ---
@@ -102,19 +106,62 @@ namespace LearnningEnglishApplication
 
             // Tìm các controls trong layout tùy chỉnh
             EditText txt_name_user = viewInflated.FindViewById<EditText>(Resource.Id.txt_name_user);
-            CheckBox cbox_male = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_male);
-            CheckBox cbox_female = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_female);
+            //CheckBox cbox_male = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_male);
+            //CheckBox cbox_female = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_female);
+
+            // ---
+            txt_name_user.Text = name_user;
+
+            //if (gioitinh_user == 0)
+            //{
+            //    cbox_male.Checked = true;
+            //}
+            //else
+            //{
+            //    cbox_female.Checked = true;
+            //}
+
+            //if (cbox_male.Checked)
+            //{
+            //    cbox_female.Checked = false;
+            //}
+
+            //if (cbox_female.Checked)
+            //{
+            //    cbox_male.Checked = false;
+            //}
 
             // Thiết lập giao diện của dialog
             builder.SetView(viewInflated)
                    .SetPositiveButton("OK", (sender, args) =>
                    {
-                       // Xử lý khi nhấn nút OK
-                       string inputText = txt_name_user.Text;
-                       bool isMaleChecked = cbox_male.Checked;
-                       bool isFemaleChecked = cbox_female.Checked;
+                       int gioitinh = 0; // 0 is male, 1 is female
 
-                       // Thực hiện xử lý với inputText, isMaleChecked và isFemaleChecked
+                       // Xử lý khi nhấn nút OK
+                       //bool isMaleChecked = cbox_male.Checked;
+                       //bool isFemaleChecked = cbox_female.Checked;
+
+                       //if (isMaleChecked)
+                       //{
+                       //    gioitinh = 0;
+                       //    cbox_female.Checked = false;
+                       //}
+
+                       //if (isFemaleChecked)
+                       //{
+                       //    gioitinh = 1;
+                       //    cbox_male.Checked = false;
+                       //}
+
+                       // ---
+                       //mysqlite.ReadableDatabase.ExecSQL("UPDATE nguoidung SET hoten = '" + txt_name_user.Text + "', gioitinh = '" + gioitinh.ToString() + "'" +
+                       //    " WHERE id = '" + id_user + "';");
+
+                       mysqlite.ReadableDatabase.ExecSQL("UPDATE nguoidung SET hoten = '" + txt_name_user.Text + "'" +
+                           " WHERE id = '" + id_user + "';");
+
+                       // ---
+                       load_info_user();
                    })
                    .SetNegativeButton("Cancel", (sender, args) =>
                    {
