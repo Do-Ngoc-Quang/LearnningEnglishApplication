@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.Database;
+using Android.Media;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -18,11 +19,17 @@ namespace LearnningEnglishApplication
     {
         mySQLite mysqlite;
 
-        string planName = "";
         string id_user = "";
 
+        string planName = "";
+
+        ImageButton img_btn_endquiz;
+
         TextView txt_socau, txt_diemso;
-        Button btn_endquiz, btn_replay_quiz;
+        Button btn_replay_quiz;
+
+        MediaPlayer audio_player;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,6 +37,9 @@ namespace LearnningEnglishApplication
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.quiz_completed);
 
+            // Ring tone
+            play_audio_congrats();
+            
             mysqlite = new mySQLite(this.ApplicationContext);
 
             id_user = Intent.GetStringExtra("id_user");
@@ -45,11 +55,19 @@ namespace LearnningEnglishApplication
             // --- Thực hiện update điểm số cho người dùng
             update_diemso(diemso);
 
-            btn_endquiz = FindViewById<Button>(Resource.Id.btn_endquiz);
+            img_btn_endquiz = FindViewById<ImageButton>(Resource.Id.img_btn_endquiz);
             btn_replay_quiz = FindViewById<Button>(Resource.Id.btn_replay_quiz);
 
-            btn_endquiz.Click += Btn_endquiz_Click;
+            img_btn_endquiz.Click += Img_btn_endquiz_Click;
             btn_replay_quiz.Click += Btn_replay_quiz_Click;
+        }
+
+        private void play_audio_congrats()
+        {
+            // Khởi tạo MediaPlayer
+            audio_player = MediaPlayer.Create(this, Resource.Raw.congrats);
+            // Phát âm thanh
+            audio_player.Start();
         }
 
         private void update_diemso(int diemso)
@@ -79,12 +97,12 @@ namespace LearnningEnglishApplication
             mysqlite.ReadableDatabase.ExecSQL("UPDATE nguoidung SET diemso = '" + diemso_temp.ToString() + "' WHERE id = '" + id_user + "';");
         }
 
-        private void Btn_endquiz_Click(object sender, EventArgs e)
+        private void Img_btn_endquiz_Click(object sender, EventArgs e)
         {
             // Đóng Activity hiện tại
             Finish();
 
-            Intent it = new Intent(this, typeof(home));
+            Intent it = new Intent(this, typeof(vocabulary));
 
             // Check if the activity is already in the task stack
             ComponentName cn = it.ResolveActivity(PackageManager);
@@ -97,6 +115,7 @@ namespace LearnningEnglishApplication
             }
 
             it.PutExtra("id_user", id_user);
+            it.PutExtra("planName", planName);
 
             StartActivity(it);
         }

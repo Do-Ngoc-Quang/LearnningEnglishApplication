@@ -3927,121 +3927,121 @@ namespace LearnningEnglishApplication
 			public const int img_btn_edit_user = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int img_btn_go1node = 2131230864;
+			public const int img_btn_endquiz = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int img_btn_goback = 2131230865;
+			public const int img_btn_go1node = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int info = 2131230866;
+			public const int img_btn_goback = 2131230866;
 			
 			// aapt resource value: 0x7F080093
-			public const int italic = 2131230867;
+			public const int info = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int item_touch_helper_previous_elevation = 2131230868;
-			
-			// aapt resource value: 0x7F080096
-			public const int labeled = 2131230870;
-			
-			// aapt resource value: 0x7F080097
-			public const int largeLabel = 2131230871;
-			
-			// aapt resource value: 0x7F080098
-			public const int left = 2131230872;
-			
-			// aapt resource value: 0x7F080099
-			public const int line1 = 2131230873;
-			
-			// aapt resource value: 0x7F08009A
-			public const int line3 = 2131230874;
-			
-			// aapt resource value: 0x7F08009B
-			public const int linearLayout_container = 2131230875;
-			
-			// aapt resource value: 0x7F08009C
-			public const int linearLayout_show_user = 2131230876;
-			
-			// aapt resource value: 0x7F08009D
-			public const int listMode = 2131230877;
-			
-			// aapt resource value: 0x7F08009E
-			public const int listPlan = 2131230878;
-			
-			// aapt resource value: 0x7F08009F
-			public const int list_item = 2131230879;
+			public const int italic = 2131230868;
 			
 			// aapt resource value: 0x7F080095
-			public const int lView_EN = 2131230869;
+			public const int item_touch_helper_previous_elevation = 2131230869;
+			
+			// aapt resource value: 0x7F080097
+			public const int labeled = 2131230871;
+			
+			// aapt resource value: 0x7F080098
+			public const int largeLabel = 2131230872;
+			
+			// aapt resource value: 0x7F080099
+			public const int left = 2131230873;
+			
+			// aapt resource value: 0x7F08009A
+			public const int line1 = 2131230874;
+			
+			// aapt resource value: 0x7F08009B
+			public const int line3 = 2131230875;
+			
+			// aapt resource value: 0x7F08009C
+			public const int linearLayout_container = 2131230876;
+			
+			// aapt resource value: 0x7F08009D
+			public const int linearLayout_show_user = 2131230877;
+			
+			// aapt resource value: 0x7F08009E
+			public const int listMode = 2131230878;
+			
+			// aapt resource value: 0x7F08009F
+			public const int listPlan = 2131230879;
 			
 			// aapt resource value: 0x7F0800A0
-			public const int masked = 2131230880;
+			public const int list_item = 2131230880;
+			
+			// aapt resource value: 0x7F080096
+			public const int lView_EN = 2131230870;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int message = 2131230881;
+			public const int masked = 2131230881;
+			
+			// aapt resource value: 0x7F0800A2
+			public const int message = 2131230882;
 			
 			// aapt resource value: 0x7F080003
 			public const int META = 2131230723;
 			
-			// aapt resource value: 0x7F0800A2
-			public const int middle = 2131230882;
-			
 			// aapt resource value: 0x7F0800A3
-			public const int mini = 2131230883;
+			public const int middle = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int mtrl_child_content_container = 2131230884;
+			public const int mini = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int mtrl_internal_children_alpha_tag = 2131230885;
+			public const int mtrl_child_content_container = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int multiply = 2131230886;
+			public const int mtrl_internal_children_alpha_tag = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int navigation_header_container = 2131230887;
+			public const int multiply = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int never = 2131230888;
+			public const int navigation_header_container = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int none = 2131230889;
+			public const int never = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int normal = 2131230890;
+			public const int none = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int notification_background = 2131230891;
+			public const int normal = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int notification_main_column = 2131230892;
+			public const int notification_background = 2131230892;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int notification_main_column_container = 2131230893;
+			public const int notification_main_column = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int off = 2131230894;
+			public const int notification_main_column_container = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int on = 2131230895;
+			public const int off = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int outline = 2131230896;
+			public const int on = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int parallax = 2131230897;
+			public const int outline = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int parentPanel = 2131230898;
+			public const int parallax = 2131230898;
 			
 			// aapt resource value: 0x7F0800B3
-			public const int parent_matrix = 2131230899;
+			public const int parentPanel = 2131230899;
 			
 			// aapt resource value: 0x7F0800B4
-			public const int pin = 2131230900;
+			public const int parent_matrix = 2131230900;
 			
 			// aapt resource value: 0x7F0800B5
-			public const int playButton = 2131230901;
+			public const int pin = 2131230901;
 			
 			// aapt resource value: 0x7F0800B6
 			public const int progress_circular = 2131230902;
@@ -4724,10 +4724,22 @@ namespace LearnningEnglishApplication
 		{
 			
 			// aapt resource value: 0x7F0D0000
-			public const int EmDongY = 2131558400;
+			public const int congrats = 2131558400;
 			
 			// aapt resource value: 0x7F0D0001
 			public const int exist__gb_3 = 2131558401;
+			
+			// aapt resource value: 0x7F0D0002
+			public const int exist__us_1 = 2131558402;
+			
+			// aapt resource value: 0x7F0D0003
+			public const int lose = 2131558403;
+			
+			// aapt resource value: 0x7F0D0004
+			public const int right_true = 2131558404;
+			
+			// aapt resource value: 0x7F0D0005
+			public const int wrong_false = 2131558405;
 			
 			static Raw()
 			{

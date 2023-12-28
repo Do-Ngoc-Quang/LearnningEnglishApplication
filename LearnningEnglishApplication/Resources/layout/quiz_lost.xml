@@ -20,13 +20,12 @@
             android:orientation="horizontal"
             android:gravity="right">
 
-            <Button
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
+            <ImageButton
+                android:id="@+id/img_btn_endquiz"
+                android:src="@drawable/icon_close_32px"
                 android:background="@android:color/transparent"
-                android:drawableTop="@drawable/icon_close_32px"
-                android:id="@+id/btn_endquiz"
-                android:gravity="center" />
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
 
         </LinearLayout>
 

@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.Content.PM;
+using Android.Media;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -26,6 +27,8 @@ namespace LearnningEnglishApplication
         List<string> vocab_en = new List<string>();
         List<string> mean_vn = new List<string>();
         List<string> mean_vn_total = new List<string>();
+        List<string> audio_eng = new List<string>();
+        List<string> audio_ame = new List<string>();
 
         Random random = new Random();
 
@@ -41,6 +44,8 @@ namespace LearnningEnglishApplication
         Button btn_dapan1, btn_dapan2, btn_dapan3, btn_endquiz;
 
         private Handler handler = new Handler();
+
+        MediaPlayer audio_player;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -109,6 +114,14 @@ namespace LearnningEnglishApplication
                                     {
                                         mean_vn.Add(reader.ReadString());
                                     }
+                                    else if (reader.Name == "audio_eng")
+                                    {
+                                        audio_eng.Add(reader.ReadString());
+                                    }
+                                    else if (reader.Name == "audio_ame")
+                                    {
+                                        audio_ame.Add(reader.ReadString());
+                                    }
                                 }
                                 else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "word")
                                 {
@@ -131,11 +144,18 @@ namespace LearnningEnglishApplication
 
                 //Đếm số câu đúng
                 cauDung++;
+
+                //-- ring tone
+                play_audio_true();
+
             }
             else
             {
                 //Xử lý nếu trả lời sai
                 soluotchoi--;
+
+                //-- ring tone
+                play_audio_false();
 
                 switch (btn_index_true)
                 {
@@ -176,11 +196,17 @@ namespace LearnningEnglishApplication
 
                 //Đếm số câu đúng
                 cauDung++;
+
+                //-- ring tone
+                play_audio_true();
             }
             else
             {
                 //Xử lý nếu trả lời sai
                 soluotchoi--;
+
+                //-- ring tone
+                play_audio_false();
 
                 switch (btn_index_true)
                 {
@@ -219,11 +245,17 @@ namespace LearnningEnglishApplication
 
                 //Đếm số câu đúng
                 cauDung++;
+
+                //-- ring tone
+                play_audio_true();
             }
             else
             {
                 //Xử lý nếu trả lời sai
                 soluotchoi--;
+
+                //-- ring tone
+                play_audio_false();
 
                 switch (btn_index_true)
                 {
@@ -251,6 +283,22 @@ namespace LearnningEnglishApplication
             handler.PostDelayed(() => {
                 ShowRandomItem();
             }, 2000);
+        }
+
+        private void play_audio_true()
+        {
+            // Khởi tạo MediaPlayer
+            audio_player = MediaPlayer.Create(this, Resource.Raw.right_true);
+            // Phát âm thanh
+            audio_player.Start();
+        }
+
+        private void play_audio_false()
+        {
+            // Khởi tạo MediaPlayer
+            audio_player = MediaPlayer.Create(this, Resource.Raw.wrong_false);
+            // Phát âm thanh
+            audio_player.Start();
         }
 
         private void Btn_endquiz_Click(object sender, EventArgs e)
@@ -303,6 +351,9 @@ namespace LearnningEnglishApplication
                 else
                 {
                     Intent it = new Intent(this, typeof(quiz_lost));
+
+                    it.PutExtra("id_user", id_user);
+
                     it.PutExtra("planName", planName.ToString());
                     StartActivity(it);
                 }
@@ -324,6 +375,10 @@ namespace LearnningEnglishApplication
 
                 // Gán giá trị của phần tử ngẫu nhiên vào EditText
                 txt_EN.Text = randomItem_en;
+
+                // play audio
+                play_audio_eng(randomIndex_en);
+                //play_audio_ame(randomIndex_en);
 
                 // Chọn ngẫu nhiên một phần tử từ danh sách vocab_en ------ Tiếng việt
                 string rightAnswer = mean_vn[randomIndex_en];
@@ -365,5 +420,52 @@ namespace LearnningEnglishApplication
                 }
             }
         }
+
+        private void play_audio_eng(int index)
+        {
+            // Lấy tên tài nguyên từ biến audio_eng[i]
+            string resourceName = audio_eng[index];
+
+            // Xác định ID của tài nguyên
+            int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+            if (resourceId != 0)
+            {
+                // Khởi tạo MediaPlayer
+                audio_player = MediaPlayer.Create(this, resourceId);
+
+                // Phát âm thanh
+                audio_player.Start();
+            }
+            else
+            {
+                // Thông báo 
+                Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+            }
+        }
+
+        //private void play_audio_ame(int index)
+        //{
+        //    // Lấy tên tài nguyên từ biến audio_eng[i]
+        //    string resourceName = audio_ame[index];
+
+        //    // Xác định ID của tài nguyên
+        //    int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+        //    if (resourceId != 0)
+        //    {
+        //        // Khởi tạo MediaPlayer
+        //        audio_player = MediaPlayer.Create(this, resourceId);
+
+        //        // Phát âm thanh
+        //        audio_player.Start();
+        //    }
+        //    else
+        //    {
+        //        // Thông báo 
+        //        Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+        //    }
+        //}
+
     }
 }

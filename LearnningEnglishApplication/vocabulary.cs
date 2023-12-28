@@ -7,17 +7,14 @@ using Android.Widget;
 using System;
 using System.Collections.Generic;
 using System.Xml;
-using System.Net;
-using System.Threading.Tasks;
-using Android.Runtime;
-using Android.Net;
+
 
 namespace LearnningEnglishApplication
 {
     [Activity(Label = "vocabulary")]
     public class vocabulary : Activity
     {
-        string id_user; 
+        string id_user;
 
         TextView txt_planName, txt_vocab_en, txt_type, txt_pronounce_eng, txt_pronounce_ame, txt_describe, txt_mean_vn;
         Button btn_playquiz;
@@ -37,7 +34,7 @@ namespace LearnningEnglishApplication
 
         int i = 0;
 
-        MediaPlayer _player;
+        MediaPlayer audio_player;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -64,18 +61,11 @@ namespace LearnningEnglishApplication
 
             id_user = Intent.GetStringExtra("id_user");
             planName = Intent.GetStringExtra("planName");
-            txt_planName.Text = planName;   
+            txt_planName.Text = planName;
             LoadVocabularyfromXML(planName);
 
             //Fill phần từ đầu tiên của một plan
             FillData(i);
-
-            // Khởi tạo MediaPlayer
-            _player = MediaPlayer.Create(this, Resource.Raw.EmDongY);
-
-            var playButton = FindViewById<Button>(Resource.Id.playButton);
-            playButton.Click += (sender, e) => _player.Start();
-
 
             btn_playquiz.Click += Btn_playquiz_Click;
 
@@ -88,7 +78,7 @@ namespace LearnningEnglishApplication
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
 
-       
+
 
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
@@ -187,7 +177,7 @@ namespace LearnningEnglishApplication
 
             txt_vocab_en.Text = vocab_en[i];
             txt_type.Text = type[i];
-            
+
             txt_pronounce_eng.Text = pronounce_eng[i];
             txt_pronounce_ame.Text = pronounce_ame[i];
 
@@ -196,19 +186,52 @@ namespace LearnningEnglishApplication
 
         }
 
-        
+
 
         private void Img_btn_audio_eng_Click(object sender, EventArgs e)
         {
-            // -- đang fix ở chỗ này
+            // Lấy tên tài nguyên từ biến audio_eng[i]
+            string resourceName = audio_eng[i];
 
-            _player = MediaPlayer.Create(this, Resource.Raw.exist__gb_3);
-            _player.Start();
+            // Xác định ID của tài nguyên
+            int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+            if (resourceId != 0)
+            {
+                // Khởi tạo MediaPlayer
+                audio_player = MediaPlayer.Create(this, resourceId);
+
+                // Phát âm thanh
+                audio_player.Start();
+            }
+            else
+            {
+                // Thông báo 
+                Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+            }
         }
 
         private void Img_btn_audio_ame_Click(object sender, EventArgs e)
         {
-            
+            // Lấy tên tài nguyên từ biến audio_eng[i]
+            string resourceName = audio_ame[i];
+
+            // Xác định ID của tài nguyên
+            int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+            if (resourceId != 0)
+            {
+                // Khởi tạo MediaPlayer
+                audio_player = MediaPlayer.Create(this, resourceId);
+
+                // Phát âm thanh
+                audio_player.Start();
+            }
+            else
+            {
+                // Thông báo 
+                Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+            }
         }
 
 

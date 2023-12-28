@@ -2,6 +2,7 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.Database;
+using Android.Media;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -41,6 +42,7 @@ namespace LearnningEnglishApplication
 
         ArrayAdapter adapter;
 
+        MediaPlayer audio_player;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -173,17 +175,61 @@ namespace LearnningEnglishApplication
             TextView txt_describe = viewInflated.FindViewById<TextView>(Resource.Id.txt_describe);
             TextView txt_mean_vn = viewInflated.FindViewById<TextView>(Resource.Id.txt_mean_vn);
 
-
             // ---
             txt_vocab_en.Text = vocab_en[e.Position];
             txt_type.Text = type[e.Position];
-
 
 
             txt_pronounce_eng.Text = pronounce_eng[e.Position];
             txt_pronounce_ame.Text = pronounce_ame[e.Position];
             txt_describe.Text = "- " + describe[e.Position];
             txt_mean_vn.Text = mean_vn[e.Position];
+
+            img_btn_audio_eng.Click += (s, args) =>
+            {
+                // Lấy tên tài nguyên từ biến audio_eng[i]
+                string resourceName = audio_eng[e.Position];
+
+                // Xác định ID của tài nguyên
+                int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+                if (resourceId != 0)
+                {
+                    // Khởi tạo MediaPlayer
+                    audio_player = MediaPlayer.Create(this, resourceId);
+
+                    // Phát âm thanh
+                    audio_player.Start();
+                }
+                else
+                {
+                    // Thông báo 
+                    Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+                }
+            };
+
+            img_btn_audio_ame.Click += (s, args) =>
+            {
+                // Lấy tên tài nguyên từ biến audio_eng[i]
+                string resourceName = audio_ame[e.Position];
+
+                // Xác định ID của tài nguyên
+                int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
+
+                if (resourceId != 0)
+                {
+                    // Khởi tạo MediaPlayer
+                    audio_player = MediaPlayer.Create(this, resourceId);
+
+                    // Phát âm thanh
+                    audio_player.Start();
+                }
+                else
+                {
+                    // Thông báo 
+                    Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
+                }
+            };
 
 
             // Thiết lập giao diện của dialog
