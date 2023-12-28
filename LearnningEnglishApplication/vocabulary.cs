@@ -10,7 +10,7 @@ using System.Xml;
 using System.Net;
 using System.Threading.Tasks;
 using Android.Runtime;
-
+using Android.Net;
 
 namespace LearnningEnglishApplication
 {
@@ -73,24 +73,22 @@ namespace LearnningEnglishApplication
             // Khởi tạo MediaPlayer
             _player = MediaPlayer.Create(this, Resource.Raw.EmDongY);
 
-            //var playButton = FindViewById<Button>(Resource.Id.playButton);
-            //playButton.Click += (sender, e) => _player.Start();
+            var playButton = FindViewById<Button>(Resource.Id.playButton);
+            playButton.Click += (sender, e) => _player.Start();
 
 
             btn_playquiz.Click += Btn_playquiz_Click;
 
             img_btn_goback.Click += Img_btn_goback_Click;
 
-            //img_btn_audio.Click += Img_btn_audio_Click;
-            //img_btn_audio.Click += delegate {
-            //    _player.Start();
-            //};
+            img_btn_audio_eng.Click += Img_btn_audio_eng_Click;
+            img_btn_audio_ame.Click += Img_btn_audio_ame_Click;
 
             img_btn_back1node.Click += Img_btn_back1node_Click;
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
 
-
+       
 
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
@@ -116,16 +114,6 @@ namespace LearnningEnglishApplication
             it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
-
-        //private void Img_btn_audio_Click(object sender, EventArgs e)
-        //{
-        //    _player.Start();
-        //}
-        //private void PlayAudio(object sender, EventArgs e)
-        //{
-        //    _player.Start();
-        //}
-
 
         private void LoadVocabularyfromXML(string planName)
         {
@@ -203,10 +191,26 @@ namespace LearnningEnglishApplication
             txt_pronounce_eng.Text = pronounce_eng[i];
             txt_pronounce_ame.Text = pronounce_ame[i];
 
-            txt_describe.Text = describe[i];
+            txt_describe.Text = "- " + describe[i];
             txt_mean_vn.Text = mean_vn[i];
 
         }
+
+        
+
+        private void Img_btn_audio_eng_Click(object sender, EventArgs e)
+        {
+            // -- đang fix ở chỗ này
+
+            _player = MediaPlayer.Create(this, Resource.Raw.exist__gb_3);
+            _player.Start();
+        }
+
+        private void Img_btn_audio_ame_Click(object sender, EventArgs e)
+        {
+            
+        }
+
 
         private void Img_btn_back1node_Click(object sender, EventArgs e)
         {

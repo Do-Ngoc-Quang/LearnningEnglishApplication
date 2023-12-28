@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
 
 namespace LearnningEnglishApplication
 {
@@ -21,7 +22,25 @@ namespace LearnningEnglishApplication
         mySQLite mysqlite;
 
         TextView txt_chaomung;
+
+        EditText txt_enter_EN;
+        ListView lView_EN;
+
         Button btn_home, btn_category, btn_leaderboard, btn_profile;
+
+        // Danh sách để lưu trữ dữ liệu từ file XML
+        List<string> vocab_en_root = new List<string>(); // root vocab
+        List<string> vocab_en = new List<string>();
+        List<string> type = new List<string>();
+        List<string> audio_eng = new List<string>();
+        List<string> audio_ame = new List<string>();
+        List<string> pronounce_eng = new List<string>();
+        List<string> pronounce_ame = new List<string>();
+        List<string> describe = new List<string>();
+        List<string> mean_vn = new List<string>();
+
+        ArrayAdapter adapter;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +55,9 @@ namespace LearnningEnglishApplication
 
             txt_chaomung = FindViewById<TextView>(Resource.Id.txt_chaomung);
 
+            txt_enter_EN = FindViewById<EditText>(Resource.Id.txt_enter_EN);
+            lView_EN = FindViewById<ListView>(Resource.Id.lView_EN);
+
             btn_home = FindViewById<Button>(Resource.Id.btn_home);
             btn_category = FindViewById<Button>(Resource.Id.btn_category);
             btn_leaderboard = FindViewById<Button>(Resource.Id.btn_leaderboard);
@@ -44,11 +66,138 @@ namespace LearnningEnglishApplication
             //Load 
             //load_chaomung();
 
+            LoadVocabularyfromXML();
+
+            // --
+            txt_enter_EN.Text = null;
+
+            adapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, vocab_en);
+            lView_EN.Adapter = adapter;
+
+            txt_enter_EN.TextChanged += Txt_enter_EN_TextChanged;
+            lView_EN.ItemClick += LView_EN_ItemClick;
+
             btn_home.Click += Btn_home_Click;
             btn_category.Click += Btn_category_Click;
             btn_leaderboard.Click += Btn_leaderboard_Click;
             btn_profile.Click += Btn_profile_Click;
         }
+
+
+
+        private void LoadVocabularyfromXML()
+        {
+            XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
+            while (reader.Read())
+            {
+                if (reader.Name == "en")
+                {
+                    vocab_en.Add(reader.ReadString());
+                }
+                else if (reader.Name == "type")
+                {
+                    type.Add(reader.ReadString());
+                }
+                else if (reader.Name == "audio_eng")
+                {
+                    audio_eng.Add(reader.ReadString());
+                }
+                else if (reader.Name == "audio_ame")
+                {
+                    audio_ame.Add(reader.ReadString());
+                }
+                else if (reader.Name == "pronounce_eng")
+                {
+                    pronounce_eng.Add(reader.ReadString());
+                }
+                else if (reader.Name == "pronounce_ame")
+                {
+                    pronounce_ame.Add(reader.ReadString());
+                }
+                else if (reader.Name == "describe")
+                {
+                    describe.Add(reader.ReadString());
+                }
+                else if (reader.Name == "vn")
+                {
+                    mean_vn.Add(reader.ReadString());
+                }
+            }
+        }
+
+        private void Txt_enter_EN_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
+        {
+            // Kiểm tra xem có dữ liệu trong EditText hay không
+            if (!string.IsNullOrEmpty(e.Text.ToString()))
+            {
+                // Lọc danh sách và gán vào danh sách tạm thời
+                List<string> filteredList = vocab_en.Where(x => x.Contains(e.Text.ToString())).ToList();
+
+                // Hiển thị kết quả lọc
+                DisplayFilteredList(filteredList);
+            }
+            else
+            {
+                // Nếu EditText trống, hiển thị toàn bộ danh sách
+                DisplayFilteredList(vocab_en);
+            }
+        }
+
+        private void DisplayFilteredList(List<string> filteredList)
+        {
+            // Tạo adapter với danh sách tạm thời
+            ArrayAdapter<string> filteredAdapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, filteredList);
+
+            // Gán adapter mới cho ListView
+            lView_EN.Adapter = filteredAdapter;
+        }
+
+        private void LView_EN_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            // show detail --
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            // Inflate giao diện tùy chỉnh từ layout
+            View viewInflated = LayoutInflater.Inflate(Resource.Layout.vocabulary_dictionary, null);
+
+            // Tìm các controls trong layout tùy chỉnh
+            TextView txt_vocab_en = viewInflated.FindViewById<TextView>(Resource.Id.txt_vocab_en);
+            TextView txt_type = viewInflated.FindViewById<TextView>(Resource.Id.txt_type);
+
+            ImageButton img_btn_audio_eng = viewInflated.FindViewById<ImageButton>(Resource.Id.img_btn_audio_eng);
+            ImageButton img_btn_audio_ame = viewInflated.FindViewById<ImageButton>(Resource.Id.img_btn_audio_ame);
+
+            TextView txt_pronounce_eng = viewInflated.FindViewById<TextView>(Resource.Id.txt_pronounce_eng);
+            TextView txt_pronounce_ame = viewInflated.FindViewById<TextView>(Resource.Id.txt_pronounce_ame);
+            TextView txt_describe = viewInflated.FindViewById<TextView>(Resource.Id.txt_describe);
+            TextView txt_mean_vn = viewInflated.FindViewById<TextView>(Resource.Id.txt_mean_vn);
+
+
+            // ---
+            txt_vocab_en.Text = vocab_en[e.Position];
+            txt_type.Text = type[e.Position];
+
+
+
+            txt_pronounce_eng.Text = pronounce_eng[e.Position];
+            txt_pronounce_ame.Text = pronounce_ame[e.Position];
+            txt_describe.Text = "- " + describe[e.Position];
+            txt_mean_vn.Text = mean_vn[e.Position];
+
+
+            // Thiết lập giao diện của dialog
+            builder.SetView(viewInflated)
+                   .SetNegativeButton("Close", (sender, args) =>
+                   {
+                       // Xử lý khi nhấn nút Close
+                   });
+
+            // Tạo và hiển thị AlertDialog
+            AlertDialog alertDialog = builder.Create();
+            alertDialog.Show();
+        }
+
 
         private void Btn_playquiz_Click(object sender, EventArgs e)
         {
