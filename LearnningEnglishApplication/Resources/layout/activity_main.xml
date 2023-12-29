@@ -24,7 +24,7 @@
             android:textColor="@android:color/white"/>
         
         <TextView
-            android:text="Tương lai trong tầm tay của bạn"
+            android:text="The future is at your fingertips"
             android:textSize="15sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
 
         <Button
             android:id="@+id/btn_start"
-            android:text="Bắt đầu"
+            android:text="start"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center"

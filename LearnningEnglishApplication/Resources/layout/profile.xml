@@ -77,6 +77,29 @@
 
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_btn_logout"
+            android:src="@drawable/icon_logout_32"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Logout"
+            android:textSize="23sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,48 +107,36 @@
         android:layout_weight="1"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
-        android:paddingTop="20sp"
         android:background="@android:color/transparent">
 
-        <Button
-            android:paddingTop="10sp"
+        <ImageButton
+            android:id="@+id/img_btn_home"
+            android:src="@drawable/icon_home_32px"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:id="@+id/btn_home"
-            android:drawableTop="@drawable/icon_home_32px"
-            android:gravity="center" />
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/img_btn_category"
+            android:src="@drawable/icon_category_32px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/img_btn_leaderboard"
+            android:src="@drawable/icon_rank_32px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/img_btn_profile"
+            android:src="@drawable/icon_profile_32px"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"/>
 
-        <Button
-            android:paddingTop="10sp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:id="@+id/btn_category"
-            android:drawableTop="@drawable/icon_category_32px"
-            android:gravity="center" />
-
-        <Button
-            android:paddingTop="10sp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:id="@+id/btn_leaderboard"
-            android:drawableTop="@drawable/icon_rank_32px"
-            android:gravity="center" />
-
-        <Button
-            android:paddingTop="10sp"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:id="@+id/btn_profile"
-            android:drawableTop="@drawable/icon_profile_32px"
-            android:gravity="center" />
     </LinearLayout>
-
 </LinearLayout>

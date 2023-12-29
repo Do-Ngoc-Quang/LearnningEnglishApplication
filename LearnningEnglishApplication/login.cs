@@ -27,6 +27,8 @@ namespace LearnningEnglishApplication
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.login);
 
+            check_sesion_active();
+
             mysqlite = new mySQLite(this.ApplicationContext);
 
             txt_tendangnhap = FindViewById<EditText>(Resource.Id.txt_tendangnhap);
@@ -39,15 +41,34 @@ namespace LearnningEnglishApplication
             btn_dangnhap.Click += Btn_dangnhap_Click;
         }
 
+        private void check_sesion_active()
+        {
+            string id_user_session;
+
+            ISharedPreferences sp = Application.Context.GetSharedPreferences("login_session", FileCreationMode.Private);
+
+            id_user_session = sp.GetString("id_user_session", "");
+
+            if (id_user_session != "")
+            {
+                //Xác thực thành công
+                Intent it = new Intent(this, typeof(home));
+
+                // Truy cập vào application nếu chưa logout
+                it.PutExtra("id_user", id_user_session);
+                StartActivity(it);
+            }
+        }
+
         private void Btn_dangnhap_Click(object sender, EventArgs e)
         {
             // ---
             //Xác thực thành công
-            Intent it = new Intent(this, typeof(home));
-            // Lấy id người dùng
-            string id_user = "3";
-            it.PutExtra("id_user", id_user);
-            StartActivity(it);
+            //Intent it = new Intent(this, typeof(home));
+            //// Lấy id người dùng
+            //string id_user = "3";
+            //it.PutExtra("id_user", id_user);
+            //StartActivity(it);
             // ---
 
 
@@ -57,41 +78,62 @@ namespace LearnningEnglishApplication
                 Toast.MakeText(this, "Username and password cannot be left blank!", ToastLength.Short).Show();
             }
 
-            //// Đọc dữ liệu
-            //ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE tendangnhap = '" + txt_tendangnhap.Text + "' LIMIT 1", null);
+            // Đọc dữ liệu
+            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung WHERE tendangnhap = '" + txt_tendangnhap.Text + "' LIMIT 1", null);
 
-            //// Kiểm tra dữ liệu
-            //if (cur != null && cur.Count > 0)
-            //{
-            //    // Di chuyển con trỏ đến dòng đầu tiên
-            //    cur.MoveToFirst();
+            // Kiểm tra dữ liệu
+            if (cur != null && cur.Count > 0)
+            {
+                // Di chuyển con trỏ đến dòng đầu tiên
+                cur.MoveToFirst();
 
-            //    // Lấy giá trị từ cột "matkhau"
-            //    string matkhau = cur.GetString(cur.GetColumnIndex("matkhau"));
+                // Lấy giá trị từ cột "matkhau"
+                string matkhau = cur.GetString(cur.GetColumnIndex("matkhau"));
 
-            //    // Kiểm tra mật khẩu
-            //    if (txt_matkhau.Text == matkhau)
-            //    {
-            //        // Xác thực thành công
-            //        Intent it = new Intent(this, typeof(home));
+                // Kiểm tra mật khẩu
+                if (txt_matkhau.Text == matkhau)
+                {
+                    // Xác thực thành công
+                    Intent it = new Intent(this, typeof(home));
 
-            //        // Lấy id người dùng
-            //        string id_user = cur.GetString(cur.GetColumnIndex("id"));
-            //        it.PutExtra("id_user", id_user);
+                    // Lấy id người dùng
+                    string id_user = cur.GetString(cur.GetColumnIndex("id"));
+                    it.PutExtra("id_user", id_user);
 
-            //        StartActivity(it);
-            //    }
-            //    else
-            //    {
-            //        // Thông báo mật khẩu không đúng
-            //        Toast.MakeText(this, "Incorrect password!", ToastLength.Short).Show();
-            //    }
-            //}
-            //else
-            //{
-            //    // Thông báo tên đăng nhập không đúng
-            //    Toast.MakeText(this, "Incorrect username!", ToastLength.Short).Show();
-            //}
+                    // -- Lưu phiên đăng nhập cho tài khoản vừa thực hiện đăng nhập
+                    save_session_active(id_user);
+
+                    StartActivity(it);
+                }
+                else
+                {
+                    // Thông báo mật khẩu không đúng
+                    Toast.MakeText(this, "Incorrect password!", ToastLength.Short).Show();
+                }
+            }
+            else
+            {
+                // Thông báo tên đăng nhập không đúng
+                Toast.MakeText(this, "Incorrect username!", ToastLength.Short).Show();
+            }
+        }
+
+        private void save_session_active(string id_user)
+        {
+            try
+            {
+                ISharedPreferences sp = Application.Context.GetSharedPreferences("login_session", FileCreationMode.Private);
+                ISharedPreferencesEditor spE = sp.Edit();
+                spE.PutString("id_user_session", id_user);
+                spE.Commit();
+
+                //Toast.MakeText(this.ApplicationContext, "Login successfully", ToastLength.Short).Show();
+            }
+            catch (Exception e)
+            {
+                Toast.MakeText(this.ApplicationContext, "Error! An error occurred", ToastLength.Short).Show();
+
+            }
         }
 
         private void Btn_taotaikhoan_Click(object sender, EventArgs e)

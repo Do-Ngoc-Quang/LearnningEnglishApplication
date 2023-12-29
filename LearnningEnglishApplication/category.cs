@@ -22,7 +22,8 @@ namespace LearnningEnglishApplication
         List<string> planNames = new List<string>();
         ListView listPlan;
 
-        Button btn_home, btn_category, btn_leaderboard, btn_profile;
+        ImageButton img_btn_home, img_btn_category, img_btn_leaderboard, img_btn_profile;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -34,21 +35,22 @@ namespace LearnningEnglishApplication
 
             listPlan = FindViewById<ListView>(Resource.Id.listPlan);
 
-            btn_home = FindViewById<Button>(Resource.Id.btn_home);
-            btn_category = FindViewById<Button>(Resource.Id.btn_category);
-            btn_leaderboard = FindViewById<Button>(Resource.Id.btn_leaderboard);
-            btn_profile = FindViewById<Button>(Resource.Id.btn_profile);
+            img_btn_home = FindViewById<ImageButton>(Resource.Id.img_btn_home);
+            img_btn_category = FindViewById<ImageButton>(Resource.Id.img_btn_category);
+            img_btn_leaderboard = FindViewById<ImageButton>(Resource.Id.img_btn_leaderboard);
+            img_btn_profile = FindViewById<ImageButton>(Resource.Id.img_btn_profile);
 
             listPlan.ItemClick += ListPlan_ItemClick;
 
-            btn_home.Click += Btn_home_Click;
-            btn_category.Click += Btn_category_Click;
-            btn_leaderboard.Click += Btn_leaderboard_Click;
-            btn_profile.Click += Btn_profile_Click;
-
             LoadXML();
             ShowPlan();
+
+            img_btn_home.Click += Img_btn_home_Click;
+            img_btn_category.Click += Img_btn_category_Click;
+            img_btn_leaderboard.Click += Img_btn_leaderboard_Click;
+            img_btn_profile.Click += Img_btn_profile_Click;
         }
+
 
         private void LoadXML()
         {
@@ -79,8 +81,11 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_home_Click(object sender, EventArgs e)
+        private void Img_btn_home_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(home));
 
             // Check if the activity is already in the task stack
@@ -93,17 +98,22 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
-        private void Btn_category_Click(object sender, EventArgs e)
+        private void Img_btn_category_Click(object sender, EventArgs e)
         {
-            // Thông báo tên đăng nhập không đúng
+            // Thông báo
             Toast.MakeText(this, "You are here", ToastLength.Short).Show();
         }
 
-        private void Btn_leaderboard_Click(object sender, EventArgs e)
+        private void Img_btn_leaderboard_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(leaderboard));
 
             // Check if the activity is already in the task stack
@@ -121,8 +131,11 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_profile_Click(object sender, EventArgs e)
+        private void Img_btn_profile_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(profile));
 
             // Check if the activity is already in the task stack

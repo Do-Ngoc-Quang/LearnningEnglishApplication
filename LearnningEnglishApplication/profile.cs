@@ -28,7 +28,8 @@ namespace LearnningEnglishApplication
         string name_user;
         int gioitinh_user;
 
-        Button btn_home, btn_category, btn_leaderboard, btn_profile;
+        ImageButton img_btn_home, img_btn_category, img_btn_leaderboard, img_btn_profile, img_btn_logout;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -47,20 +48,26 @@ namespace LearnningEnglishApplication
             txt_name_user = FindViewById<TextView>(Resource.Id.txt_name_user);
             txt_point = FindViewById<TextView>(Resource.Id.txt_point);
 
-            btn_home = FindViewById<Button>(Resource.Id.btn_home);
-            btn_category = FindViewById<Button>(Resource.Id.btn_category);
-            btn_leaderboard = FindViewById<Button>(Resource.Id.btn_leaderboard);
-            btn_profile = FindViewById<Button>(Resource.Id.btn_profile);
+
+            img_btn_logout = FindViewById<ImageButton>(Resource.Id.img_btn_logout);
+
+            img_btn_home = FindViewById<ImageButton>(Resource.Id.img_btn_home);
+            img_btn_category = FindViewById<ImageButton>(Resource.Id.img_btn_category);
+            img_btn_leaderboard = FindViewById<ImageButton>(Resource.Id.img_btn_leaderboard);
+            img_btn_profile = FindViewById<ImageButton>(Resource.Id.img_btn_profile);
 
             load_info_user();
 
             img_btn_edit_user.Click += Img_btn_edit_user_Click;
 
-            btn_home.Click += Btn_home_Click;
-            btn_category.Click += Btn_category_Click;
-            btn_leaderboard.Click += Btn_leaderboard_Click;
-            btn_profile.Click += Btn_profile_Click;
+            img_btn_logout.Click += Img_btn_logout_Click;
+
+            img_btn_home.Click += Img_btn_home_Click;
+            img_btn_category.Click += Img_btn_category_Click;
+            img_btn_leaderboard.Click += Img_btn_leaderboard_Click;
+            img_btn_profile.Click += Img_btn_profile_Click;
         }
+
 
         private void load_info_user()
         {
@@ -173,9 +180,71 @@ namespace LearnningEnglishApplication
             alertDialog.Show();
         }
 
-
-        private void Btn_home_Click(object sender, EventArgs e)
+        private void Img_btn_logout_Click(object sender, EventArgs e)
         {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            // Thiết lập nội dung của dialog
+            builder.SetMessage("Do you want to log out?");
+
+            // Thiết lập nút "Logout"
+            builder.SetPositiveButton("Logout", (sender, args) =>
+            {
+                // Đóng Activity hiện tại
+                Finish();
+
+                Intent it = new Intent(this, typeof(login));
+
+                // Check if the activity is already in the task stack
+                ComponentName cn = it.ResolveActivity(PackageManager);
+                String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
+
+                if (!currentActivity.Equals(GetType().FullName))
+                {
+                    // If the activity is not the current one, reorder it to the front
+                    it.AddFlags(ActivityFlags.ReorderToFront);
+                }
+
+                out_session_active();
+
+                StartActivity(it);
+            });
+
+            // Thiết lập nút "Cancel"
+            builder.SetNegativeButton("Cancel", (sender, args) =>
+            {
+                // Xử lý khi nhấn nút Cancel
+            });
+
+            // Tạo và hiển thị AlertDialog
+            AlertDialog alertDialog = builder.Create();
+            alertDialog.Show();
+
+        }
+
+        private void out_session_active()
+        {
+            try
+            {
+                ISharedPreferences sp = Application.Context.GetSharedPreferences("login_session", FileCreationMode.Private);
+                ISharedPreferencesEditor spE = sp.Edit();
+                spE.PutString("id_user_session", "");
+                spE.Commit();
+
+                //Toast.MakeText(this.ApplicationContext, "Logout successfully", ToastLength.Short).Show();
+            }
+            catch (Exception e)
+            {
+                Toast.MakeText(this.ApplicationContext, "Error! Cannot logout", ToastLength.Short).Show();
+
+            }
+        }
+
+        private void Img_btn_home_Click(object sender, EventArgs e)
+        {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(home));
 
             // Check if the activity is already in the task stack
@@ -188,11 +257,16 @@ namespace LearnningEnglishApplication
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
 
+            it.PutExtra("id_user", id_user);
+
             StartActivity(it);
         }
 
-        private void Btn_category_Click(object sender, EventArgs e)
+        private void Img_btn_category_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(category));
 
             // Check if the activity is already in the task stack
@@ -210,8 +284,11 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_leaderboard_Click(object sender, EventArgs e)
+        private void Img_btn_leaderboard_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(leaderboard));
 
             // Check if the activity is already in the task stack
@@ -229,7 +306,7 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_profile_Click(object sender, EventArgs e)
+        private void Img_btn_profile_Click(object sender, EventArgs e)
         {
             // Thông báo 
             Toast.MakeText(this, "You are here", ToastLength.Short).Show();

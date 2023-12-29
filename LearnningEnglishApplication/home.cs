@@ -27,7 +27,7 @@ namespace LearnningEnglishApplication
         EditText txt_enter_EN;
         ListView lView_EN;
 
-        Button btn_home, btn_category, btn_leaderboard, btn_profile;
+        ImageButton img_btn_home, img_btn_category, img_btn_leaderboard, img_btn_profile;
 
         // Danh sách để lưu trữ dữ liệu từ file XML
         List<string> vocab_en_root = new List<string>(); // root vocab
@@ -60,10 +60,10 @@ namespace LearnningEnglishApplication
             txt_enter_EN = FindViewById<EditText>(Resource.Id.txt_enter_EN);
             lView_EN = FindViewById<ListView>(Resource.Id.lView_EN);
 
-            btn_home = FindViewById<Button>(Resource.Id.btn_home);
-            btn_category = FindViewById<Button>(Resource.Id.btn_category);
-            btn_leaderboard = FindViewById<Button>(Resource.Id.btn_leaderboard);
-            btn_profile = FindViewById<Button>(Resource.Id.btn_profile);
+            img_btn_home = FindViewById<ImageButton>(Resource.Id.img_btn_home);
+            img_btn_category = FindViewById<ImageButton>(Resource.Id.img_btn_category);
+            img_btn_leaderboard = FindViewById<ImageButton>(Resource.Id.img_btn_leaderboard);
+            img_btn_profile = FindViewById<ImageButton>(Resource.Id.img_btn_profile);
 
             //Load 
             //load_chaomung();
@@ -79,14 +79,13 @@ namespace LearnningEnglishApplication
             txt_enter_EN.TextChanged += Txt_enter_EN_TextChanged;
             lView_EN.ItemClick += LView_EN_ItemClick;
 
-            btn_home.Click += Btn_home_Click;
-            btn_category.Click += Btn_category_Click;
-            btn_leaderboard.Click += Btn_leaderboard_Click;
-            btn_profile.Click += Btn_profile_Click;
+            img_btn_home.Click += Img_btn_home_Click;
+            img_btn_category.Click += Img_btn_category_Click;
+            img_btn_leaderboard.Click += Img_btn_leaderboard_Click;
+            img_btn_profile.Click += Img_btn_profile_Click;
         }
 
-
-
+       
         private void LoadVocabularyfromXML()
         {
             XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
@@ -271,14 +270,17 @@ namespace LearnningEnglishApplication
             }
         }
 
-        private void Btn_home_Click(object sender, EventArgs e)
+        private void Img_btn_home_Click(object sender, EventArgs e)
         {
             // Thông báo
             Toast.MakeText(this, "You are here", ToastLength.Short).Show();
         }
 
-        private void Btn_category_Click(object sender, EventArgs e)
+        private void Img_btn_category_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(category));
 
             // Check if the activity is already in the task stack
@@ -296,8 +298,11 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_leaderboard_Click(object sender, EventArgs e)
+        private void Img_btn_leaderboard_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(leaderboard));
 
             // Check if the activity is already in the task stack
@@ -315,8 +320,11 @@ namespace LearnningEnglishApplication
             StartActivity(it);
         }
 
-        private void Btn_profile_Click(object sender, EventArgs e)
+        private void Img_btn_profile_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(profile));
 
             // Check if the activity is already in the task stack
