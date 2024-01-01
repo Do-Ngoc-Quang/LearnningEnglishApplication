@@ -4736,514 +4736,1585 @@ namespace LearnningEnglishApplication
 			public const int alive__us_2 = 2131558401;
 			
 			// aapt resource value: 0x7F0D0002
-			public const int animate__gb_1 = 2131558402;
+			public const int amphibian__gb_1 = 2131558402;
 			
 			// aapt resource value: 0x7F0D0003
-			public const int animate__us_1 = 2131558403;
+			public const int amphibian__us_1 = 2131558403;
 			
 			// aapt resource value: 0x7F0D0004
-			public const int animation__gb_1 = 2131558404;
+			public const int animal__gb_1 = 2131558404;
 			
 			// aapt resource value: 0x7F0D0005
-			public const int animation__us_1 = 2131558405;
+			public const int animal__us_1 = 2131558405;
 			
 			// aapt resource value: 0x7F0D0006
-			public const int assassinate__gb_2 = 2131558406;
+			public const int animate__gb_1 = 2131558406;
 			
 			// aapt resource value: 0x7F0D0007
-			public const int assassinate__us_1 = 2131558407;
+			public const int animate__us_1 = 2131558407;
 			
 			// aapt resource value: 0x7F0D0008
-			public const int barren__gb_1 = 2131558408;
+			public const int animation__gb_1 = 2131558408;
 			
 			// aapt resource value: 0x7F0D0009
-			public const int barren__us_1 = 2131558409;
-			
-			// aapt resource value: 0x7F0D000C
-			public const int bear__gb_2 = 2131558412;
-			
-			// aapt resource value: 0x7F0D000D
-			public const int bear__us_1 = 2131558413;
+			public const int animation__us_1 = 2131558409;
 			
 			// aapt resource value: 0x7F0D000A
-			public const int be__gb_7 = 2131558410;
+			public const int anthropoid__gb_1 = 2131558410;
 			
 			// aapt resource value: 0x7F0D000B
-			public const int be__us_1 = 2131558411;
+			public const int anthropoid__us_1 = 2131558411;
+			
+			// aapt resource value: 0x7F0D000C
+			public const int ape__gb_1 = 2131558412;
+			
+			// aapt resource value: 0x7F0D000D
+			public const int ape__us_1 = 2131558413;
 			
 			// aapt resource value: 0x7F0D000E
-			public const int birth__gb_3 = 2131558414;
+			public const int apiary__gb_1 = 2131558414;
 			
 			// aapt resource value: 0x7F0D000F
-			public const int birth__us_1 = 2131558415;
+			public const int apiary__us_1 = 2131558415;
 			
 			// aapt resource value: 0x7F0D0010
-			public const int born__gb_4 = 2131558416;
+			public const int aquarium__gb_1 = 2131558416;
 			
 			// aapt resource value: 0x7F0D0011
-			public const int born__us_1 = 2131558417;
-			
-			// aapt resource value: 0x7F0D0014
-			public const int breeding__gb_1 = 2131558420;
-			
-			// aapt resource value: 0x7F0D0015
-			public const int breeding__us_1 = 2131558421;
+			public const int aquarium__us_1 = 2131558417;
 			
 			// aapt resource value: 0x7F0D0012
-			public const int breed__gb_1 = 2131558418;
+			public const int assassinate__gb_2 = 2131558418;
 			
 			// aapt resource value: 0x7F0D0013
-			public const int breed__us_1 = 2131558419;
+			public const int assassinate__us_1 = 2131558419;
 			
-			// aapt resource value: 0x7F0D0018
-			public const int butchery__gb_1 = 2131558424;
+			// aapt resource value: 0x7F0D0014
+			public const int aviary__gb_1 = 2131558420;
 			
-			// aapt resource value: 0x7F0D0019
-			public const int butchery__us_1 = 2131558425;
+			// aapt resource value: 0x7F0D0015
+			public const int aviary__us_1 = 2131558421;
 			
 			// aapt resource value: 0x7F0D0016
-			public const int butcher__gb_2 = 2131558422;
+			public const int baboon__gb_1 = 2131558422;
 			
 			// aapt resource value: 0x7F0D0017
-			public const int butcher__us_1 = 2131558423;
+			public const int baboon__us_1 = 2131558423;
+			
+			// aapt resource value: 0x7F0D0018
+			public const int back__gb_2 = 2131558424;
+			
+			// aapt resource value: 0x7F0D0019
+			public const int back__us_1 = 2131558425;
 			
 			// aapt resource value: 0x7F0D001A
-			public const int carnage__gb_1 = 2131558426;
+			public const int bacteria__gb_1 = 2131558426;
 			
 			// aapt resource value: 0x7F0D001B
-			public const int carnage__us_1 = 2131558427;
+			public const int bacteria__us_2 = 2131558427;
 			
 			// aapt resource value: 0x7F0D001C
-			public const int coitus__gb_1 = 2131558428;
+			public const int bark__gb_2 = 2131558428;
 			
 			// aapt resource value: 0x7F0D001D
-			public const int coitus__us_1 = 2131558429;
+			public const int bark__us_1 = 2131558429;
 			
 			// aapt resource value: 0x7F0D001E
-			public const int congrats = 2131558430;
+			public const int barren__gb_1 = 2131558430;
 			
 			// aapt resource value: 0x7F0D001F
-			public const int copulate__gb_1 = 2131558431;
-			
-			// aapt resource value: 0x7F0D0020
-			public const int copulate__us_1 = 2131558432;
-			
-			// aapt resource value: 0x7F0D0021
-			public const int copulation__gb_1 = 2131558433;
+			public const int barren__us_1 = 2131558431;
 			
 			// aapt resource value: 0x7F0D0022
-			public const int copulation__us_1 = 2131558434;
+			public const int bear__gb_2 = 2131558434;
 			
 			// aapt resource value: 0x7F0D0023
-			public const int create__gb_5 = 2131558435;
+			public const int bear__us_1 = 2131558435;
 			
 			// aapt resource value: 0x7F0D0024
-			public const int create__us_1 = 2131558436;
+			public const int beast__gb_3 = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int creation__gb_1 = 2131558437;
+			public const int beast__us_1 = 2131558437;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int creation__us_2 = 2131558438;
-			
-			// aapt resource value: 0x7F0D0029
-			public const int deadly__gb_1 = 2131558441;
-			
-			// aapt resource value: 0x7F0D002A
-			public const int deadly__us_1 = 2131558442;
+			public const int being__gb_3 = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int dead__gb_1 = 2131558439;
+			public const int being__us_1 = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int dead__us_1 = 2131558440;
+			public const int belly__gb_2 = 2131558440;
 			
-			// aapt resource value: 0x7F0D002D
-			public const int deathly__gb_1 = 2131558445;
+			// aapt resource value: 0x7F0D0029
+			public const int belly__us_1 = 2131558441;
 			
-			// aapt resource value: 0x7F0D002E
-			public const int deathly__us_1 = 2131558446;
+			// aapt resource value: 0x7F0D0020
+			public const int be__gb_7 = 2131558432;
+			
+			// aapt resource value: 0x7F0D0021
+			public const int be__us_1 = 2131558433;
+			
+			// aapt resource value: 0x7F0D002A
+			public const int biped__gb_2 = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int death__gb_1 = 2131558443;
+			public const int biped__us_1 = 2131558443;
+			
+			// aapt resource value: 0x7F0D002E
+			public const int bird_of_prey_1_gb_1 = 2131558446;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int death__us_1 = 2131558444;
+			public const int bird__gb_2 = 2131558444;
+			
+			// aapt resource value: 0x7F0D002D
+			public const int bird__us_1 = 2131558445;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int decay__gb_1 = 2131558447;
+			public const int birth__gb_3 = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int decay__us_1 = 2131558448;
+			public const int birth__us_1 = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int decompose__gb_1 = 2131558449;
+			public const int bison__gb_4 = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public const int decompose__us_1 = 2131558450;
+			public const int bison__us_1_rr = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int decomposition__gb_1 = 2131558451;
+			public const int bleat__gb_2 = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int decomposition__us_1 = 2131558452;
+			public const int bleat__us_1 = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int die__gb_1 = 2131558453;
+			public const int born__gb_4 = 2131558453;
 			
 			// aapt resource value: 0x7F0D0036
-			public const int die__us_1 = 2131558454;
-			
-			// aapt resource value: 0x7F0D0037
-			public const int dying__gb_1 = 2131558455;
-			
-			// aapt resource value: 0x7F0D0038
-			public const int dying__us_1 = 2131558456;
+			public const int born__us_1 = 2131558454;
 			
 			// aapt resource value: 0x7F0D0039
-			public const int eliminate__gb_2 = 2131558457;
+			public const int breeding__gb_1 = 2131558457;
 			
 			// aapt resource value: 0x7F0D003A
-			public const int eliminate__us_1 = 2131558458;
+			public const int breeding__us_1 = 2131558458;
 			
-			// aapt resource value: 0x7F0D003D
-			public const int existence__gb_1 = 2131558461;
+			// aapt resource value: 0x7F0D0037
+			public const int breed__gb_1 = 2131558455;
 			
-			// aapt resource value: 0x7F0D003E
-			public const int existence__us_1 = 2131558462;
+			// aapt resource value: 0x7F0D0038
+			public const int breed__us_1 = 2131558456;
 			
 			// aapt resource value: 0x7F0D003B
-			public const int exist__gb_3 = 2131558459;
+			public const int brute__gb_1 = 2131558459;
 			
 			// aapt resource value: 0x7F0D003C
-			public const int exist__us_1 = 2131558460;
+			public const int brute__us_1 = 2131558460;
+			
+			// aapt resource value: 0x7F0D003D
+			public const int buffalo__gb_4 = 2131558461;
+			
+			// aapt resource value: 0x7F0D003E
+			public const int buffalo__us_1 = 2131558462;
 			
 			// aapt resource value: 0x7F0D003F
-			public const int fatal__gb_1 = 2131558463;
+			public const int bug__gb_3 = 2131558463;
 			
 			// aapt resource value: 0x7F0D0040
-			public const int fatal__us_1 = 2131558464;
-			
-			// aapt resource value: 0x7F0D0041
-			public const int fecund__gb_1 = 2131558465;
-			
-			// aapt resource value: 0x7F0D0042
-			public const int fecund__us_1_rr = 2131558466;
+			public const int bug__us_1 = 2131558464;
 			
 			// aapt resource value: 0x7F0D0043
-			public const int female__gb_1 = 2131558467;
+			public const int bulldog__gb_2 = 2131558467;
 			
 			// aapt resource value: 0x7F0D0044
-			public const int female__us_2 = 2131558468;
+			public const int bulldog__us_1 = 2131558468;
 			
 			// aapt resource value: 0x7F0D0045
-			public const int feminine__gb_1 = 2131558469;
+			public const int bullock__gb_2 = 2131558469;
 			
 			// aapt resource value: 0x7F0D0046
-			public const int feminine__us_1 = 2131558470;
+			public const int bullock__us_1 = 2131558470;
+			
+			// aapt resource value: 0x7F0D0041
+			public const int bull__gb_2 = 2131558465;
+			
+			// aapt resource value: 0x7F0D0042
+			public const int bull__us_1 = 2131558466;
 			
 			// aapt resource value: 0x7F0D0047
-			public const int fertile__gb_1 = 2131558471;
+			public const int burrow__gb_1 = 2131558471;
 			
 			// aapt resource value: 0x7F0D0048
-			public const int fertile__us_1 = 2131558472;
-			
-			// aapt resource value: 0x7F0D0049
-			public const int gender__gb_2 = 2131558473;
-			
-			// aapt resource value: 0x7F0D004A
-			public const int gender__us_1 = 2131558474;
+			public const int burrow__us_1 = 2131558472;
 			
 			// aapt resource value: 0x7F0D004B
-			public const int hatch__gb_1 = 2131558475;
+			public const int butchery__gb_1 = 2131558475;
 			
 			// aapt resource value: 0x7F0D004C
-			public const int hatch__us_1 = 2131558476;
+			public const int butchery__us_1 = 2131558476;
+			
+			// aapt resource value: 0x7F0D0049
+			public const int butcher__gb_2 = 2131558473;
+			
+			// aapt resource value: 0x7F0D004A
+			public const int butcher__us_1 = 2131558474;
 			
 			// aapt resource value: 0x7F0D004D
-			public const int immortal__gb_1 = 2131558477;
+			public const int carnage__gb_1 = 2131558477;
 			
 			// aapt resource value: 0x7F0D004E
-			public const int immortal__us_1 = 2131558478;
+			public const int carnage__us_1 = 2131558478;
 			
 			// aapt resource value: 0x7F0D004F
-			public const int impotent__gb_1 = 2131558479;
+			public const int castrate__gb_1 = 2131558479;
 			
 			// aapt resource value: 0x7F0D0050
-			public const int impotent__us_1 = 2131558480;
-			
-			// aapt resource value: 0x7F0D0051
-			public const int inborn__gb_1 = 2131558481;
-			
-			// aapt resource value: 0x7F0D0052
-			public const int inborn__us_1 = 2131558482;
+			public const int castrate__us_1 = 2131558480;
 			
 			// aapt resource value: 0x7F0D0053
-			public const int inherent__gb_2 = 2131558483;
+			public const int cattle__gb_2 = 2131558483;
 			
 			// aapt resource value: 0x7F0D0054
-			public const int inherent__us_2_rr = 2131558484;
+			public const int cattle__us_1 = 2131558484;
+			
+			// aapt resource value: 0x7F0D0051
+			public const int cat__gb_2 = 2131558481;
+			
+			// aapt resource value: 0x7F0D0052
+			public const int cat__us_1 = 2131558482;
 			
 			// aapt resource value: 0x7F0D0055
-			public const int innate__gb_1 = 2131558485;
+			public const int cell__gb_2 = 2131558485;
 			
 			// aapt resource value: 0x7F0D0056
-			public const int innate__us_1 = 2131558486;
+			public const int cell__us_1 = 2131558486;
 			
 			// aapt resource value: 0x7F0D0057
-			public const int intercourse__gb_1 = 2131558487;
+			public const int cheetah__gb_2 = 2131558487;
 			
 			// aapt resource value: 0x7F0D0058
-			public const int intercourse__us_1 = 2131558488;
-			
-			// aapt resource value: 0x7F0D005B
-			public const int killing__gb_3 = 2131558491;
-			
-			// aapt resource value: 0x7F0D005C
-			public const int killing__us_3 = 2131558492;
+			public const int cheetah__us_1 = 2131558488;
 			
 			// aapt resource value: 0x7F0D0059
-			public const int kill__gb_2 = 2131558489;
+			public const int chest__gb_2 = 2131558489;
 			
 			// aapt resource value: 0x7F0D005A
-			public const int kill__us_1 = 2131558490;
+			public const int chest__us_1 = 2131558490;
+			
+			// aapt resource value: 0x7F0D005B
+			public const int chimpanzee__gb_3 = 2131558491;
+			
+			// aapt resource value: 0x7F0D005C
+			public const int chimpanzee__us_1 = 2131558492;
 			
 			// aapt resource value: 0x7F0D005D
-			public const int lay__gb_1 = 2131558493;
+			public const int claw__gb_1 = 2131558493;
 			
 			// aapt resource value: 0x7F0D005E
-			public const int lay__us_1 = 2131558494;
+			public const int claw__us_1 = 2131558494;
 			
 			// aapt resource value: 0x7F0D005F
-			public const int lethal__gb_1 = 2131558495;
+			public const int coitus__gb_1 = 2131558495;
 			
 			// aapt resource value: 0x7F0D0060
-			public const int lethal__us_1 = 2131558496;
+			public const int coitus__us_1 = 2131558496;
 			
 			// aapt resource value: 0x7F0D0061
-			public const int life__gb_3 = 2131558497;
+			public const int colony__gb_1 = 2131558497;
 			
 			// aapt resource value: 0x7F0D0062
-			public const int life__us_1 = 2131558498;
+			public const int colony__us_1 = 2131558498;
 			
 			// aapt resource value: 0x7F0D0063
-			public const int liquidate__gb_1 = 2131558499;
+			public const int colt__gb_1 = 2131558499;
 			
 			// aapt resource value: 0x7F0D0064
-			public const int liquidate__us_1 = 2131558500;
+			public const int colt__us_1 = 2131558500;
 			
 			// aapt resource value: 0x7F0D0065
-			public const int live__gb_1 = 2131558501;
+			public const int congrats = 2131558501;
 			
 			// aapt resource value: 0x7F0D0066
-			public const int live__us_1 = 2131558502;
+			public const int copulate__gb_1 = 2131558502;
 			
 			// aapt resource value: 0x7F0D0067
-			public const int living__gb_1 = 2131558503;
+			public const int copulate__us_1 = 2131558503;
 			
 			// aapt resource value: 0x7F0D0068
-			public const int living__us_5 = 2131558504;
+			public const int copulation__gb_1 = 2131558504;
 			
 			// aapt resource value: 0x7F0D0069
-			public const int lose = 2131558505;
+			public const int copulation__us_1 = 2131558505;
 			
 			// aapt resource value: 0x7F0D006A
-			public const int male__gb_1 = 2131558506;
+			public const int cow__gb_1 = 2131558506;
 			
 			// aapt resource value: 0x7F0D006B
-			public const int male__us_1 = 2131558507;
+			public const int cow__us_1 = 2131558507;
 			
 			// aapt resource value: 0x7F0D006C
-			public const int masculine__gb_1 = 2131558508;
+			public const int create__gb_5 = 2131558508;
 			
 			// aapt resource value: 0x7F0D006D
-			public const int masculine__us_1 = 2131558509;
+			public const int create__us_1 = 2131558509;
 			
 			// aapt resource value: 0x7F0D006E
-			public const int massacre__gb_1 = 2131558510;
+			public const int creation__gb_1 = 2131558510;
 			
 			// aapt resource value: 0x7F0D006F
-			public const int massacre__us_1 = 2131558511;
+			public const int creation__us_2 = 2131558511;
 			
 			// aapt resource value: 0x7F0D0070
-			public const int mate__gb_1 = 2131558512;
+			public const int creature__gb_1 = 2131558512;
 			
 			// aapt resource value: 0x7F0D0071
-			public const int mate__us_1 = 2131558513;
-			
-			// aapt resource value: 0x7F0D0072
-			public const int mating__gb_1 = 2131558514;
-			
-			// aapt resource value: 0x7F0D0073
-			public const int mating__us_1 = 2131558515;
+			public const int creature__us_2 = 2131558513;
 			
 			// aapt resource value: 0x7F0D0074
-			public const int menopause__gb_1 = 2131558516;
+			public const int cross_breed_1_gb_1 = 2131558516;
 			
 			// aapt resource value: 0x7F0D0075
-			public const int menopause__us_1 = 2131558517;
+			public const int cross_breed_1_us_1 = 2131558517;
+			
+			// aapt resource value: 0x7F0D0072
+			public const int cross__gb_1 = 2131558514;
+			
+			// aapt resource value: 0x7F0D0073
+			public const int cross__us_1 = 2131558515;
 			
 			// aapt resource value: 0x7F0D0076
-			public const int menstruation__gb_1 = 2131558518;
+			public const int croup__gb_1 = 2131558518;
 			
 			// aapt resource value: 0x7F0D0077
-			public const int menstruation__us_1 = 2131558519;
-			
-			// aapt resource value: 0x7F0D007A
-			public const int mortality__gb_1 = 2131558522;
-			
-			// aapt resource value: 0x7F0D007B
-			public const int mortality__us_1 = 2131558523;
+			public const int croup__us_1 = 2131558519;
 			
 			// aapt resource value: 0x7F0D0078
-			public const int mortal__gb_1 = 2131558520;
+			public const int crustacean__gb_1 = 2131558520;
 			
 			// aapt resource value: 0x7F0D0079
-			public const int mortal__us_1 = 2131558521;
+			public const int crustacean__us_1 = 2131558521;
 			
-			// aapt resource value: 0x7F0D007C
-			public const int murder__gb_1 = 2131558524;
+			// aapt resource value: 0x7F0D007A
+			public const int cub__gb_1 = 2131558522;
 			
-			// aapt resource value: 0x7F0D007D
-			public const int murder__us_2 = 2131558525;
+			// aapt resource value: 0x7F0D007B
+			public const int cub__us_1 = 2131558523;
 			
 			// aapt resource value: 0x7F0D007E
-			public const int nativity__gb_1 = 2131558526;
+			public const int deadly__gb_1 = 2131558526;
 			
 			// aapt resource value: 0x7F0D007F
-			public const int nativity__us_1 = 2131558527;
+			public const int deadly__us_1 = 2131558527;
 			
-			// aapt resource value: 0x7F0D0080
-			public const int natural__gb_6 = 2131558528;
+			// aapt resource value: 0x7F0D007C
+			public const int dead__gb_1 = 2131558524;
 			
-			// aapt resource value: 0x7F0D0081
-			public const int natural__us_1_rr = 2131558529;
+			// aapt resource value: 0x7F0D007D
+			public const int dead__us_1 = 2131558525;
 			
 			// aapt resource value: 0x7F0D0082
-			public const int neuter__gb_1 = 2131558530;
+			public const int deathly__gb_1 = 2131558530;
 			
 			// aapt resource value: 0x7F0D0083
-			public const int neuter__us_1 = 2131558531;
+			public const int deathly__us_1 = 2131558531;
+			
+			// aapt resource value: 0x7F0D0080
+			public const int death__gb_1 = 2131558528;
+			
+			// aapt resource value: 0x7F0D0081
+			public const int death__us_1 = 2131558529;
 			
 			// aapt resource value: 0x7F0D0084
-			public const int newborn__gb_1 = 2131558532;
+			public const int decay__gb_1 = 2131558532;
 			
 			// aapt resource value: 0x7F0D0085
-			public const int newborn__us_1 = 2131558533;
+			public const int decay__us_1 = 2131558533;
 			
 			// aapt resource value: 0x7F0D0086
-			public const int produce__gb_1 = 2131558534;
+			public const int decompose__gb_1 = 2131558534;
 			
 			// aapt resource value: 0x7F0D0087
-			public const int produce__us_1 = 2131558535;
+			public const int decompose__us_1 = 2131558535;
 			
 			// aapt resource value: 0x7F0D0088
-			public const int puberty__gb_1 = 2131558536;
+			public const int decomposition__gb_1 = 2131558536;
 			
 			// aapt resource value: 0x7F0D0089
-			public const int puberty__us_1 = 2131558537;
+			public const int decomposition__us_1 = 2131558537;
 			
 			// aapt resource value: 0x7F0D008A
-			public const int reproduce__gb_1 = 2131558538;
+			public const int den__gb_1 = 2131558538;
 			
 			// aapt resource value: 0x7F0D008B
-			public const int reproduce__us_1 = 2131558539;
+			public const int den__us_1 = 2131558539;
 			
 			// aapt resource value: 0x7F0D008C
-			public const int reproduction__gb_1 = 2131558540;
+			public const int die__gb_1 = 2131558540;
 			
 			// aapt resource value: 0x7F0D008D
-			public const int reproduction__us_1 = 2131558541;
+			public const int die__us_1 = 2131558541;
 			
 			// aapt resource value: 0x7F0D008E
-			public const int right_true = 2131558542;
+			public const int dock__gb_1 = 2131558542;
 			
 			// aapt resource value: 0x7F0D008F
-			public const int rot__gb_1 = 2131558543;
+			public const int dock__us_1 = 2131558543;
 			
 			// aapt resource value: 0x7F0D0090
-			public const int rot__us_1 = 2131558544;
+			public const int dog__gb_2 = 2131558544;
 			
 			// aapt resource value: 0x7F0D0091
-			public const int salary__gb_2 = 2131558545;
+			public const int dog__us_1_rr = 2131558545;
 			
 			// aapt resource value: 0x7F0D0092
-			public const int salary__us_1 = 2131558546;
-			
-			// aapt resource value: 0x7F0D0095
-			public const int sexual__gb_1 = 2131558549;
-			
-			// aapt resource value: 0x7F0D0096
-			public const int sexual__us_1 = 2131558550;
+			public const int domesticate__gb_1 = 2131558546;
 			
 			// aapt resource value: 0x7F0D0093
-			public const int sex__gb_1 = 2131558547;
+			public const int domesticate__us_1 = 2131558547;
 			
 			// aapt resource value: 0x7F0D0094
-			public const int sex__us_1 = 2131558548;
+			public const int donkey__gb_3 = 2131558548;
+			
+			// aapt resource value: 0x7F0D0095
+			public const int donkey__us_1_rr = 2131558549;
+			
+			// aapt resource value: 0x7F0D0096
+			public const int dying__gb_1 = 2131558550;
 			
 			// aapt resource value: 0x7F0D0097
-			public const int slaughter__gb_1 = 2131558551;
+			public const int dying__us_1 = 2131558551;
 			
 			// aapt resource value: 0x7F0D0098
-			public const int slaughter__us_1 = 2131558552;
+			public const int ear__gb_2 = 2131558552;
 			
 			// aapt resource value: 0x7F0D0099
-			public const int slay__gb_1 = 2131558553;
+			public const int ear__us_1 = 2131558553;
 			
 			// aapt resource value: 0x7F0D009A
-			public const int slay__us_1 = 2131558554;
+			public const int egg__gb_3 = 2131558554;
 			
 			// aapt resource value: 0x7F0D009B
-			public const int spawn__gb_1 = 2131558555;
+			public const int egg__us_1 = 2131558555;
 			
 			// aapt resource value: 0x7F0D009C
-			public const int spawn__us_1 = 2131558556;
+			public const int eliminate__gb_2 = 2131558556;
 			
 			// aapt resource value: 0x7F0D009D
-			public const int sterile__gb_1 = 2131558557;
+			public const int eliminate__us_1 = 2131558557;
 			
 			// aapt resource value: 0x7F0D009E
-			public const int sterile__us_1 = 2131558558;
+			public const int emasculate__gb_1 = 2131558558;
 			
 			// aapt resource value: 0x7F0D009F
-			public const int survival__gb_1 = 2131558559;
+			public const int emasculate__us_1 = 2131558559;
 			
 			// aapt resource value: 0x7F0D00A0
-			public const int survival__us_1 = 2131558560;
+			public const int embryo__gb_1 = 2131558560;
 			
 			// aapt resource value: 0x7F0D00A1
-			public const int survive__gb_2 = 2131558561;
-			
-			// aapt resource value: 0x7F0D00A2
-			public const int survive__us_1 = 2131558562;
-			
-			// aapt resource value: 0x7F0D00A3
-			public const int survivor__gb_1 = 2131558563;
+			public const int embryo__us_1 = 2131558561;
 			
 			// aapt resource value: 0x7F0D00A4
-			public const int survivor__us_1 = 2131558564;
+			public const int existence__gb_1 = 2131558564;
 			
 			// aapt resource value: 0x7F0D00A5
-			public const int unborn__gb_1 = 2131558565;
+			public const int existence__us_1 = 2131558565;
+			
+			// aapt resource value: 0x7F0D00A2
+			public const int exist__gb_3 = 2131558562;
+			
+			// aapt resource value: 0x7F0D00A3
+			public const int exist__us_1 = 2131558563;
 			
 			// aapt resource value: 0x7F0D00A6
-			public const int unborn__us_1 = 2131558566;
+			public const int eye__gb_2 = 2131558566;
 			
 			// aapt resource value: 0x7F0D00A7
-			public const int undying__gb_1 = 2131558567;
+			public const int eye__us_1 = 2131558567;
 			
 			// aapt resource value: 0x7F0D00A8
-			public const int undying__us_1 = 2131558568;
+			public const int family__gb_1 = 2131558568;
 			
 			// aapt resource value: 0x7F0D00A9
-			public const int wrong_false = 2131558569;
+			public const int family__us_2_rr = 2131558569;
 			
 			// aapt resource value: 0x7F0D00AA
-			public const int xcongenital__gb_1 = 2131558570;
+			public const int fatal__gb_1 = 2131558570;
 			
 			// aapt resource value: 0x7F0D00AB
-			public const int xcongenital__us_1 = 2131558571;
+			public const int fatal__us_1 = 2131558571;
+			
+			// aapt resource value: 0x7F0D00AC
+			public const int fauna__gb_1 = 2131558572;
+			
+			// aapt resource value: 0x7F0D00AD
+			public const int fauna__us_4 = 2131558573;
+			
+			// aapt resource value: 0x7F0D00AE
+			public const int fecund__gb_1 = 2131558574;
+			
+			// aapt resource value: 0x7F0D00AF
+			public const int fecund__us_1_rr = 2131558575;
+			
+			// aapt resource value: 0x7F0D00B0
+			public const int female__gb_1 = 2131558576;
+			
+			// aapt resource value: 0x7F0D00B1
+			public const int female__us_2 = 2131558577;
+			
+			// aapt resource value: 0x7F0D00B2
+			public const int feminine__gb_1 = 2131558578;
+			
+			// aapt resource value: 0x7F0D00B3
+			public const int feminine__us_1 = 2131558579;
+			
+			// aapt resource value: 0x7F0D00B4
+			public const int fertile__gb_1 = 2131558580;
+			
+			// aapt resource value: 0x7F0D00B5
+			public const int fertile__us_1 = 2131558581;
+			
+			// aapt resource value: 0x7F0D00B6
+			public const int fertilize__gb_1 = 2131558582;
+			
+			// aapt resource value: 0x7F0D00B7
+			public const int fertilize__us_1 = 2131558583;
+			
+			// aapt resource value: 0x7F0D00B8
+			public const int fetlock__gb_1 = 2131558584;
+			
+			// aapt resource value: 0x7F0D00B9
+			public const int fetlock__us_1 = 2131558585;
+			
+			// aapt resource value: 0x7F0D00BA
+			public const int filly__gb_1 = 2131558586;
+			
+			// aapt resource value: 0x7F0D00BB
+			public const int filly__us_1 = 2131558587;
+			
+			// aapt resource value: 0x7F0D00BC
+			public const int fish__gb_3 = 2131558588;
+			
+			// aapt resource value: 0x7F0D00BD
+			public const int fish__us_1 = 2131558589;
+			
+			// aapt resource value: 0x7F0D00BE
+			public const int flight__gb_1 = 2131558590;
+			
+			// aapt resource value: 0x7F0D00BF
+			public const int flight__us_1 = 2131558591;
+			
+			// aapt resource value: 0x7F0D00C0
+			public const int flock__gb_1 = 2131558592;
+			
+			// aapt resource value: 0x7F0D00C1
+			public const int flock__us_1 = 2131558593;
+			
+			// aapt resource value: 0x7F0D00C2
+			public const int flora__gb_1 = 2131558594;
+			
+			// aapt resource value: 0x7F0D00C3
+			public const int flora__us_1 = 2131558595;
+			
+			// aapt resource value: 0x7F0D00C4
+			public const int foal__gb_1 = 2131558596;
+			
+			// aapt resource value: 0x7F0D00C5
+			public const int foal__us_1 = 2131558597;
+			
+			// aapt resource value: 0x7F0D00C6
+			public const int foetus__gb_1 = 2131558598;
+			
+			// aapt resource value: 0x7F0D00C7
+			public const int foetus__us_1 = 2131558599;
+			
+			// aapt resource value: 0x7F0D00C8
+			public const int fowl__gb_1 = 2131558600;
+			
+			// aapt resource value: 0x7F0D00C9
+			public const int fowl__us_1 = 2131558601;
+			
+			// aapt resource value: 0x7F0D00CA
+			public const int gelding__gb_3 = 2131558602;
+			
+			// aapt resource value: 0x7F0D00CB
+			public const int gelding__us_1 = 2131558603;
+			
+			// aapt resource value: 0x7F0D00CC
+			public const int gender__gb_2 = 2131558604;
+			
+			// aapt resource value: 0x7F0D00CD
+			public const int gender__us_1 = 2131558605;
+			
+			// aapt resource value: 0x7F0D00CE
+			public const int genus__gb_2 = 2131558606;
+			
+			// aapt resource value: 0x7F0D00CF
+			public const int genus__us_1 = 2131558607;
+			
+			// aapt resource value: 0x7F0D00D2
+			public const int germinate__gb_2 = 2131558610;
+			
+			// aapt resource value: 0x7F0D00D3
+			public const int germinate__us_1 = 2131558611;
+			
+			// aapt resource value: 0x7F0D00D0
+			public const int germ__gb_2 = 2131558608;
+			
+			// aapt resource value: 0x7F0D00D1
+			public const int germ__us_1 = 2131558609;
+			
+			// aapt resource value: 0x7F0D00D4
+			public const int gibbon__gb_2 = 2131558612;
+			
+			// aapt resource value: 0x7F0D00D5
+			public const int gibbon__us_1 = 2131558613;
+			
+			// aapt resource value: 0x7F0D00D6
+			public const int gorilla__gb_1 = 2131558614;
+			
+			// aapt resource value: 0x7F0D00D7
+			public const int gorilla__us_1 = 2131558615;
+			
+			// aapt resource value: 0x7F0D00D8
+			public const int grunt__gb_1 = 2131558616;
+			
+			// aapt resource value: 0x7F0D00D9
+			public const int grunt__us_1 = 2131558617;
+			
+			// aapt resource value: 0x7F0D00DA
+			public const int hatch__gb_1 = 2131558618;
+			
+			// aapt resource value: 0x7F0D00DB
+			public const int hatch__us_1 = 2131558619;
+			
+			// aapt resource value: 0x7F0D00DC
+			public const int head__gb_2 = 2131558620;
+			
+			// aapt resource value: 0x7F0D00DD
+			public const int head__us_1 = 2131558621;
+			
+			// aapt resource value: 0x7F0D00DE
+			public const int heifer__gb_1 = 2131558622;
+			
+			// aapt resource value: 0x7F0D00DF
+			public const int heifer__us_1 = 2131558623;
+			
+			// aapt resource value: 0x7F0D00E0
+			public const int herd__gb_1 = 2131558624;
+			
+			// aapt resource value: 0x7F0D00E1
+			public const int herd__us_1 = 2131558625;
+			
+			// aapt resource value: 0x7F0D00E2
+			public const int higher_animals_1_gb_1 = 2131558626;
+			
+			// aapt resource value: 0x7F0D00E3
+			public const int higher_animals_1_us_1 = 2131558627;
+			
+			// aapt resource value: 0x7F0D00E4
+			public const int hock__gb_1 = 2131558628;
+			
+			// aapt resource value: 0x7F0D00E5
+			public const int hock__us_1 = 2131558629;
+			
+			// aapt resource value: 0x7F0D00E6
+			public const int hoof__gb_1 = 2131558630;
+			
+			// aapt resource value: 0x7F0D00E7
+			public const int hoof__us_2_rr = 2131558631;
+			
+			// aapt resource value: 0x7F0D00E8
+			public const int hoot__gb_1 = 2131558632;
+			
+			// aapt resource value: 0x7F0D00E9
+			public const int hoot__us_1 = 2131558633;
+			
+			// aapt resource value: 0x7F0D00EA
+			public const int horse__gb_1 = 2131558634;
+			
+			// aapt resource value: 0x7F0D00EB
+			public const int horse__us_1 = 2131558635;
+			
+			// aapt resource value: 0x7F0D00EE
+			public const int hybridize__gb_1 = 2131558638;
+			
+			// aapt resource value: 0x7F0D00EF
+			public const int hybridize__us_1 = 2131558639;
+			
+			// aapt resource value: 0x7F0D00EC
+			public const int hybrid__gb_2 = 2131558636;
+			
+			// aapt resource value: 0x7F0D00ED
+			public const int hybrid__us_1 = 2131558637;
+			
+			// aapt resource value: 0x7F0D00F0
+			public const int immortal__gb_1 = 2131558640;
+			
+			// aapt resource value: 0x7F0D00F1
+			public const int immortal__us_1 = 2131558641;
+			
+			// aapt resource value: 0x7F0D00F2
+			public const int impotent__gb_1 = 2131558642;
+			
+			// aapt resource value: 0x7F0D00F3
+			public const int impotent__us_1 = 2131558643;
+			
+			// aapt resource value: 0x7F0D00F4
+			public const int impregnate__gb_1 = 2131558644;
+			
+			// aapt resource value: 0x7F0D00F5
+			public const int impregnate__us_1 = 2131558645;
+			
+			// aapt resource value: 0x7F0D00F6
+			public const int inborn__gb_1 = 2131558646;
+			
+			// aapt resource value: 0x7F0D00F7
+			public const int inborn__us_1 = 2131558647;
+			
+			// aapt resource value: 0x7F0D00F8
+			public const int inherent__gb_2 = 2131558648;
+			
+			// aapt resource value: 0x7F0D00F9
+			public const int inherent__us_2_rr = 2131558649;
+			
+			// aapt resource value: 0x7F0D00FA
+			public const int innate__gb_1 = 2131558650;
+			
+			// aapt resource value: 0x7F0D00FB
+			public const int innate__us_1 = 2131558651;
+			
+			// aapt resource value: 0x7F0D00FC
+			public const int insect__gb_2 = 2131558652;
+			
+			// aapt resource value: 0x7F0D00FD
+			public const int insect__us_1 = 2131558653;
+			
+			// aapt resource value: 0x7F0D00FE
+			public const int interbreed__gb_1 = 2131558654;
+			
+			// aapt resource value: 0x7F0D00FF
+			public const int interbreed__us_1 = 2131558655;
+			
+			// aapt resource value: 0x7F0D0100
+			public const int intercourse__gb_1 = 2131558656;
+			
+			// aapt resource value: 0x7F0D0101
+			public const int intercourse__us_1 = 2131558657;
+			
+			// aapt resource value: 0x7F0D0102
+			public const int issue__gb_3 = 2131558658;
+			
+			// aapt resource value: 0x7F0D0103
+			public const int issue__us_2 = 2131558659;
+			
+			// aapt resource value: 0x7F0D0104
+			public const int jackass__gb_1 = 2131558660;
+			
+			// aapt resource value: 0x7F0D0105
+			public const int jackass__us_1 = 2131558661;
+			
+			// aapt resource value: 0x7F0D0106
+			public const int jaguar__gb_1 = 2131558662;
+			
+			// aapt resource value: 0x7F0D0107
+			public const int jaguar__us_2 = 2131558663;
+			
+			// aapt resource value: 0x7F0D010A
+			public const int killing__gb_3 = 2131558666;
+			
+			// aapt resource value: 0x7F0D010B
+			public const int killing__us_3 = 2131558667;
+			
+			// aapt resource value: 0x7F0D0108
+			public const int kill__gb_2 = 2131558664;
+			
+			// aapt resource value: 0x7F0D0109
+			public const int kill__us_1 = 2131558665;
+			
+			// aapt resource value: 0x7F0D010C
+			public const int kitten__gb_3 = 2131558668;
+			
+			// aapt resource value: 0x7F0D010D
+			public const int kitten__us_1 = 2131558669;
+			
+			// aapt resource value: 0x7F0D010E
+			public const int kitty__gb_2 = 2131558670;
+			
+			// aapt resource value: 0x7F0D010F
+			public const int kitty__us_1 = 2131558671;
+			
+			// aapt resource value: 0x7F0D0110
+			public const int knee__gb_3 = 2131558672;
+			
+			// aapt resource value: 0x7F0D0111
+			public const int knee__us_1 = 2131558673;
+			
+			// aapt resource value: 0x7F0D0112
+			public const int lair__gb_1 = 2131558674;
+			
+			// aapt resource value: 0x7F0D0113
+			public const int lair__us_1 = 2131558675;
+			
+			// aapt resource value: 0x7F0D0114
+			public const int lay__gb_1 = 2131558676;
+			
+			// aapt resource value: 0x7F0D0115
+			public const int lay__us_1 = 2131558677;
+			
+			// aapt resource value: 0x7F0D0116
+			public const int leopard__gb_1 = 2131558678;
+			
+			// aapt resource value: 0x7F0D0117
+			public const int leopard__us_1 = 2131558679;
+			
+			// aapt resource value: 0x7F0D0118
+			public const int lethal__gb_1 = 2131558680;
+			
+			// aapt resource value: 0x7F0D0119
+			public const int lethal__us_1 = 2131558681;
+			
+			// aapt resource value: 0x7F0D011A
+			public const int life__gb_3 = 2131558682;
+			
+			// aapt resource value: 0x7F0D011B
+			public const int life__us_1 = 2131558683;
+			
+			// aapt resource value: 0x7F0D011C
+			public const int lion__gb_2 = 2131558684;
+			
+			// aapt resource value: 0x7F0D011D
+			public const int lion__us_2 = 2131558685;
+			
+			// aapt resource value: 0x7F0D011E
+			public const int liquidate__gb_1 = 2131558686;
+			
+			// aapt resource value: 0x7F0D011F
+			public const int liquidate__us_1 = 2131558687;
+			
+			// aapt resource value: 0x7F0D0120
+			public const int litter__gb_1 = 2131558688;
+			
+			// aapt resource value: 0x7F0D0121
+			public const int litter__us_1 = 2131558689;
+			
+			// aapt resource value: 0x7F0D0122
+			public const int live__gb_1 = 2131558690;
+			
+			// aapt resource value: 0x7F0D0123
+			public const int live__us_1 = 2131558691;
+			
+			// aapt resource value: 0x7F0D0124
+			public const int living__gb_1 = 2131558692;
+			
+			// aapt resource value: 0x7F0D0125
+			public const int living__us_5 = 2131558693;
+			
+			// aapt resource value: 0x7F0D0126
+			public const int longhorn__gb_1 = 2131558694;
+			
+			// aapt resource value: 0x7F0D0127
+			public const int longhorn__us_3 = 2131558695;
+			
+			// aapt resource value: 0x7F0D0128
+			public const int lose = 2131558696;
+			
+			// aapt resource value: 0x7F0D0129
+			public const int lynx__gb_1 = 2131558697;
+			
+			// aapt resource value: 0x7F0D012A
+			public const int lynx__us_1 = 2131558698;
+			
+			// aapt resource value: 0x7F0D012B
+			public const int male__gb_1 = 2131558699;
+			
+			// aapt resource value: 0x7F0D012C
+			public const int male__us_1 = 2131558700;
+			
+			// aapt resource value: 0x7F0D012D
+			public const int mammal__gb_1 = 2131558701;
+			
+			// aapt resource value: 0x7F0D012E
+			public const int mammal__us_1 = 2131558702;
+			
+			// aapt resource value: 0x7F0D0131
+			public const int mane__gb_1 = 2131558705;
+			
+			// aapt resource value: 0x7F0D0132
+			public const int mane__us_1 = 2131558706;
+			
+			// aapt resource value: 0x7F0D012F
+			public const int man__gb_2 = 2131558703;
+			
+			// aapt resource value: 0x7F0D0130
+			public const int man__us_1 = 2131558704;
+			
+			// aapt resource value: 0x7F0D0133
+			public const int mare__gb_1 = 2131558707;
+			
+			// aapt resource value: 0x7F0D0134
+			public const int mare__us_1 = 2131558708;
+			
+			// aapt resource value: 0x7F0D0135
+			public const int marmoset__gb_3 = 2131558709;
+			
+			// aapt resource value: 0x7F0D0136
+			public const int marmoset__us_1_rr = 2131558710;
+			
+			// aapt resource value: 0x7F0D0137
+			public const int marsupial__gb_1 = 2131558711;
+			
+			// aapt resource value: 0x7F0D0138
+			public const int marsupial__us_1 = 2131558712;
+			
+			// aapt resource value: 0x7F0D0139
+			public const int masculine__gb_1 = 2131558713;
+			
+			// aapt resource value: 0x7F0D013A
+			public const int masculine__us_1 = 2131558714;
+			
+			// aapt resource value: 0x7F0D013B
+			public const int massacre__gb_1 = 2131558715;
+			
+			// aapt resource value: 0x7F0D013C
+			public const int massacre__us_1 = 2131558716;
+			
+			// aapt resource value: 0x7F0D013D
+			public const int mate__gb_1 = 2131558717;
+			
+			// aapt resource value: 0x7F0D013E
+			public const int mate__us_1 = 2131558718;
+			
+			// aapt resource value: 0x7F0D013F
+			public const int mating__gb_1 = 2131558719;
+			
+			// aapt resource value: 0x7F0D0140
+			public const int mating__us_1 = 2131558720;
+			
+			// aapt resource value: 0x7F0D0141
+			public const int menopause__gb_1 = 2131558721;
+			
+			// aapt resource value: 0x7F0D0142
+			public const int menopause__us_1 = 2131558722;
+			
+			// aapt resource value: 0x7F0D0143
+			public const int menstruation__gb_1 = 2131558723;
+			
+			// aapt resource value: 0x7F0D0144
+			public const int menstruation__us_1 = 2131558724;
+			
+			// aapt resource value: 0x7F0D0145
+			public const int microbe__gb_1 = 2131558725;
+			
+			// aapt resource value: 0x7F0D0146
+			public const int microbe__us_1 = 2131558726;
+			
+			// aapt resource value: 0x7F0D0147
+			public const int mollusc__gb_1 = 2131558727;
+			
+			// aapt resource value: 0x7F0D0148
+			public const int mollusc__us_1 = 2131558728;
+			
+			// aapt resource value: 0x7F0D0149
+			public const int mongrel__gb_1 = 2131558729;
+			
+			// aapt resource value: 0x7F0D014A
+			public const int mongrel__us_2_rr = 2131558730;
+			
+			// aapt resource value: 0x7F0D014B
+			public const int monkey__gb_2 = 2131558731;
+			
+			// aapt resource value: 0x7F0D014C
+			public const int monkey__us_1 = 2131558732;
+			
+			// aapt resource value: 0x7F0D014F
+			public const int mortality__gb_1 = 2131558735;
+			
+			// aapt resource value: 0x7F0D0150
+			public const int mortality__us_1 = 2131558736;
+			
+			// aapt resource value: 0x7F0D014D
+			public const int mortal__gb_1 = 2131558733;
+			
+			// aapt resource value: 0x7F0D014E
+			public const int mortal__us_1 = 2131558734;
+			
+			// aapt resource value: 0x7F0D0151
+			public const int mouth__gb_3 = 2131558737;
+			
+			// aapt resource value: 0x7F0D0152
+			public const int mouth__us_1 = 2131558738;
+			
+			// aapt resource value: 0x7F0D0153
+			public const int mule__gb_1 = 2131558739;
+			
+			// aapt resource value: 0x7F0D0154
+			public const int mule__us_1 = 2131558740;
+			
+			// aapt resource value: 0x7F0D0155
+			public const int murder__gb_1 = 2131558741;
+			
+			// aapt resource value: 0x7F0D0156
+			public const int murder__us_2 = 2131558742;
+			
+			// aapt resource value: 0x7F0D0157
+			public const int mustang__gb_1 = 2131558743;
+			
+			// aapt resource value: 0x7F0D0158
+			public const int mustang__us_1 = 2131558744;
+			
+			// aapt resource value: 0x7F0D0159
+			public const int muzzle__gb_1 = 2131558745;
+			
+			// aapt resource value: 0x7F0D015A
+			public const int muzzle__us_1 = 2131558746;
+			
+			// aapt resource value: 0x7F0D015B
+			public const int nativity__gb_1 = 2131558747;
+			
+			// aapt resource value: 0x7F0D015C
+			public const int nativity__us_1 = 2131558748;
+			
+			// aapt resource value: 0x7F0D015D
+			public const int natural__gb_6 = 2131558749;
+			
+			// aapt resource value: 0x7F0D015E
+			public const int natural__us_1_rr = 2131558750;
+			
+			// aapt resource value: 0x7F0D015F
+			public const int neck__gb_2 = 2131558751;
+			
+			// aapt resource value: 0x7F0D0160
+			public const int neck__us_1 = 2131558752;
+			
+			// aapt resource value: 0x7F0D0161
+			public const int neigh__gb_1 = 2131558753;
+			
+			// aapt resource value: 0x7F0D0162
+			public const int neigh__us_1 = 2131558754;
+			
+			// aapt resource value: 0x7F0D0163
+			public const int nest__gb_1 = 2131558755;
+			
+			// aapt resource value: 0x7F0D0164
+			public const int nest__us_1 = 2131558756;
+			
+			// aapt resource value: 0x7F0D0165
+			public const int neuter__gb_1 = 2131558757;
+			
+			// aapt resource value: 0x7F0D0166
+			public const int neuter__us_1 = 2131558758;
+			
+			// aapt resource value: 0x7F0D0167
+			public const int newborn__gb_1 = 2131558759;
+			
+			// aapt resource value: 0x7F0D0168
+			public const int newborn__us_1 = 2131558760;
+			
+			// aapt resource value: 0x7F0D0169
+			public const int nose__gb_1 = 2131558761;
+			
+			// aapt resource value: 0x7F0D016A
+			public const int nose__us_1 = 2131558762;
+			
+			// aapt resource value: 0x7F0D016B
+			public const int nucleus__gb_1 = 2131558763;
+			
+			// aapt resource value: 0x7F0D016C
+			public const int nucleus__us_1 = 2131558764;
+			
+			// aapt resource value: 0x7F0D016D
+			public const int offspring__gb_1 = 2131558765;
+			
+			// aapt resource value: 0x7F0D016E
+			public const int offspring__us_1_rr = 2131558766;
+			
+			// aapt resource value: 0x7F0D016F
+			public const int organism__gb_1 = 2131558767;
+			
+			// aapt resource value: 0x7F0D0170
+			public const int organism__us_1 = 2131558768;
+			
+			// aapt resource value: 0x7F0D0171
+			public const int ovum__gb_1 = 2131558769;
+			
+			// aapt resource value: 0x7F0D0172
+			public const int ovum__us_1 = 2131558770;
+			
+			// aapt resource value: 0x7F0D0173
+			public const int ox__gb_1 = 2131558771;
+			
+			// aapt resource value: 0x7F0D0174
+			public const int ox__us_1 = 2131558772;
+			
+			// aapt resource value: 0x7F0D0175
+			public const int panther__gb_1 = 2131558773;
+			
+			// aapt resource value: 0x7F0D0176
+			public const int panther__us_1 = 2131558774;
+			
+			// aapt resource value: 0x7F0D0177
+			public const int parasite__gb_1 = 2131558775;
+			
+			// aapt resource value: 0x7F0D0178
+			public const int parasite__us_1 = 2131558776;
+			
+			// aapt resource value: 0x7F0D0179
+			public const int pastern__gb_1 = 2131558777;
+			
+			// aapt resource value: 0x7F0D017A
+			public const int pastern__us_1 = 2131558778;
+			
+			// aapt resource value: 0x7F0D017B
+			public const int pedigree__gb_1 = 2131558779;
+			
+			// aapt resource value: 0x7F0D017C
+			public const int pedigree__us_1 = 2131558780;
+			
+			// aapt resource value: 0x7F0D017D
+			public const int pest__gb_1 = 2131558781;
+			
+			// aapt resource value: 0x7F0D017E
+			public const int pest__us_1 = 2131558782;
+			
+			// aapt resource value: 0x7F0D017F
+			public const int plant__gb_3 = 2131558783;
+			
+			// aapt resource value: 0x7F0D0180
+			public const int plant__us_1 = 2131558784;
+			
+			// aapt resource value: 0x7F0D0181
+			public const int pony__gb_1 = 2131558785;
+			
+			// aapt resource value: 0x7F0D0182
+			public const int pony__us_1 = 2131558786;
+			
+			// aapt resource value: 0x7F0D0183
+			public const int predator__gb_1 = 2131558787;
+			
+			// aapt resource value: 0x7F0D0184
+			public const int predator__us_1 = 2131558788;
+			
+			// aapt resource value: 0x7F0D0185
+			public const int pregnant__gb_1 = 2131558789;
+			
+			// aapt resource value: 0x7F0D0186
+			public const int pregnant__us_1 = 2131558790;
+			
+			// aapt resource value: 0x7F0D0187
+			public const int prey__gb_1 = 2131558791;
+			
+			// aapt resource value: 0x7F0D0188
+			public const int prey__us_1 = 2131558792;
+			
+			// aapt resource value: 0x7F0D0189
+			public const int produce__gb_1 = 2131558793;
+			
+			// aapt resource value: 0x7F0D018A
+			public const int produce__us_1 = 2131558794;
+			
+			// aapt resource value: 0x7F0D018B
+			public const int progeny__gb_1 = 2131558795;
+			
+			// aapt resource value: 0x7F0D018C
+			public const int progeny__us_1 = 2131558796;
+			
+			// aapt resource value: 0x7F0D018D
+			public const int puberty__gb_1 = 2131558797;
+			
+			// aapt resource value: 0x7F0D018E
+			public const int puberty__us_1 = 2131558798;
+			
+			// aapt resource value: 0x7F0D018F
+			public const int puma__gb_1 = 2131558799;
+			
+			// aapt resource value: 0x7F0D0190
+			public const int puma__us_1 = 2131558800;
+			
+			// aapt resource value: 0x7F0D0191
+			public const int pussy__gb_1 = 2131558801;
+			
+			// aapt resource value: 0x7F0D0192
+			public const int pussy__us_1 = 2131558802;
+			
+			// aapt resource value: 0x7F0D0193
+			public const int quack__gb_1 = 2131558803;
+			
+			// aapt resource value: 0x7F0D0194
+			public const int quack__us_1 = 2131558804;
+			
+			// aapt resource value: 0x7F0D0195
+			public const int quadruped__gb_1 = 2131558805;
+			
+			// aapt resource value: 0x7F0D0196
+			public const int quadruped__us_1 = 2131558806;
+			
+			// aapt resource value: 0x7F0D0197
+			public const int race__gb_2 = 2131558807;
+			
+			// aapt resource value: 0x7F0D0198
+			public const int race__us_1 = 2131558808;
+			
+			// aapt resource value: 0x7F0D0199
+			public const int reproduce__gb_1 = 2131558809;
+			
+			// aapt resource value: 0x7F0D019A
+			public const int reproduce__us_1 = 2131558810;
+			
+			// aapt resource value: 0x7F0D019B
+			public const int reproduction__gb_1 = 2131558811;
+			
+			// aapt resource value: 0x7F0D019C
+			public const int reproduction__us_1 = 2131558812;
+			
+			// aapt resource value: 0x7F0D019D
+			public const int reptile__gb_1 = 2131558813;
+			
+			// aapt resource value: 0x7F0D019E
+			public const int reptile__us_1_rr = 2131558814;
+			
+			// aapt resource value: 0x7F0D019F
+			public const int right_true = 2131558815;
+			
+			// aapt resource value: 0x7F0D01A0
+			public const int rodent__gb_1 = 2131558816;
+			
+			// aapt resource value: 0x7F0D01A1
+			public const int rodent__us_1 = 2131558817;
+			
+			// aapt resource value: 0x7F0D01A2
+			public const int rot__gb_1 = 2131558818;
+			
+			// aapt resource value: 0x7F0D01A3
+			public const int rot__us_1 = 2131558819;
+			
+			// aapt resource value: 0x7F0D01A4
+			public const int salary__gb_2 = 2131558820;
+			
+			// aapt resource value: 0x7F0D01A5
+			public const int salary__us_1 = 2131558821;
+			
+			// aapt resource value: 0x7F0D01A6
+			public const int scavenger__gb_1 = 2131558822;
+			
+			// aapt resource value: 0x7F0D01A7
+			public const int scavenger__us_1 = 2131558823;
+			
+			// aapt resource value: 0x7F0D01A8
+			public const int seed__gb_1 = 2131558824;
+			
+			// aapt resource value: 0x7F0D01A9
+			public const int seed__us_1 = 2131558825;
+			
+			// aapt resource value: 0x7F0D01AA
+			public const int semen__gb_2 = 2131558826;
+			
+			// aapt resource value: 0x7F0D01AB
+			public const int semen__us_1 = 2131558827;
+			
+			// aapt resource value: 0x7F0D01AE
+			public const int sexual__gb_1 = 2131558830;
+			
+			// aapt resource value: 0x7F0D01AF
+			public const int sexual__us_1 = 2131558831;
+			
+			// aapt resource value: 0x7F0D01AC
+			public const int sex__gb_1 = 2131558828;
+			
+			// aapt resource value: 0x7F0D01AD
+			public const int sex__us_1 = 2131558829;
+			
+			// aapt resource value: 0x7F0D01B0
+			public const int shank__gb_1 = 2131558832;
+			
+			// aapt resource value: 0x7F0D01B1
+			public const int shank__us_1 = 2131558833;
+			
+			// aapt resource value: 0x7F0D01B2
+			public const int shellfish__gb_1 = 2131558834;
+			
+			// aapt resource value: 0x7F0D01B3
+			public const int shellfish__us_1 = 2131558835;
+			
+			// aapt resource value: 0x7F0D01B4
+			public const int shoal__gb_1 = 2131558836;
+			
+			// aapt resource value: 0x7F0D01B5
+			public const int shoal__us_1 = 2131558837;
+			
+			// aapt resource value: 0x7F0D01B6
+			public const int shorthorn__gb_1 = 2131558838;
+			
+			// aapt resource value: 0x7F0D01B7
+			public const int shorthorn__us_1 = 2131558839;
+			
+			// aapt resource value: 0x7F0D01B8
+			public const int shoulder__gb_1 = 2131558840;
+			
+			// aapt resource value: 0x7F0D01B9
+			public const int shoulder__us_1 = 2131558841;
+			
+			// aapt resource value: 0x7F0D01BA
+			public const int slaughter__gb_1 = 2131558842;
+			
+			// aapt resource value: 0x7F0D01BB
+			public const int slaughter__us_1 = 2131558843;
+			
+			// aapt resource value: 0x7F0D01BC
+			public const int slay__gb_1 = 2131558844;
+			
+			// aapt resource value: 0x7F0D01BD
+			public const int slay__us_1 = 2131558845;
+			
+			// aapt resource value: 0x7F0D01BE
+			public const int snort__gb_1 = 2131558846;
+			
+			// aapt resource value: 0x7F0D01BF
+			public const int snort__us_1 = 2131558847;
+			
+			// aapt resource value: 0x7F0D01C0
+			public const int spawn__gb_1 = 2131558848;
+			
+			// aapt resource value: 0x7F0D01C1
+			public const int spawn__us_1 = 2131558849;
+			
+			// aapt resource value: 0x7F0D01C2
+			public const int species__gb_2 = 2131558850;
+			
+			// aapt resource value: 0x7F0D01C3
+			public const int species__us_1_rr = 2131558851;
+			
+			// aapt resource value: 0x7F0D01C4
+			public const int sperm__gb_1 = 2131558852;
+			
+			// aapt resource value: 0x7F0D01C5
+			public const int sperm__us_1 = 2131558853;
+			
+			// aapt resource value: 0x7F0D01C6
+			public const int spore__gb_1 = 2131558854;
+			
+			// aapt resource value: 0x7F0D01C7
+			public const int spore__us_1 = 2131558855;
+			
+			// aapt resource value: 0x7F0D01C8
+			public const int squeal__gb_1 = 2131558856;
+			
+			// aapt resource value: 0x7F0D01C9
+			public const int squeal__us_1 = 2131558857;
+			
+			// aapt resource value: 0x7F0D01CA
+			public const int stallion__gb_1 = 2131558858;
+			
+			// aapt resource value: 0x7F0D01CB
+			public const int stallion__us_1 = 2131558859;
+			
+			// aapt resource value: 0x7F0D01CC
+			public const int steer__gb_1 = 2131558860;
+			
+			// aapt resource value: 0x7F0D01CD
+			public const int steer__us_1 = 2131558861;
+			
+			// aapt resource value: 0x7F0D01CE
+			public const int sterile__gb_1 = 2131558862;
+			
+			// aapt resource value: 0x7F0D01CF
+			public const int sterile__us_1 = 2131558863;
+			
+			// aapt resource value: 0x7F0D01D0
+			public const int sterilize__gb_1 = 2131558864;
+			
+			// aapt resource value: 0x7F0D01D1
+			public const int sterilize__us_1 = 2131558865;
+			
+			// aapt resource value: 0x7F0D01D2
+			public const int strain__gb_1 = 2131558866;
+			
+			// aapt resource value: 0x7F0D01D3
+			public const int strain__us_1 = 2131558867;
+			
+			// aapt resource value: 0x7F0D01D4
+			public const int stud__gb_1 = 2131558868;
+			
+			// aapt resource value: 0x7F0D01D5
+			public const int stud__us_1 = 2131558869;
+			
+			// aapt resource value: 0x7F0D01D6
+			public const int survival__gb_1 = 2131558870;
+			
+			// aapt resource value: 0x7F0D01D7
+			public const int survival__us_1 = 2131558871;
+			
+			// aapt resource value: 0x7F0D01D8
+			public const int survive__gb_2 = 2131558872;
+			
+			// aapt resource value: 0x7F0D01D9
+			public const int survive__us_1 = 2131558873;
+			
+			// aapt resource value: 0x7F0D01DA
+			public const int survivor__gb_1 = 2131558874;
+			
+			// aapt resource value: 0x7F0D01DB
+			public const int survivor__us_1 = 2131558875;
+			
+			// aapt resource value: 0x7F0D01DC
+			public const int tabby__gb_1 = 2131558876;
+			
+			// aapt resource value: 0x7F0D01DD
+			public const int tabby__us_1 = 2131558877;
+			
+			// aapt resource value: 0x7F0D01DE
+			public const int tail__gb_2 = 2131558878;
+			
+			// aapt resource value: 0x7F0D01DF
+			public const int tail__us_1 = 2131558879;
+			
+			// aapt resource value: 0x7F0D01E0
+			public const int tame__gb_1 = 2131558880;
+			
+			// aapt resource value: 0x7F0D01E1
+			public const int tame__us_1 = 2131558881;
+			
+			// aapt resource value: 0x7F0D01E2
+			public const int thoroughbred__gb_1 = 2131558882;
+			
+			// aapt resource value: 0x7F0D01E3
+			public const int thoroughbred__us_1_rr = 2131558883;
+			
+			// aapt resource value: 0x7F0D01E4
+			public const int tiger__gb_2 = 2131558884;
+			
+			// aapt resource value: 0x7F0D01E5
+			public const int tiger__us_1 = 2131558885;
+			
+			// aapt resource value: 0x7F0D01E6
+			public const int tomcat__gb_1 = 2131558886;
+			
+			// aapt resource value: 0x7F0D01E7
+			public const int tomcat__us_1 = 2131558887;
+			
+			// aapt resource value: 0x7F0D01E8
+			public const int troop__gb_1 = 2131558888;
+			
+			// aapt resource value: 0x7F0D01E9
+			public const int troop__us_1 = 2131558889;
+			
+			// aapt resource value: 0x7F0D01EA
+			public const int unborn__gb_1 = 2131558890;
+			
+			// aapt resource value: 0x7F0D01EB
+			public const int unborn__us_1 = 2131558891;
+			
+			// aapt resource value: 0x7F0D01EC
+			public const int undying__gb_1 = 2131558892;
+			
+			// aapt resource value: 0x7F0D01ED
+			public const int undying__us_1 = 2131558893;
+			
+			// aapt resource value: 0x7F0D01EE
+			public const int vermin__gb_1 = 2131558894;
+			
+			// aapt resource value: 0x7F0D01EF
+			public const int vermin__us_1 = 2131558895;
+			
+			// aapt resource value: 0x7F0D01F0
+			public const int virus__gb_2 = 2131558896;
+			
+			// aapt resource value: 0x7F0D01F1
+			public const int virus__us_1 = 2131558897;
+			
+			// aapt resource value: 0x7F0D01F4
+			public const int waterfowl__gb_1 = 2131558900;
+			
+			// aapt resource value: 0x7F0D01F5
+			public const int waterfowl__us_3_rr = 2131558901;
+			
+			// aapt resource value: 0x7F0D01F2
+			public const int water_buffalo_1_gb_1 = 2131558898;
+			
+			// aapt resource value: 0x7F0D01F3
+			public const int water_buffalo_1_us_3 = 2131558899;
+			
+			// aapt resource value: 0x7F0D01F6
+			public const int whinny__gb_1 = 2131558902;
+			
+			// aapt resource value: 0x7F0D01F7
+			public const int whinny__us_1 = 2131558903;
+			
+			// aapt resource value: 0x7F0D01F8
+			public const int whisker__gb_1 = 2131558904;
+			
+			// aapt resource value: 0x7F0D01F9
+			public const int whisker__us_1 = 2131558905;
+			
+			// aapt resource value: 0x7F0D01FA
+			public const int white_1_gb_1 = 2131558906;
+			
+			// aapt resource value: 0x7F0D01FB
+			public const int white__us_1 = 2131558907;
+			
+			// aapt resource value: 0x7F0D01FC
+			public const int wildcat__gb_1 = 2131558908;
+			
+			// aapt resource value: 0x7F0D01FD
+			public const int wildcat__us_1 = 2131558909;
+			
+			// aapt resource value: 0x7F0D01FE
+			public const int wildfowl__gb_1 = 2131558910;
+			
+			// aapt resource value: 0x7F0D01FF
+			public const int wildfowl__us_1 = 2131558911;
+			
+			// aapt resource value: 0x7F0D0200
+			public const int wildlife__gb_1 = 2131558912;
+			
+			// aapt resource value: 0x7F0D0201
+			public const int wildlife__us_1 = 2131558913;
+			
+			// aapt resource value: 0x7F0D0202
+			public const int withers__gb_1 = 2131558914;
+			
+			// aapt resource value: 0x7F0D0203
+			public const int withers__us_1 = 2131558915;
+			
+			// aapt resource value: 0x7F0D0204
+			public const int wrong_false = 2131558916;
+			
+			// aapt resource value: 0x7F0D0205
+			public const int xconceive__gb_1 = 2131558917;
+			
+			// aapt resource value: 0x7F0D0206
+			public const int xconceive__us_1 = 2131558918;
+			
+			// aapt resource value: 0x7F0D0207
+			public const int xcongenital__gb_1 = 2131558919;
+			
+			// aapt resource value: 0x7F0D0208
+			public const int xcongenital__us_1 = 2131558920;
+			
+			// aapt resource value: 0x7F0D0209
+			public const int yolk__gb_1 = 2131558921;
+			
+			// aapt resource value: 0x7F0D020A
+			public const int yolk__us_1 = 2131558922;
+			
+			// aapt resource value: 0x7F0D020B
+			public const int young_1_gb_1 = 2131558923;
+			
+			// aapt resource value: 0x7F0D020C
+			public const int young__us_1 = 2131558924;
+			
+			// aapt resource value: 0x7F0D020D
+			public const int zebra__gb_1 = 2131558925;
+			
+			// aapt resource value: 0x7F0D020E
+			public const int zebra__us_2 = 2131558926;
+			
+			// aapt resource value: 0x7F0D020F
+			public const int zoo__gb_1 = 2131558927;
+			
+			// aapt resource value: 0x7F0D0210
+			public const int zoo__us_1 = 2131558928;
 			
 			static Raw()
 			{
