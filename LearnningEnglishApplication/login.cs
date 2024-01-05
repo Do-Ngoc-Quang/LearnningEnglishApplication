@@ -27,8 +27,6 @@ namespace LearnningEnglishApplication
             // Set our view from the "---" layout resource
             SetContentView(Resource.Layout.login);
 
-            check_sesion_active();
-
             mysqlite = new mySQLite(this.ApplicationContext);
 
             txt_tendangnhap = FindViewById<EditText>(Resource.Id.txt_tendangnhap);
@@ -39,25 +37,6 @@ namespace LearnningEnglishApplication
 
             btn_taotaikhoan.Click += Btn_taotaikhoan_Click;
             btn_dangnhap.Click += Btn_dangnhap_Click;
-        }
-
-        private void check_sesion_active()
-        {
-            string id_user_session;
-
-            ISharedPreferences sp = Application.Context.GetSharedPreferences("login_session", FileCreationMode.Private);
-
-            id_user_session = sp.GetString("id_user_session", "");
-
-            if (id_user_session != "")
-            {
-                //Xác thực thành công
-                Intent it = new Intent(this, typeof(home));
-
-                // Truy cập vào application nếu chưa logout
-                it.PutExtra("id_user", id_user_session);
-                StartActivity(it);
-            }
         }
 
         private void Btn_dangnhap_Click(object sender, EventArgs e)
@@ -143,11 +122,3 @@ namespace LearnningEnglishApplication
         }
     }
 }
-
-//// Đọc dữ liệu và hiển thị lên TextView:
-//ICursor cur;
-//cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM SINHVIEN", null);
-//while (cur.MoveToNext())
-//{
-//    textView.Text += cur.GetString(1) + "\n";
-//}

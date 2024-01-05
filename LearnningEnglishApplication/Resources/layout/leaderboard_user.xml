@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="@android:color/holo_orange_light">
+    android:background="@android:color/holo_blue_light">
 
     <TextView
         android:id="@+id/txt_rank"
@@ -21,11 +21,6 @@
         android:src="@drawable/icon_avatar_male_48"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"/>
-<!--    <ImageView
-        android:id="@+id/gender_user_female"
-        android:src="@drawable/icon_avatar_female_48"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"/>-->
 
     <TextView
         android:id="@+id/txt_name_user"

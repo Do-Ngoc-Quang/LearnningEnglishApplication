@@ -29,6 +29,8 @@ namespace LearnningEnglishApplication
 
         ImageButton img_btn_home, img_btn_category, img_btn_leaderboard, img_btn_profile;
 
+        private Dictionary<int, int> positionMapping = new Dictionary<int, int>();
+
         // Danh sách để lưu trữ dữ liệu từ file XML
         List<string> vocab_en_root = new List<string>(); // root vocab
         List<string> vocab_en = new List<string>();
@@ -42,7 +44,8 @@ namespace LearnningEnglishApplication
 
         ArrayAdapter adapter;
 
-        MediaPlayer audio_player;
+        bool dictionary_default = true;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -66,18 +69,22 @@ namespace LearnningEnglishApplication
             img_btn_profile = FindViewById<ImageButton>(Resource.Id.img_btn_profile);
 
             //Load 
-            //load_chaomung();
+            load_chaomung();
 
             LoadVocabularyfromXML();
 
             // --
             txt_enter_EN.Text = null;
 
-            adapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, vocab_en);
+            adapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, vocab_en_root);
             lView_EN.Adapter = adapter;
 
             txt_enter_EN.TextChanged += Txt_enter_EN_TextChanged;
-            lView_EN.ItemClick += LView_EN_ItemClick;
+
+            if (dictionary_default)
+            {
+                lView_EN.ItemClick += LView_EN_ItemClick;
+            }
 
             img_btn_home.Click += Img_btn_home_Click;
             img_btn_category.Click += Img_btn_category_Click;
@@ -85,7 +92,7 @@ namespace LearnningEnglishApplication
             img_btn_profile.Click += Img_btn_profile_Click;
         }
 
-       
+
         private void LoadVocabularyfromXML()
         {
             XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml"));
@@ -93,6 +100,7 @@ namespace LearnningEnglishApplication
             {
                 if (reader.Name == "en")
                 {
+                    vocab_en_root.Add(reader.ReadString());
                     vocab_en.Add(reader.ReadString());
                 }
                 else if (reader.Name == "type")
@@ -132,7 +140,10 @@ namespace LearnningEnglishApplication
             if (!string.IsNullOrEmpty(e.Text.ToString()))
             {
                 // Lọc danh sách và gán vào danh sách tạm thời
-                List<string> filteredList = vocab_en.Where(x => x.Contains(e.Text.ToString())).ToList();
+                List<string> filteredList = vocab_en_root.Where(x => x.Contains(e.Text.ToString())).ToList();
+
+                // Cập nhật ánh xạ vị trí
+                UpdatePositionMapping(filteredList);
 
                 // Hiển thị kết quả lọc
                 DisplayFilteredList(filteredList);
@@ -140,107 +151,62 @@ namespace LearnningEnglishApplication
             else
             {
                 // Nếu EditText trống, hiển thị toàn bộ danh sách
-                DisplayFilteredList(vocab_en);
+                DisplayFilteredList(vocab_en_root);
+            }
+        }
+
+        private void UpdatePositionMapping(List<string> filteredList)
+        {
+            positionMapping.Clear();
+
+            for (int i = 0; i < filteredList.Count; i++)
+            {
+                int originalPosition = vocab_en_root.IndexOf(filteredList[i]);
+                positionMapping[i] = originalPosition;
             }
         }
 
         private void DisplayFilteredList(List<string> filteredList)
         {
-            // Tạo adapter với danh sách tạm thời
-            ArrayAdapter<string> filteredAdapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, filteredList);
+            // Hiển thị danh sách lọc trong ListView
+            ArrayAdapter adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, filteredList);
+            lView_EN.Adapter = adapter;
 
-            // Gán adapter mới cho ListView
-            lView_EN.Adapter = filteredAdapter;
+            // Xử lý sự kiện khi một mục trong ListView được chọn
+            lView_EN.ItemClick += (s, e) =>
+            {
+                // Lấy vị trí của mục trong danh sách lọc
+                int positionInFilteredList = e.Position;
+
+                // Lấy vị trí tương ứng trong danh sách gốc
+                if (positionMapping.TryGetValue(positionInFilteredList, out int positionInRoot))
+                {
+                    Intent it = new Intent(this, typeof(vocabulary_dictionary));
+                    //---
+                    it.PutExtra("id_user", id_user);
+
+                    //---
+                    it.PutExtra("position", positionInRoot.ToString());
+
+                    StartActivity(it);
+                }
+
+                // Tắt sự kiện click ban đầu khi đã có sự kiện click này
+                dictionary_default = false;
+                    
+            };
         }
 
         private void LView_EN_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            // show detail --
+            Intent it = new Intent(this, typeof(vocabulary_dictionary));
+            //---
+            it.PutExtra("id_user", id_user);
 
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            //---
+            it.PutExtra("position", e.Position.ToString());
 
-            // Inflate giao diện tùy chỉnh từ layout
-            View viewInflated = LayoutInflater.Inflate(Resource.Layout.vocabulary_dictionary, null);
-
-            // Tìm các controls trong layout tùy chỉnh
-            TextView txt_vocab_en = viewInflated.FindViewById<TextView>(Resource.Id.txt_vocab_en);
-            TextView txt_type = viewInflated.FindViewById<TextView>(Resource.Id.txt_type);
-
-            ImageButton img_btn_audio_eng = viewInflated.FindViewById<ImageButton>(Resource.Id.img_btn_audio_eng);
-            ImageButton img_btn_audio_ame = viewInflated.FindViewById<ImageButton>(Resource.Id.img_btn_audio_ame);
-
-            TextView txt_pronounce_eng = viewInflated.FindViewById<TextView>(Resource.Id.txt_pronounce_eng);
-            TextView txt_pronounce_ame = viewInflated.FindViewById<TextView>(Resource.Id.txt_pronounce_ame);
-            TextView txt_describe = viewInflated.FindViewById<TextView>(Resource.Id.txt_describe);
-            TextView txt_mean_vn = viewInflated.FindViewById<TextView>(Resource.Id.txt_mean_vn);
-
-            // ---
-            txt_vocab_en.Text = vocab_en[e.Position];
-            txt_type.Text = type[e.Position];
-
-
-            txt_pronounce_eng.Text = pronounce_eng[e.Position];
-            txt_pronounce_ame.Text = pronounce_ame[e.Position];
-            txt_describe.Text = "- " + describe[e.Position];
-            txt_mean_vn.Text = mean_vn[e.Position];
-
-            img_btn_audio_eng.Click += (s, args) =>
-            {
-                // Lấy tên tài nguyên từ biến audio_eng[i]
-                string resourceName = audio_eng[e.Position];
-
-                // Xác định ID của tài nguyên
-                int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
-
-                if (resourceId != 0)
-                {
-                    // Khởi tạo MediaPlayer
-                    audio_player = MediaPlayer.Create(this, resourceId);
-
-                    // Phát âm thanh
-                    audio_player.Start();
-                }
-                else
-                {
-                    // Thông báo 
-                    Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
-                }
-            };
-
-            img_btn_audio_ame.Click += (s, args) =>
-            {
-                // Lấy tên tài nguyên từ biến audio_eng[i]
-                string resourceName = audio_ame[e.Position];
-
-                // Xác định ID của tài nguyên
-                int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
-
-                if (resourceId != 0)
-                {
-                    // Khởi tạo MediaPlayer
-                    audio_player = MediaPlayer.Create(this, resourceId);
-
-                    // Phát âm thanh
-                    audio_player.Start();
-                }
-                else
-                {
-                    // Thông báo 
-                    Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
-                }
-            };
-
-
-            // Thiết lập giao diện của dialog
-            builder.SetView(viewInflated)
-                   .SetNegativeButton("Close", (sender, args) =>
-                   {
-                       // Xử lý khi nhấn nút Close
-                   });
-
-            // Tạo và hiển thị AlertDialog
-            AlertDialog alertDialog = builder.Create();
-            alertDialog.Show();
+            StartActivity(it);
         }
 
 
@@ -266,7 +232,7 @@ namespace LearnningEnglishApplication
             }
             else
             {
-                txt_chaomung.Text = "Không tìm thấy thông tin người dùng, hãy đăng nhập lại!";
+                txt_chaomung.Text = "User information could not be found, please log in again!";
             }
         }
 

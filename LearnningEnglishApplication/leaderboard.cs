@@ -34,9 +34,8 @@ namespace LearnningEnglishApplication
 
             mysqlite = new mySQLite(this.ApplicationContext);
 
-            //
+            // ---
             load_user_rank();
-
 
             img_btn_home = FindViewById<ImageButton>(Resource.Id.img_btn_home);
             img_btn_category = FindViewById<ImageButton>(Resource.Id.img_btn_category);
@@ -52,7 +51,7 @@ namespace LearnningEnglishApplication
         private void load_user_rank()
         {
             // Đọc dữ liệu
-            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung ORDER BY diemso DESC", null);
+            ICursor cur = mysqlite.ReadableDatabase.RawQuery("SELECT * FROM nguoidung ORDER BY diemso DESC LIMIT 10", null); // Top 10
 
             // Kiểm tra dữ liệu
             if (cur != null && cur.Count > 0)
@@ -63,7 +62,6 @@ namespace LearnningEnglishApplication
                 while (cur.MoveToNext())
                 {
                     string id = cur.GetString(cur.GetColumnIndex("id"));
-
 
                     // Lấy giá trị
                     string name_user = cur.GetString(cur.GetColumnIndex("hoten"));
@@ -82,30 +80,9 @@ namespace LearnningEnglishApplication
 
                     // Truyền tham số vào TextView hoặc các thành phần khác trong layout
                     TextView txt_rank = newUserLayout.FindViewById<TextView>(Resource.Id.txt_rank);
-                    //ImageView gender_user_male = FindViewById<ImageView>(Resource.Id.gender_user_male);
-                    //ImageView gender_user_female = FindViewById<ImageView>(Resource.Id.gender_user_female);
                     TextView txt_name_user = newUserLayout.FindViewById<TextView>(Resource.Id.txt_name_user);
                     TextView txt_point = newUserLayout.FindViewById<TextView>(Resource.Id.txt_point);
                     txt_rank.Text = "#" + index.ToString();
-
-                    //if (gender_user_male != null || gender_user_female != null)
-                    //{
-                    //    if (gioitinh_user == 0)
-                    //    {
-                    //        // Ẩn avatar female
-                    //        gender_user_female.Visibility = ViewStates.Gone;
-                    //    }
-                    //    else
-                    //    {
-                    //        gender_user_male.Visibility = ViewStates.Gone;
-                    //    }
-                    //}
-                    
-
-                    //Intent it = new Intent(this, typeof(leaderboard_user));
-                    //it.PutExtra("gioitinh_user", gioitinh_user.ToString());
-                    //StartActivity(it);
-
 
                     if (id == id_user)
                     {
@@ -130,6 +107,7 @@ namespace LearnningEnglishApplication
                 Toast.MakeText(this, "Cannot connect to database!", ToastLength.Short).Show();
             }
         }
+
 
         private void Img_btn_home_Click(object sender, EventArgs e)
         {

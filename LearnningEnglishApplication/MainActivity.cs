@@ -22,11 +22,30 @@ namespace LearnningEnglishApplication
             //Create db SQLite
             mySQLite mysqlite = new mySQLite(this.ApplicationContext);
 
-
+            check_sesion_active();
 
             btn_start = FindViewById<Button>(Resource.Id.btn_start);
 
             btn_start.Click += Btn_start_Click;
+        }
+
+        private void check_sesion_active()
+        {
+            string id_user_session;
+
+            ISharedPreferences sp = Application.Context.GetSharedPreferences("login_session", FileCreationMode.Private);
+
+            id_user_session = sp.GetString("id_user_session", "");
+
+            if (id_user_session != "")
+            {
+                //Xác thực thành công
+                Intent it = new Intent(this, typeof(home));
+
+                // Truy cập vào application nếu chưa logout
+                it.PutExtra("id_user", id_user_session);
+                StartActivity(it);
+            }
         }
 
         private void Btn_start_Click(object sender, System.EventArgs e)

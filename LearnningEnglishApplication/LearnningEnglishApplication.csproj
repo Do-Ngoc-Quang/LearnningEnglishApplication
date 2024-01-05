@@ -77,6 +77,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="signup.cs" />
     <Compile Include="vocabulary.cs" />
+    <Compile Include="vocabulary_dictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -298,7 +299,7 @@
     <AndroidResource Include="Resources\drawable\icon_reload_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\vocabulary_dictionary.xml">
+    <AndroidResource Include="Resources\layout\vocabulary_dictionary2.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -1894,6 +1895,14 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\lion__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\vocabulary_ditionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\vocabulary_dictionary.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

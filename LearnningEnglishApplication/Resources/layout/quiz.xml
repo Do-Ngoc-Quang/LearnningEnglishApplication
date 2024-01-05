@@ -127,13 +127,13 @@
             android:layout_marginTop="50dp"
             android:gravity="center">
 
-            <Button
+            <ImageButton
+                android:src="@drawable/icon_close_32px"
+                android:background="@android:color/transparent"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:drawableTop="@drawable/icon_close_48px"
-                android:id="@+id/btn_endquiz"
-                android:gravity="center" />
+                android:id="@+id/img_btn_endquiz" />
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

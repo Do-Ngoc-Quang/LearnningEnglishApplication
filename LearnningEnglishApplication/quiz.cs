@@ -41,7 +41,8 @@ namespace LearnningEnglishApplication
 
         CheckBox ckb_soluotchoi_1, ckb_soluotchoi_2, ckb_soluotchoi_3;
         TextView txt_EN, txt_socau;
-        Button btn_dapan1, btn_dapan2, btn_dapan3, btn_endquiz;
+        Button btn_dapan1, btn_dapan2, btn_dapan3;
+        ImageButton img_btn_endquiz;
 
         private Handler handler = new Handler();
 
@@ -67,20 +68,22 @@ namespace LearnningEnglishApplication
             btn_dapan1 = FindViewById<Button>(Resource.Id.btn_dapan1);
             btn_dapan2 = FindViewById<Button>(Resource.Id.btn_dapan2);
             btn_dapan3 = FindViewById<Button>(Resource.Id.btn_dapan3);
-            btn_endquiz = FindViewById<Button>(Resource.Id.btn_endquiz);
+            img_btn_endquiz = FindViewById<ImageButton>(Resource.Id.img_btn_endquiz);
 
             btn_dapan1.Click += Btn_dapan1_Click;
             btn_dapan2.Click += Btn_dapan2_Click;
             btn_dapan3.Click += Btn_dapan3_Click;
-            btn_endquiz.Click += Btn_endquiz_Click;
+
+            img_btn_endquiz.Click += Img_btn_endquiz_Click;
 
             LoadXML(planName);
 
             ShowRandomItem();
         }
 
+
         private void LoadXML(string planName)
-        {          
+        {
             using (XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml")))
             {
                 string currentCategory = "";
@@ -166,7 +169,7 @@ namespace LearnningEnglishApplication
 
                         //True answer!
                         btn_dapan2.SetBackgroundColor(Android.Graphics.Color.LightGreen);
-                        
+
                         break;
 
                     case 3:
@@ -182,7 +185,8 @@ namespace LearnningEnglishApplication
             }
 
             // Sử dụng Handler để tạo độ trễ
-            handler.PostDelayed(() => {
+            handler.PostDelayed(() =>
+            {
                 ShowRandomItem();
             }, 2000);
         }
@@ -231,7 +235,8 @@ namespace LearnningEnglishApplication
             }
 
             // Sử dụng Handler để tạo độ trễ
-            handler.PostDelayed(() => {
+            handler.PostDelayed(() =>
+            {
                 ShowRandomItem();
             }, 2000);
         }
@@ -280,7 +285,8 @@ namespace LearnningEnglishApplication
             }
 
             // Sử dụng Handler để tạo độ trễ
-            handler.PostDelayed(() => {
+            handler.PostDelayed(() =>
+            {
                 ShowRandomItem();
             }, 2000);
         }
@@ -301,13 +307,16 @@ namespace LearnningEnglishApplication
             audio_player.Start();
         }
 
-        private void Btn_endquiz_Click(object sender, EventArgs e)
+        private void Img_btn_endquiz_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(vocabulary));
+            it.PutExtra("id_user", id_user);
             it.PutExtra("planName", planName.ToString());
             StartActivity(it);
         }
-
 
         private void ShowRandomItem()
         {
@@ -338,6 +347,9 @@ namespace LearnningEnglishApplication
             {
                 if (cauDung >= 1)
                 {
+                    // Đóng Activity hiện tại
+                    Finish();
+
                     Intent it = new Intent(this, typeof(quiz_completed));
 
                     it.PutExtra("id_user", id_user);
@@ -350,6 +362,9 @@ namespace LearnningEnglishApplication
                 }
                 else
                 {
+                    // Đóng Activity hiện tại
+                    Finish();
+
                     Intent it = new Intent(this, typeof(quiz_lost));
 
                     it.PutExtra("id_user", id_user);
@@ -357,7 +372,7 @@ namespace LearnningEnglishApplication
                     it.PutExtra("planName", planName.ToString());
                     StartActivity(it);
                 }
-                
+
             }
             else
             {
@@ -443,29 +458,5 @@ namespace LearnningEnglishApplication
                 Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
             }
         }
-
-        //private void play_audio_ame(int index)
-        //{
-        //    // Lấy tên tài nguyên từ biến audio_eng[i]
-        //    string resourceName = audio_ame[index];
-
-        //    // Xác định ID của tài nguyên
-        //    int resourceId = Resources.GetIdentifier(resourceName, "raw", PackageName);
-
-        //    if (resourceId != 0)
-        //    {
-        //        // Khởi tạo MediaPlayer
-        //        audio_player = MediaPlayer.Create(this, resourceId);
-
-        //        // Phát âm thanh
-        //        audio_player.Start();
-        //    }
-        //    else
-        //    {
-        //        // Thông báo 
-        //        Toast.MakeText(this, "No sound found", ToastLength.Short).Show();
-        //    }
-        //}
-
     }
 }

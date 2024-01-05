@@ -82,8 +82,8 @@ namespace LearnningEnglishApplication
 
             if (cur != null && cur.MoveToFirst())
             {
-                // Thông báo tên tài khoản đã tồn tại
-                Toast.MakeText(this, "The name being entered already exists, please try again!", ToastLength.Short).Show();
+                // Thông báo tên đăng nhập đã tồn tại
+                Toast.MakeText(this, "The username already exists, please try again!", ToastLength.Short).Show();
             }
             else
             {

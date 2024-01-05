@@ -82,6 +82,9 @@ namespace LearnningEnglishApplication
 
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(category));
 
             // Check if the activity is already in the task stack
@@ -99,6 +102,9 @@ namespace LearnningEnglishApplication
 
         private void Btn_playquiz_Click(object sender, EventArgs e)
         {
+            // Đóng Activity hiện tại
+            Finish();
+
             Intent it = new Intent(this, typeof(quiz));
             it.PutExtra("id_user", id_user);
             it.PutExtra("planName", planName.ToString());
@@ -185,7 +191,6 @@ namespace LearnningEnglishApplication
             txt_mean_vn.Text = mean_vn[i];
 
         }
-
 
 
         private void Img_btn_audio_eng_Click(object sender, EventArgs e)
