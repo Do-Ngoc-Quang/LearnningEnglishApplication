@@ -111,7 +111,6 @@ namespace LearnningEnglishApplication
             catch (Exception e)
             {
                 Toast.MakeText(this.ApplicationContext, "Error! An error occurred", ToastLength.Short).Show();
-
             }
         }
 

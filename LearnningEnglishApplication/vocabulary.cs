@@ -78,8 +78,6 @@ namespace LearnningEnglishApplication
             img_btn_go1node.Click += Img_btn_go1node_Click;
         }
 
-
-
         private void Img_btn_goback_Click(object sender, EventArgs e)
         {
             // Đóng Activity hiện tại
@@ -96,6 +94,8 @@ namespace LearnningEnglishApplication
                 // If the activity is not the current one, reorder it to the front
                 it.AddFlags(ActivityFlags.ReorderToFront);
             }
+
+            it.PutExtra("id_user", id_user);
 
             StartActivity(it);
         }
@@ -191,7 +191,6 @@ namespace LearnningEnglishApplication
             txt_mean_vn.Text = mean_vn[i];
 
         }
-
 
         private void Img_btn_audio_eng_Click(object sender, EventArgs e)
         {

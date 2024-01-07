@@ -100,7 +100,6 @@ namespace LearnningEnglishApplication
                 catch (SQLiteException ex)
                 {
                     // Nếu có ngoại lệ, thông báo tạo tài khoản không thành công - hiển thị lỗi
-                    //Console.WriteLine("Lỗi khi thực hiện câu lệnh SQL: " + ex.Message);
                     Toast.MakeText(this, "Error creating account!" + ex.Message, ToastLength.Short).Show();
                 }
 

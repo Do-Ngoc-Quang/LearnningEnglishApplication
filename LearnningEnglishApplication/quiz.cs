@@ -81,7 +81,6 @@ namespace LearnningEnglishApplication
             ShowRandomItem();
         }
 
-
         private void LoadXML(string planName)
         {
             using (XmlReader reader = XmlReader.Create(Assets.Open("vocabulary.xml")))
@@ -343,9 +342,9 @@ namespace LearnningEnglishApplication
             }
 
             //Kiểm tra điều kiện
-            if (tongSocau == 10 || soluotchoi == 2) //lượt chơi bằng 0
+            if (tongSocau == 10 || soluotchoi == 0) //lượt chơi bằng 0
             {
-                if (cauDung >= 1)
+                if (cauDung >= 5)
                 {
                     // Đóng Activity hiện tại
                     Finish();

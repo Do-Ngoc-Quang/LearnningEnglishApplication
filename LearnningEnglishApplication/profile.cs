@@ -113,30 +113,9 @@ namespace LearnningEnglishApplication
 
             // Tìm các controls trong layout tùy chỉnh
             EditText txt_name_user = viewInflated.FindViewById<EditText>(Resource.Id.txt_name_user);
-            //CheckBox cbox_male = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_male);
-            //CheckBox cbox_female = viewInflated.FindViewById<CheckBox>(Resource.Id.cbox_female);
 
             // ---
             txt_name_user.Text = name_user;
-
-            //if (gioitinh_user == 0)
-            //{
-            //    cbox_male.Checked = true;
-            //}
-            //else
-            //{
-            //    cbox_female.Checked = true;
-            //}
-
-            //if (cbox_male.Checked)
-            //{
-            //    cbox_female.Checked = false;
-            //}
-
-            //if (cbox_female.Checked)
-            //{
-            //    cbox_male.Checked = false;
-            //}
 
             // Thiết lập giao diện của dialog
             builder.SetView(viewInflated)
@@ -145,25 +124,6 @@ namespace LearnningEnglishApplication
                        int gioitinh = 0; // 0 is male, 1 is female
 
                        // Xử lý khi nhấn nút OK
-                       //bool isMaleChecked = cbox_male.Checked;
-                       //bool isFemaleChecked = cbox_female.Checked;
-
-                       //if (isMaleChecked)
-                       //{
-                       //    gioitinh = 0;
-                       //    cbox_female.Checked = false;
-                       //}
-
-                       //if (isFemaleChecked)
-                       //{
-                       //    gioitinh = 1;
-                       //    cbox_male.Checked = false;
-                       //}
-
-                       // ---
-                       //mysqlite.ReadableDatabase.ExecSQL("UPDATE nguoidung SET hoten = '" + txt_name_user.Text + "', gioitinh = '" + gioitinh.ToString() + "'" +
-                       //    " WHERE id = '" + id_user + "';");
-
                        mysqlite.ReadableDatabase.ExecSQL("UPDATE nguoidung SET hoten = '" + txt_name_user.Text + "'" +
                            " WHERE id = '" + id_user + "';");
 

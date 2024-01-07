@@ -68,19 +68,9 @@ namespace LearnningEnglishApplication
 
         private void ShowPlan()
         {
-            //// Hiển thị danh sách planNames lên ListView
+            // Hiển thị danh sách planNames lên ListView
             adapter = new ArrayAdapter<string>(this, Resource.Layout.support_simple_spinner_dropdown_item, planNames);
             listPlan.Adapter = adapter;
-
-            //// Tạo một danh sách mẫu
-            //List<string> samplePlanNames = new List<string> { "Stage 1", "Stage 2", "Stage 3" };
-
-            //// Tạo CustomAdapter
-            //CustomAdapter adapter = new CustomAdapter(this, planNames);
-
-            //// Gán adapter cho ListView
-            //ListView listPlan = FindViewById<ListView>(Resource.Id.listPlan);
-            //listPlan.Adapter = adapter;
         }
 
         private void ListPlan_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -128,16 +118,6 @@ namespace LearnningEnglishApplication
             Finish();
 
             Intent it = new Intent(this, typeof(leaderboard));
-
-            //// Check if the activity is already in the task stack
-            //ComponentName cn = it.ResolveActivity(PackageManager);
-            //String currentActivity = PackageManager.GetActivityInfo(cn, PackageInfoFlags.Activities).Name;
-
-            //if (!currentActivity.Equals(GetType().FullName))
-            //{
-            //    // If the activity is not the current one, reorder it to the front
-            //    it.AddFlags(ActivityFlags.ReorderToFront);
-            //}
 
             it.PutExtra("id_user", id_user);
 

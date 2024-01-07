@@ -159,6 +159,8 @@ namespace LearnningEnglishApplication
         {
             positionMapping.Clear();
 
+            // key: index in Mapping - value is position in new vocab(filter)
+
             for (int i = 0; i < filteredList.Count; i++)
             {
                 int originalPosition = vocab_en_root.IndexOf(filteredList[i]);

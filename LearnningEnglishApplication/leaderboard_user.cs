@@ -18,25 +18,6 @@ namespace LearnningEnglishApplication
         {
             base.OnCreate(savedInstanceState);
 
-            //// Thiết lập giao diện cho activity từ layout resource
-            //SetContentView(Resource.Layout.leaderboard_user);
-
-            //// Tham chiếu đến ImageView bằng ID
-            //ImageView gender_user_avatar = FindViewById<ImageView>(Resource.Id.gender_user_avatar);
-
-            //// Nhận giá trị gioitinh_user từ Intent
-            //int gioitinh_user = int.Parse(Intent.GetStringExtra("gioitinh_user"));
-
-            //if (gioitinh_user == 0)
-            //{
-            //    // Thay đổi hình ảnh bằng mã nguồn (resource ID)
-            //    gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_male_32);
-            //}
-            //else
-            //{
-            //    //gender_user_avatar.SetImageResource(Resource.Drawable.icon_avatar_female_32);
-            //}
-
         }
     }
 }

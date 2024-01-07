@@ -14,7 +14,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +69,6 @@
                     android:textColor="@android:color/white"
                     android:gravity="center_horizontal"/>
 
-
                 <TextView
                     android:id="@+id/txt_diemso"
                     android:text="point"
@@ -92,7 +90,6 @@
 
         </LinearLayout>
 
-
         <Button
             android:id="@+id/btn_replay_quiz"
             android:text="Play again"
@@ -100,6 +97,6 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"/>
-        
+
     </LinearLayout>
 </RelativeLayout>
