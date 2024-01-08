@@ -304,211 +304,25 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\exist__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\exist__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\lose.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\congrats.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\wrong_false.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\right_true.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon_close_32px.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\animate__gb_1.mp3" />
+    <AndroidResource Include="Resources\drawable\icon_logout_32.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\animate__us_1.mp3" />
+    <AndroidAsset Include="Assets\vocabulary_ditionary.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\vocabulary_dictionary.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\raw\be__gb_7.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\be__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\create__gb_5.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\create__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decay__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decay__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decompose__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decompose__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\die__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\die__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\live__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\live__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\salary__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\salary__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\living__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\living__us_5.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\rot__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\rot__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survive__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survive__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\alive__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\alive__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dead__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dead__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dying__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dying__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\existence__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\existence__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\life__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\life__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\death__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\death__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decomposition__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\decomposition__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mortality__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mortality__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nativity__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nativity__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survival__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survival__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\animation__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\animation__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\birth__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\birth__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\creation__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\creation__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\hatch__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\hatch__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\lay__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\lay__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\newborn__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\newborn__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\produce__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\produce__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\spawn__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\spawn__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survivor__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\survivor__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\unborn__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\unborn__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\bear__gb_2.mp3" />
@@ -517,106 +331,121 @@
     <AndroidResource Include="Resources\raw\bear__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidResource Include="Resources\raw\beast__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\beast__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\being__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\being__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\belly__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\belly__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\biped__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\biped__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bird__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bird__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bird_of_prey_1_gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\birth__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\birth__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bison__gb_4.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bison__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bleat__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bleat__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
     <AndroidResource Include="Resources\raw\born__gb_4.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\born__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\inherent__us_2_rr.mp3" />
+    <AndroidResource Include="Resources\raw\breed__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\innate__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\breed__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\innate__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\breeding__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\kill__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\breeding__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\kill__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\brute__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\murder__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\brute__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\murder__us_2.mp3" />
+    <AndroidResource Include="Resources\raw\buffalo__gb_4.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\natural__gb_6.mp3" />
+    <AndroidResource Include="Resources\raw\buffalo__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\natural__us_1_rr.mp3" />
+    <AndroidResource Include="Resources\raw\bug__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\slay__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\bug__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\slay__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\bull__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\xcongenital__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\bull__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\xcongenital__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\bulldog__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\assassinate__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\bulldog__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\assassinate__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\bullock__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\inborn__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\bullock__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\inborn__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\burrow__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\inherent__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fatal__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fatal__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\liquidate__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\liquidate__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\massacre__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\massacre__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\slaughter__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\slaughter__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\burrow__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\butcher__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\butcher__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\deadly__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\deadly__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\eliminate__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\eliminate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\butchery__gb_1.mp3" />
@@ -631,94 +460,73 @@
     <AndroidResource Include="Resources\raw\carnage__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\deathly__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\castrate__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\deathly__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\castrate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\immortal__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\cat__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\immortal__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\cat__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\killing__gb_3.mp3" />
+    <AndroidResource Include="Resources\raw\cattle__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\killing__us_3.mp3" />
+    <AndroidResource Include="Resources\raw\cattle__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lethal__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\cell__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lethal__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\cell__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mortal__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\cheetah__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mortal__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\cheetah__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\undying__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\chest__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\undying__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\chest__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\feminine__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\chimpanzee__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\gender__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\chimpanzee__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\gender__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\claw__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\male__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\male__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\masculine__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\masculine__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\neuter__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\neuter__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sex__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sex__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sexual__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sexual__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\female__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\female__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\feminine__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\claw__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\coitus__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\coitus__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\colony__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\colony__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\colt__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\colt__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\congrats.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\copulate__gb_1.mp3" />
@@ -733,460 +541,28 @@
     <AndroidResource Include="Resources\raw\copulation__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\intercourse__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\cow__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\intercourse__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\cow__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mate__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\create__gb_5.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mate__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\create__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mating__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\creation__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mating__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reproduce__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reproduce__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reproduction__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reproduction__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\breed__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\breed__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fecund__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fecund__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fertile__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fertile__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\impotent__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\impotent__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\menopause__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\menopause__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\menstruation__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\menstruation__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\puberty__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\puberty__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sterile__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sterile__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\barren__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\barren__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\breeding__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\breeding__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_logout_32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\foetus__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\foetus__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\germinate__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\germinate__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\impregnate__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\impregnate__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pregnant__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pregnant__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sterilize__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sterilize__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\xconceive__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\xconceive__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\castrate__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\castrate__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\emasculate__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\emasculate__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\embryo__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\embryo__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fertilize__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fertilize__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\seed__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\seed__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\semen__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\semen__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sperm__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\sperm__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\spore__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\spore__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\white__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\white_1_gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\yolk__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\yolk__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cell__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cell__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\egg__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\egg__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\germ__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\germ__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nucleus__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nucleus__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\animal__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\animal__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\being__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\being__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\creation__us_2.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\creature__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\creature__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\issue__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\issue__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\litter__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\litter__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\offspring__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\offspring__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ovum__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ovum__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\progeny__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\progeny__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\young__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\young_1_gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fauna__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fauna__us_4.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\flora__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\flora__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\organism__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\organism__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\plant__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\plant__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\quadruped__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\quadruped__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildlife__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildlife__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\beast__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\beast__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\biped__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\biped__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\brute__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\brute__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\higher_animals_1_gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\higher_animals_1_us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mammal__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mammal__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\marsupial__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\marsupial__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\rodent__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\rodent__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bird__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bird__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bird_of_prey_1_gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fowl__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fowl__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fish__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fish__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\insect__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\insect__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mollusc__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mollusc__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reptile__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\reptile__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shellfish__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shellfish__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\waterfowl__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\waterfowl__us_3_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildfowl__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildfowl__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\amphibian__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\amphibian__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\crustacean__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\crustacean__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\family__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\family__us_2_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\hybrid__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\hybrid__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pedigree__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pedigree__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\race__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\race__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\species__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\species__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\strain__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\strain__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\thoroughbred__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\thoroughbred__us_1_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\cross__gb_1.mp3" />
@@ -1201,46 +577,88 @@
     <AndroidResource Include="Resources\raw\cross_breed_1_us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\genus__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\croup__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\genus__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\croup__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\hybridize__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\crustacean__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\hybridize__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\crustacean__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\interbreed__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\cub__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\interbreed__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\cub__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mongrel__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\dead__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mongrel__us_2_rr.mp3" />
+    <AndroidResource Include="Resources\raw\dead__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\tame__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\deadly__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\tame__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\deadly__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\virus__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\death__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\virus__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\death__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bacteria__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\deathly__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bacteria__us_2.mp3" />
+    <AndroidResource Include="Resources\raw\deathly__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decay__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decay__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decompose__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decompose__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decomposition__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\decomposition__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\den__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\den__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\die__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\die__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\dock__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\dock__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\dog__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\dog__us_1_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\domesticate__gb_1.mp3" />
@@ -1249,94 +667,130 @@
     <AndroidResource Include="Resources\raw\domesticate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\microbe__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\donkey__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\microbe__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\donkey__us_1_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\parasite__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\dying__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\parasite__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\dying__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\pest__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\ear__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\pest__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\ear__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\predator__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\egg__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\predator__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\egg__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\prey__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\eliminate__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\prey__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\eliminate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\scavenger__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\emasculate__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\scavenger__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\emasculate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\vermin__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\embryo__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\vermin__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\embryo__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bug__gb_3.mp3" />
+    <AndroidResource Include="Resources\raw\exist__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bug__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\exist__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\colony__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\existence__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\colony__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\existence__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\herd__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\eye__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\herd__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\eye__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lair__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\family__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lair__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\family__us_2_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\nest__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\fatal__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\nest__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\fatal__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\shoal__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\fauna__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\shoal__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\fauna__us_4.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\troop__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\fecund__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\troop__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\fecund__us_1_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\den__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\female__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\den__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\female__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\feminine__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\feminine__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fertile__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fertile__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fertilize__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fertilize__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fetlock__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fetlock__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\filly__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\filly__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fish__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\fish__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\flight__gb_1.mp3" />
@@ -1351,124 +805,58 @@
     <AndroidResource Include="Resources\raw\flock__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bleat__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\flora__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\burrow__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\flora__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\burrow__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\foal__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\neigh__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\foal__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\neigh__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\foetus__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\whinny__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\foetus__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\whinny__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\fowl__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\zoo__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\fowl__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\zoo__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\gelding__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\apiary__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\gelding__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\apiary__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\gender__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\aquarium__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\gender__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\aquarium__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\genus__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\aviary__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\genus__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\aviary__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\germ__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bleat__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\germ__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\hoot__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\germinate__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\hoot__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\man__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\man__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\monkey__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\monkey__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\quack__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\quack__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\snort__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\snort__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\squeal__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\squeal__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ape__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ape__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bark__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bark__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\grunt__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\grunt__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\anthropoid__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\anthropoid__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\baboon__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\baboon__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\chimpanzee__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\chimpanzee__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\germinate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\gibbon__gb_2.mp3" />
@@ -1483,19 +871,16 @@
     <AndroidResource Include="Resources\raw\gorilla__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\marmoset__gb_3.mp3" />
+    <AndroidResource Include="Resources\raw\grunt__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\marmoset__us_1_rr.mp3" />
+    <AndroidResource Include="Resources\raw\grunt__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\ear__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\hatch__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\eye__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\eye__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\hatch__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\head__gb_2.mp3" />
@@ -1504,97 +889,22 @@
     <AndroidResource Include="Resources\raw\head__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mane__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\heifer__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mane__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\heifer__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mouth__gb_3.mp3" />
+    <AndroidResource Include="Resources\raw\herd__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mouth__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\herd__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\neck__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\higher_animals_1_gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\neck__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\withers__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\withers__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\back__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\back__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\croup__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\croup__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dock__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dock__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ear__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\knee__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\knee__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\muzzle__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\muzzle__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nose__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\nose__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pastern__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pastern__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shank__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shank__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shoulder__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shoulder__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tail__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tail__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fetlock__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\fetlock__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\higher_animals_1_us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\hock__gb_1.mp3" />
@@ -1609,16 +919,10 @@
     <AndroidResource Include="Resources\raw\hoof__us_2_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\foal__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\hoot__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\foal__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\gelding__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\gelding__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\hoot__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\horse__gb_1.mp3" />
@@ -1627,52 +931,76 @@
     <AndroidResource Include="Resources\raw\horse__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mare__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\hybrid__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mare__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\hybrid__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\pony__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\hybridize__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\pony__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\hybridize__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\stallion__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\immortal__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\stallion__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\immortal__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\belly__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\impotent__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\belly__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\impotent__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\chest__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\impregnate__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\chest__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\impregnate__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\colt__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\inborn__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\colt__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\inborn__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\filly__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\inherent__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\filly__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\inherent__us_2_rr.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\heifer__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\innate__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\heifer__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\innate__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\insect__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\insect__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\interbreed__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\interbreed__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\intercourse__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\intercourse__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\issue__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\issue__us_2.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\jackass__gb_1.mp3" />
@@ -1681,160 +1009,22 @@
     <AndroidResource Include="Resources\raw\jackass__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\mule__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mule__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mustang__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\mustang__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\stud__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\stud__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\zebra__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\zebra__us_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bull__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bull__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bullock__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bullock__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cow__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cow__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\donkey__gb_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\donkey__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cattle__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cattle__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\longhorn__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\longhorn__us_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ox__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\ox__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shorthorn__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\shorthorn__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\steer__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\steer__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\water_buffalo_1_gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\water_buffalo_1_us_3.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bison__gb_4.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\bison__us_1_rr.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\buffalo__gb_4.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\buffalo__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cat__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cat__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\kitty__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\kitty__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\leopard__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\leopard__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pussy__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\pussy__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tabby__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tabby__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tomcat__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\tomcat__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\whisker__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\whisker__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\claw__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\claw__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cub__gb_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\cub__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\raw\jaguar__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\jaguar__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\kill__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\kill__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\killing__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\killing__us_3.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\kitten__gb_3.mp3" />
@@ -1843,52 +1033,46 @@
     <AndroidResource Include="Resources\raw\kitten__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lynx__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\kitty__gb_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\lynx__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\kitty__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\panther__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\knee__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\panther__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\knee__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\puma__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\lair__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\puma__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\lair__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\tiger__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\lay__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\tiger__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\lay__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildcat__gb_1.mp3" />
+    <AndroidResource Include="Resources\raw\leopard__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\wildcat__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\leopard__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bulldog__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\lethal__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\bulldog__us_1.mp3" />
+    <AndroidResource Include="Resources\raw\lethal__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\cheetah__gb_2.mp3" />
+    <AndroidResource Include="Resources\raw\life__gb_3.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\raw\cheetah__us_1.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dog__gb_2.mp3" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\raw\dog__us_1_rr.mp3" />
+    <AndroidResource Include="Resources\raw\life__us_1.mp3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\raw\lion__gb_2.mp3" />
@@ -1897,12 +1081,829 @@
     <AndroidResource Include="Resources\raw\lion__us_2.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidAsset Include="Assets\vocabulary_ditionary.xml" />
+    <AndroidResource Include="Resources\raw\liquidate__gb_1.mp3" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\vocabulary_dictionary.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\raw\liquidate__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\litter__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\litter__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\live__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\live__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\living__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\living__us_5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\longhorn__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\longhorn__us_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\lose.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\lynx__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\lynx__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\male__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\male__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mammal__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mammal__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\man__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\man__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mane__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mane__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mare__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mare__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\marmoset__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\marmoset__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\marsupial__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\marsupial__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\masculine__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\masculine__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\massacre__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\massacre__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mate__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mate__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mating__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mating__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\menopause__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\menopause__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\menstruation__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\menstruation__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\microbe__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\microbe__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mollusc__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mollusc__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mongrel__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mongrel__us_2_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\monkey__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\monkey__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mortal__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mortal__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mortality__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mortality__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mouth__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mouth__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mule__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mule__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\murder__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\murder__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mustang__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\mustang__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\muzzle__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\muzzle__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nativity__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nativity__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\natural__gb_6.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\natural__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neck__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neck__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neigh__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neigh__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nest__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nest__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neuter__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\neuter__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\newborn__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\newborn__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nose__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nose__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nucleus__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\nucleus__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\offspring__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\offspring__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\organism__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\organism__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ovum__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ovum__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ox__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ox__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\panther__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\panther__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\parasite__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\parasite__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pastern__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pastern__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pedigree__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pedigree__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pest__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pest__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\plant__gb_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\plant__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pony__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pony__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\predator__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\predator__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pregnant__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pregnant__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\prey__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\prey__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\produce__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\produce__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\progeny__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\progeny__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\puberty__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\puberty__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\puma__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\puma__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pussy__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\pussy__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\quack__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\quack__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\quadruped__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\quadruped__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\race__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\race__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reproduce__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reproduce__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reproduction__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reproduction__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reptile__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\reptile__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\right_true.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rodent__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rodent__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rot__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\rot__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\salary__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\salary__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\scavenger__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\scavenger__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\seed__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\seed__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\semen__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\semen__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sex__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sex__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sexual__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sexual__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shank__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shank__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shellfish__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shellfish__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoal__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoal__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shorthorn__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shorthorn__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoulder__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\shoulder__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\slaughter__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\slaughter__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\slay__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\slay__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\snort__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\snort__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\spawn__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\spawn__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\species__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\species__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sperm__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sperm__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\spore__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\spore__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\squeal__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\squeal__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\stallion__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\stallion__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\steer__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\steer__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sterile__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sterile__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sterilize__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\sterilize__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\strain__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\strain__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\stud__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\stud__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survival__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survival__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survive__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survive__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survivor__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\survivor__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tabby__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tabby__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tail__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tail__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tame__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tame__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\thoroughbred__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\thoroughbred__us_1_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tiger__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tiger__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tomcat__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\tomcat__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\troop__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\troop__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\unborn__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\unborn__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\undying__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\undying__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\vermin__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\vermin__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\virus__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\virus__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\water_buffalo_1_gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\water_buffalo_1_us_3.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\waterfowl__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\waterfowl__us_3_rr.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\whinny__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\whinny__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\whisker__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\whisker__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\white__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\white_1_gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildcat__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildcat__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildfowl__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildfowl__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildlife__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wildlife__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\withers__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\withers__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\wrong_false.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\xconceive__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\xconceive__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\xcongenital__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\xcongenital__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\yolk__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\yolk__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\young__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\young_1_gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\zebra__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\zebra__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\zoo__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\zoo__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\alive__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\alive__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\amphibian__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\amphibian__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animal__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animal__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animate__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animate__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animation__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\animation__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\anthropoid__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\anthropoid__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ape__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\ape__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\apiary__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\apiary__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\aquarium__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\aquarium__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\assassinate__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\assassinate__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\aviary__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\aviary__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\baboon__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\baboon__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\back__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\back__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bacteria__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bacteria__us_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bark__gb_2.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\bark__us_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\barren__gb_1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\raw\barren__us_1.mp3" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
